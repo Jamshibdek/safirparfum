@@ -1,0 +1,3582 @@
+[
+  {
+    "id": 1001,
+    "slug": "dior-sauvage-elixir",
+    "name": "Sauvage Elixir",
+    "brand": "dior",
+    "gender": "men",
+    "families": [
+      "spicy",
+      "woody"
+    ],
+    "notes": {
+      "top": [
+        "cinnamon",
+        "cardamom",
+        "grapefruit"
+      ],
+      "heart": [
+        "lavender"
+      ],
+      "base": [
+        "amber",
+        "patchouli",
+        "sandalwood"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 5,
+    "sillage": 4,
+    "concentration": "Parfum",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 660000,
+        "oldPrice": null,
+        "stock": 6
+      },
+      {
+        "ml": 50,
+        "price": 1020000,
+        "oldPrice": null,
+        "stock": 8
+      },
+      {
+        "ml": 100,
+        "price": 1650000,
+        "oldPrice": null,
+        "stock": 4
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Ziravorlar bilan yonayotgan iz",
+      "ru": "Шлейф, горящий пряностями"
+    },
+    "description": {
+      "uz": "Sauvage Elixir — Dior uyidan erkaklar uchun ziravorli va yog'ochli hid. Ochilishida dolchin, kardamon va greypfrut seziladi, yuragida lavanda ochiladi, izida esa ambra, pachuli va sandal qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Sauvage Elixir — аромат дома Dior для мужчин: пряный и древесный. В начале звучат корица, кардамон и грейпфрут, в сердце раскрываются лаванда, в шлейфе остаются амбра, пачули и сандал. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#3B4F86",
+      "cap": "black"
+    },
+    "badge": "top",
+    "featured": true,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 73,
+    "popularity": 115,
+    "createdAt": "2026-01-01"
+  },
+  {
+    "id": 1002,
+    "slug": "dior-sauvage-edp",
+    "name": "Sauvage EDP",
+    "brand": "dior",
+    "gender": "men",
+    "families": [
+      "fougere",
+      "spicy"
+    ],
+    "notes": {
+      "top": [
+        "bergamot",
+        "pinkpepper"
+      ],
+      "heart": [
+        "lavender",
+        "geranium"
+      ],
+      "base": [
+        "ambroxan",
+        "vanilla"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "time": "day",
+    "longevity": 4,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 460000,
+        "oldPrice": 540000,
+        "stock": 4
+      },
+      {
+        "ml": 50,
+        "price": 710000,
+        "oldPrice": 840000,
+        "stock": 6
+      },
+      {
+        "ml": 100,
+        "price": 1150000,
+        "oldPrice": 1350000,
+        "stock": 11
+      }
+    ],
+    "discount": 15,
+    "tagline": {
+      "uz": "Toza, ishonchli, har kunga",
+      "ru": "Чисто, уверенно, на каждый день"
+    },
+    "description": {
+      "uz": "Sauvage EDP — Dior uyidan erkaklar uchun fujer va ziravorli hid. Ochilishida bergamot va pushti qalampir seziladi, yuragida lavanda va geran ochiladi, izida esa ambroksan va vanil qoladi. Ayniqsa bahor, yoz va kuz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Sauvage EDP — аромат дома Dior для мужчин: фужерный и пряный. В начале звучат бергамот и розовый перец, в сердце раскрываются лаванда и герань, в шлейфе остаются амброксан и ваниль. Лучше всего раскрывается: весна, лето и осень, днём."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#2E4A80",
+      "cap": "black"
+    },
+    "badge": "top",
+    "featured": true,
+    "isNew": false,
+    "rating": 4.6,
+    "reviews": 59,
+    "popularity": 506,
+    "createdAt": "2026-02-04"
+  },
+  {
+    "id": 1003,
+    "slug": "dior-miss-dior-blooming-bouquet",
+    "name": "Miss Dior Blooming Bouquet",
+    "brand": "dior",
+    "gender": "women",
+    "families": [
+      "floral",
+      "fruity"
+    ],
+    "notes": {
+      "top": [
+        "mandarin",
+        "bergamot"
+      ],
+      "heart": [
+        "peony",
+        "rose"
+      ],
+      "base": [
+        "musk"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "time": "day",
+    "longevity": 3,
+    "sillage": 2,
+    "concentration": "EDT",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 460000,
+        "oldPrice": null,
+        "stock": 11
+      },
+      {
+        "ml": 50,
+        "price": 710000,
+        "oldPrice": null,
+        "stock": 4
+      },
+      {
+        "ml": 100,
+        "price": 1150000,
+        "oldPrice": null,
+        "stock": 9
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Gullar bilan nafas oladigan nafislik",
+      "ru": "Изящество, которое дышит цветами"
+    },
+    "description": {
+      "uz": "Miss Dior Blooming Bouquet — Dior uyidan ayollar uchun gulli va mevali hid. Ochilishida mandarin va bergamot seziladi, yuragida pion va atirgul ochiladi, izida esa mushk qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Miss Dior Blooming Bouquet — аромат дома Dior для женщин: цветочный и фруктовый. В начале звучат мандарин и бергамот, в сердце раскрываются пион и роза, в шлейфе остаются мускус. Лучше всего раскрывается: весна и лето, днём."
+    },
+    "art": {
+      "shape": "round",
+      "liquid": "#F2C6CF",
+      "cap": "silver"
+    },
+    "badge": null,
+    "featured": false,
+    "isNew": false,
+    "rating": 4.5,
+    "reviews": 111,
+    "popularity": 589,
+    "createdAt": "2026-03-07"
+  },
+  {
+    "id": 1004,
+    "slug": "dior-homme-intense",
+    "name": "Homme Intense",
+    "brand": "dior",
+    "gender": "men",
+    "families": [
+      "woody",
+      "floral"
+    ],
+    "notes": {
+      "top": [
+        "lavender",
+        "pear"
+      ],
+      "heart": [
+        "iris"
+      ],
+      "base": [
+        "vetiver",
+        "cedar"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 4,
+    "sillage": 3,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 520000,
+        "oldPrice": null,
+        "stock": 0
+      },
+      {
+        "ml": 50,
+        "price": 800000,
+        "oldPrice": null,
+        "stock": 11
+      },
+      {
+        "ml": 100,
+        "price": 1290000,
+        "oldPrice": null,
+        "stock": 7
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Quruq yog'och va toza havo",
+      "ru": "Сухое дерево и чистый воздух"
+    },
+    "description": {
+      "uz": "Homme Intense — Dior uyidan erkaklar uchun yog'ochli va gulli hid. Ochilishida lavanda va nok seziladi, yuragida iris ochiladi, izida esa vetiver va sadr qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Homme Intense — аромат дома Dior для мужчин: древесный и цветочный. В начале звучат лаванда и груша, в сердце раскрываются ирис, в шлейфе остаются ветивер и кедр. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "tall",
+      "liquid": "#8B7B74",
+      "cap": "black"
+    },
+    "badge": null,
+    "featured": true,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 40,
+    "popularity": 781,
+    "createdAt": "2026-04-10"
+  },
+  {
+    "id": 1005,
+    "slug": "chanel-coco-mademoiselle",
+    "name": "Coco Mademoiselle",
+    "brand": "chanel",
+    "gender": "women",
+    "families": [
+      "oriental",
+      "floral"
+    ],
+    "notes": {
+      "top": [
+        "mandarin",
+        "bergamot"
+      ],
+      "heart": [
+        "rose",
+        "jasmine"
+      ],
+      "base": [
+        "patchouli",
+        "vanilla",
+        "musk"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
+    "time": "any",
+    "longevity": 4,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 680000,
+        "oldPrice": null,
+        "stock": 7
+      },
+      {
+        "ml": 50,
+        "price": 1050000,
+        "oldPrice": null,
+        "stock": 9
+      },
+      {
+        "ml": 100,
+        "price": 1690000,
+        "oldPrice": null,
+        "stock": 5
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Issiq, sirli va unutilmas",
+      "ru": "Тёплый, загадочный, незабываемый"
+    },
+    "description": {
+      "uz": "Coco Mademoiselle — Chanel uyidan ayollar uchun sharqona va gulli hid. Ochilishida mandarin va bergamot seziladi, yuragida atirgul va yasmin ochiladi, izida esa pachuli, vanil va mushk qoladi. Ayniqsa kuz, qish va bahor fasllarida, istalgan vaqtda yaxshi ochiladi.",
+      "ru": "Coco Mademoiselle — аромат дома Chanel для женщин: восточный и цветочный. В начале звучат мандарин и бергамот, в сердце раскрываются роза и жасмин, в шлейфе остаются пачули, ваниль и мускус. Лучше всего раскрывается: осень, зима и весна, в любое время."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#E7B78C",
+      "cap": "gold"
+    },
+    "badge": "top",
+    "featured": true,
+    "isNew": false,
+    "rating": 4.8,
+    "reviews": 15,
+    "popularity": 498,
+    "createdAt": "2026-05-13"
+  },
+  {
+    "id": 1006,
+    "slug": "chanel-bleu-de-chanel",
+    "name": "Bleu de Chanel",
+    "brand": "chanel",
+    "gender": "men",
+    "families": [
+      "woody",
+      "citrus"
+    ],
+    "notes": {
+      "top": [
+        "grapefruit",
+        "lemon",
+        "mint"
+      ],
+      "heart": [
+        "incense",
+        "pinkpepper"
+      ],
+      "base": [
+        "cedar",
+        "sandalwood"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "time": "any",
+    "longevity": 4,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 570000,
+        "oldPrice": 640000,
+        "stock": 5
+      },
+      {
+        "ml": 50,
+        "price": 890000,
+        "oldPrice": 990000,
+        "stock": 0
+      },
+      {
+        "ml": 100,
+        "price": 1430000,
+        "oldPrice": 1590000,
+        "stock": 3
+      }
+    ],
+    "discount": 10,
+    "tagline": {
+      "uz": "Quruq yog'och va toza havo",
+      "ru": "Сухое дерево и чистый воздух"
+    },
+    "description": {
+      "uz": "Bleu de Chanel — Chanel uyidan erkaklar uchun yog'ochli va sitrusli hid. Ochilishida greypfrut, limon va yalpiz seziladi, yuragida ladan va pushti qalampir ochiladi, izida esa sadr va sandal qoladi. Ayniqsa bahor, yoz va kuz fasllarida, istalgan vaqtda yaxshi ochiladi.",
+      "ru": "Bleu de Chanel — аромат дома Chanel для мужчин: древесный и цитрусовый. В начале звучат грейпфрут, лимон и мята, в сердце раскрываются ладан и розовый перец, в шлейфе остаются кедр и сандал. Лучше всего раскрывается: весна, лето и осень, в любое время."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#1E2B4E",
+      "cap": "black"
+    },
+    "badge": "top",
+    "featured": true,
+    "isNew": false,
+    "rating": 4.6,
+    "reviews": 86,
+    "popularity": 157,
+    "createdAt": "2026-06-16"
+  },
+  {
+    "id": 1007,
+    "slug": "chanel-chance-eau-tendre",
+    "name": "Chance Eau Tendre",
+    "brand": "chanel",
+    "gender": "women",
+    "families": [
+      "floral",
+      "fruity"
+    ],
+    "notes": {
+      "top": [
+        "grapefruit",
+        "apple"
+      ],
+      "heart": [
+        "jasmine"
+      ],
+      "base": [
+        "musk",
+        "cedar"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "time": "day",
+    "longevity": 3,
+    "sillage": 2,
+    "concentration": "EDT",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 560000,
+        "oldPrice": null,
+        "stock": 3
+      },
+      {
+        "ml": 50,
+        "price": 860000,
+        "oldPrice": null,
+        "stock": 5
+      },
+      {
+        "ml": 100,
+        "price": 1390000,
+        "oldPrice": null,
+        "stock": 10
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Gullar bilan nafas oladigan nafislik",
+      "ru": "Изящество, которое дышит цветами"
+    },
+    "description": {
+      "uz": "Chance Eau Tendre — Chanel uyidan ayollar uchun gulli va mevali hid. Ochilishida greypfrut va olma seziladi, yuragida yasmin ochiladi, izida esa mushk va sadr qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Chance Eau Tendre — аромат дома Chanel для женщин: цветочный и фруктовый. В начале звучат грейпфрут и яблоко, в сердце раскрываются жасмин, в шлейфе остаются мускус и кедр. Лучше всего раскрывается: весна и лето, днём."
+    },
+    "art": {
+      "shape": "orb",
+      "liquid": "#F6C9C4",
+      "cap": "silver"
+    },
+    "badge": null,
+    "featured": true,
+    "isNew": false,
+    "rating": 4.8,
+    "reviews": 64,
+    "popularity": 176,
+    "createdAt": "2026-07-19"
+  },
+  {
+    "id": 1008,
+    "slug": "chanel-egoiste-platinum",
+    "name": "Egoiste Platinum",
+    "brand": "chanel",
+    "gender": "men",
+    "families": [
+      "fougere",
+      "woody"
+    ],
+    "notes": {
+      "top": [
+        "lavender",
+        "neroli"
+      ],
+      "heart": [
+        "geranium",
+        "sage"
+      ],
+      "base": [
+        "vetiver",
+        "cedar"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "autumn"
+    ],
+    "time": "day",
+    "longevity": 3,
+    "sillage": 3,
+    "concentration": "EDT",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 410000,
+        "oldPrice": 520000,
+        "stock": 10
+      },
+      {
+        "ml": 50,
+        "price": 640000,
+        "oldPrice": 800000,
+        "stock": 3
+      },
+      {
+        "ml": 100,
+        "price": 1030000,
+        "oldPrice": 1290000,
+        "stock": 8
+      }
+    ],
+    "discount": 20,
+    "tagline": {
+      "uz": "Toza, ishonchli, har kunga",
+      "ru": "Чисто, уверенно, на каждый день"
+    },
+    "description": {
+      "uz": "Egoiste Platinum — Chanel uyidan erkaklar uchun fujer va yog'ochli hid. Ochilishida lavanda va neroli seziladi, yuragida geran va shalfey ochiladi, izida esa vetiver va sadr qoladi. Ayniqsa bahor va kuz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Egoiste Platinum — аромат дома Chanel для мужчин: фужерный и древесный. В начале звучат лаванда и нероли, в сердце раскрываются герань и шалфей, в шлейфе остаются ветивер и кедр. Лучше всего раскрывается: весна и осень, днём."
+    },
+    "art": {
+      "shape": "tall",
+      "liquid": "#B9BCC2",
+      "cap": "silver"
+    },
+    "badge": "sale",
+    "featured": false,
+    "isNew": false,
+    "rating": 4.5,
+    "reviews": 118,
+    "popularity": 969,
+    "createdAt": "2026-08-22"
+  },
+  {
+    "id": 1009,
+    "slug": "tom-ford-lost-cherry",
+    "name": "Lost Cherry",
+    "brand": "tom-ford",
+    "gender": "unisex",
+    "families": [
+      "gourmand",
+      "fruity"
+    ],
+    "notes": {
+      "top": [
+        "cherry",
+        "almond"
+      ],
+      "heart": [
+        "rose",
+        "jasmine"
+      ],
+      "base": [
+        "tonka",
+        "vanilla",
+        "sandalwood"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 4,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1160000,
+        "oldPrice": null,
+        "stock": 8
+      },
+      {
+        "ml": 50,
+        "price": 1800000,
+        "oldPrice": null,
+        "stock": 10
+      },
+      {
+        "ml": 100,
+        "price": 2900000,
+        "oldPrice": null,
+        "stock": 6
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Shirin, ammo shirinlikdan ko'proq",
+      "ru": "Сладкий, но больше чем сладость"
+    },
+    "description": {
+      "uz": "Lost Cherry — Tom Ford uyidan har kim uchun shirin (gurmand) va mevali hid. Ochilishida olcha va bodom seziladi, yuragida atirgul va yasmin ochiladi, izida esa tonka loviya, vanil va sandal qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Lost Cherry — аромат дома Tom Ford для всех: гурманский и фруктовый. В начале звучат вишня и миндаль, в сердце раскрываются роза и жасмин, в шлейфе остаются бобы тонка, ваниль и сандал. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#8E1B2C",
+      "cap": "black"
+    },
+    "badge": "top",
+    "featured": true,
+    "isNew": false,
+    "rating": 4.6,
+    "reviews": 59,
+    "popularity": 955,
+    "createdAt": "2026-09-25"
+  },
+  {
+    "id": 1010,
+    "slug": "tom-ford-ombre-leather",
+    "name": "Ombre Leather",
+    "brand": "tom-ford",
+    "gender": "unisex",
+    "families": [
+      "leather",
+      "woody"
+    ],
+    "notes": {
+      "top": [
+        "cardamom"
+      ],
+      "heart": [
+        "leather",
+        "jasmine"
+      ],
+      "base": [
+        "amber",
+        "patchouli"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 5,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 940000,
+        "oldPrice": null,
+        "stock": 6
+      },
+      {
+        "ml": 50,
+        "price": 1460000,
+        "oldPrice": null,
+        "stock": 8
+      },
+      {
+        "ml": 100,
+        "price": 2350000,
+        "oldPrice": null,
+        "stock": 4
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Yumshoq teri va jasur xarakter",
+      "ru": "Мягкая кожа и смелый характер"
+    },
+    "description": {
+      "uz": "Ombre Leather — Tom Ford uyidan har kim uchun teri va yog'ochli hid. Ochilishida kardamon seziladi, yuragida teri va yasmin ochiladi, izida esa ambra va pachuli qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Ombre Leather — аромат дома Tom Ford для всех: кожаный и древесный. В начале звучат кардамон, в сердце раскрываются кожа и жасмин, в шлейфе остаются амбра и пачули. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#5A3A2A",
+      "cap": "black"
+    },
+    "badge": null,
+    "featured": true,
+    "isNew": false,
+    "rating": 4.6,
+    "reviews": 56,
+    "popularity": 550,
+    "createdAt": "2026-10-01"
+  },
+  {
+    "id": 1011,
+    "slug": "tom-ford-tobacco-vanille",
+    "name": "Tobacco Vanille",
+    "brand": "tom-ford",
+    "gender": "unisex",
+    "families": [
+      "oriental",
+      "spicy"
+    ],
+    "notes": {
+      "top": [
+        "tobacco",
+        "cinnamon"
+      ],
+      "heart": [
+        "vanilla",
+        "tonka"
+      ],
+      "base": [
+        "coffee",
+        "amber"
+      ]
+    },
+    "seasons": [
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 5,
+    "sillage": 5,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1180000,
+        "oldPrice": null,
+        "stock": 4
+      },
+      {
+        "ml": 50,
+        "price": 1830000,
+        "oldPrice": null,
+        "stock": 6
+      },
+      {
+        "ml": 100,
+        "price": 2950000,
+        "oldPrice": null,
+        "stock": 0
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Issiq, sirli va unutilmas",
+      "ru": "Тёплый, загадочный, незабываемый"
+    },
+    "description": {
+      "uz": "Tobacco Vanille — Tom Ford uyidan har kim uchun sharqona va ziravorli hid. Ochilishida tamaki va dolchin seziladi, yuragida vanil va tonka loviya ochiladi, izida esa qahva va ambra qoladi. Ayniqsa qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Tobacco Vanille — аромат дома Tom Ford для всех: восточный и пряный. В начале звучат табак и корица, в сердце раскрываются ваниль и бобы тонка, в шлейфе остаются кофе и амбра. Лучше всего раскрывается: зима, вечером."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#9B5B2B",
+      "cap": "black"
+    },
+    "badge": "new",
+    "featured": false,
+    "isNew": true,
+    "rating": 4.8,
+    "reviews": 39,
+    "popularity": 170,
+    "createdAt": "2026-11-04"
+  },
+  {
+    "id": 1012,
+    "slug": "tom-ford-neroli-portofino",
+    "name": "Neroli Portofino",
+    "brand": "tom-ford",
+    "gender": "unisex",
+    "families": [
+      "citrus",
+      "aquatic"
+    ],
+    "notes": {
+      "top": [
+        "bergamot",
+        "lemon",
+        "mandarin"
+      ],
+      "heart": [
+        "neroli",
+        "orangeblossom"
+      ],
+      "base": [
+        "amber",
+        "musk"
+      ]
+    },
+    "seasons": [
+      "summer"
+    ],
+    "time": "day",
+    "longevity": 3,
+    "sillage": 3,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 970000,
+        "oldPrice": 1080000,
+        "stock": 11
+      },
+      {
+        "ml": 50,
+        "price": 1510000,
+        "oldPrice": 1670000,
+        "stock": 4
+      },
+      {
+        "ml": 100,
+        "price": 2430000,
+        "oldPrice": 2700000,
+        "stock": 9
+      }
+    ],
+    "discount": 10,
+    "tagline": {
+      "uz": "Tetiklik bir tomchida",
+      "ru": "Свежесть в одной капле"
+    },
+    "description": {
+      "uz": "Neroli Portofino — Tom Ford uyidan har kim uchun sitrusli va suvli hid. Ochilishida bergamot, limon va mandarin seziladi, yuragida neroli va apelsin guli ochiladi, izida esa ambra va mushk qoladi. Ayniqsa yoz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Neroli Portofino — аромат дома Tom Ford для всех: цитрусовый и водный. В начале звучат бергамот, лимон и мандарин, в сердце раскрываются нероли и цветок апельсина, в шлейфе остаются амбра и мускус. Лучше всего раскрывается: лето, днём."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#9ED3E6",
+      "cap": "gold"
+    },
+    "badge": null,
+    "featured": false,
+    "isNew": false,
+    "rating": 5,
+    "reviews": 59,
+    "popularity": 232,
+    "createdAt": "2026-01-07"
+  },
+  {
+    "id": 1013,
+    "slug": "yves-saint-laurent-libre",
+    "name": "Libre",
+    "brand": "ysl",
+    "gender": "women",
+    "families": [
+      "floral",
+      "oriental"
+    ],
+    "notes": {
+      "top": [
+        "lavender",
+        "mandarin"
+      ],
+      "heart": [
+        "orangeblossom",
+        "jasmine"
+      ],
+      "base": [
+        "vanilla",
+        "musk"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
+    "time": "any",
+    "longevity": 4,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 580000,
+        "oldPrice": null,
+        "stock": 9
+      },
+      {
+        "ml": 50,
+        "price": 900000,
+        "oldPrice": null,
+        "stock": 11
+      },
+      {
+        "ml": 100,
+        "price": 1450000,
+        "oldPrice": null,
+        "stock": 7
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Gullar bilan nafas oladigan nafislik",
+      "ru": "Изящество, которое дышит цветами"
+    },
+    "description": {
+      "uz": "Libre — Yves Saint Laurent uyidan ayollar uchun gulli va sharqona hid. Ochilishida lavanda va mandarin seziladi, yuragida apelsin guli va yasmin ochiladi, izida esa vanil va mushk qoladi. Ayniqsa kuz, qish va bahor fasllarida, istalgan vaqtda yaxshi ochiladi.",
+      "ru": "Libre — аромат дома Yves Saint Laurent для женщин: цветочный и восточный. В начале звучат лаванда и мандарин, в сердце раскрываются цветок апельсина и жасмин, в шлейфе остаются ваниль и мускус. Лучше всего раскрывается: осень, зима и весна, в любое время."
+    },
+    "art": {
+      "shape": "facet",
+      "liquid": "#E9D3A6",
+      "cap": "gold"
+    },
+    "badge": "top",
+    "featured": true,
+    "isNew": false,
+    "rating": 4.8,
+    "reviews": 45,
+    "popularity": 153,
+    "createdAt": "2026-02-10"
+  },
+  {
+    "id": 1014,
+    "slug": "yves-saint-laurent-y-eau-de-parfum",
+    "name": "Y Eau de Parfum",
+    "brand": "ysl",
+    "gender": "men",
+    "families": [
+      "fougere",
+      "woody"
+    ],
+    "notes": {
+      "top": [
+        "apple",
+        "bergamot"
+      ],
+      "heart": [
+        "sage",
+        "geranium"
+      ],
+      "base": [
+        "tonka",
+        "amber",
+        "cedar"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "autumn"
+    ],
+    "time": "any",
+    "longevity": 4,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 460000,
+        "oldPrice": 540000,
+        "stock": 7
+      },
+      {
+        "ml": 50,
+        "price": 710000,
+        "oldPrice": 840000,
+        "stock": 9
+      },
+      {
+        "ml": 100,
+        "price": 1150000,
+        "oldPrice": 1350000,
+        "stock": 5
+      }
+    ],
+    "discount": 15,
+    "tagline": {
+      "uz": "Toza, ishonchli, har kunga",
+      "ru": "Чисто, уверенно, на каждый день"
+    },
+    "description": {
+      "uz": "Y Eau de Parfum — Yves Saint Laurent uyidan erkaklar uchun fujer va yog'ochli hid. Ochilishida olma va bergamot seziladi, yuragida shalfey va geran ochiladi, izida esa tonka loviya, ambra va sadr qoladi. Ayniqsa bahor va kuz fasllarida, istalgan vaqtda yaxshi ochiladi.",
+      "ru": "Y Eau de Parfum — аромат дома Yves Saint Laurent для мужчин: фужерный и древесный. В начале звучат яблоко и бергамот, в сердце раскрываются шалфей и герань, в шлейфе остаются бобы тонка, амбра и кедр. Лучше всего раскрывается: весна и осень, в любое время."
+    },
+    "art": {
+      "shape": "tall",
+      "liquid": "#2A3E73",
+      "cap": "silver"
+    },
+    "badge": null,
+    "featured": false,
+    "isNew": false,
+    "rating": 4.9,
+    "reviews": 48,
+    "popularity": 350,
+    "createdAt": "2026-03-13"
+  },
+  {
+    "id": 1015,
+    "slug": "yves-saint-laurent-black-opium",
+    "name": "Black Opium",
+    "brand": "ysl",
+    "gender": "women",
+    "families": [
+      "gourmand",
+      "oriental"
+    ],
+    "notes": {
+      "top": [
+        "pear",
+        "pinkpepper"
+      ],
+      "heart": [
+        "coffee",
+        "jasmine"
+      ],
+      "base": [
+        "vanilla",
+        "patchouli",
+        "cedar"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 4,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 560000,
+        "oldPrice": null,
+        "stock": 0
+      },
+      {
+        "ml": 50,
+        "price": 860000,
+        "oldPrice": null,
+        "stock": 7
+      },
+      {
+        "ml": 100,
+        "price": 1390000,
+        "oldPrice": null,
+        "stock": 3
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Shirin, ammo shirinlikdan ko'proq",
+      "ru": "Сладкий, но больше чем сладость"
+    },
+    "description": {
+      "uz": "Black Opium — Yves Saint Laurent uyidan ayollar uchun shirin (gurmand) va sharqona hid. Ochilishida nok va pushti qalampir seziladi, yuragida qahva va yasmin ochiladi, izida esa vanil, pachuli va sadr qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Black Opium — аромат дома Yves Saint Laurent для женщин: гурманский и восточный. В начале звучат груша и розовый перец, в сердце раскрываются кофе и жасмин, в шлейфе остаются ваниль, пачули и кедр. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "facet",
+      "liquid": "#2B1E2E",
+      "cap": "black"
+    },
+    "badge": null,
+    "featured": false,
+    "isNew": false,
+    "rating": 4.5,
+    "reviews": 117,
+    "popularity": 238,
+    "createdAt": "2026-04-16"
+  },
+  {
+    "id": 1016,
+    "slug": "yves-saint-laurent-myslf",
+    "name": "MYSLF",
+    "brand": "ysl",
+    "gender": "men",
+    "families": [
+      "floral",
+      "woody"
+    ],
+    "notes": {
+      "top": [
+        "bergamot"
+      ],
+      "heart": [
+        "orangeblossom"
+      ],
+      "base": [
+        "patchouli",
+        "amber"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "time": "day",
+    "longevity": 3,
+    "sillage": 3,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 570000,
+        "oldPrice": null,
+        "stock": 3
+      },
+      {
+        "ml": 50,
+        "price": 880000,
+        "oldPrice": null,
+        "stock": 5
+      },
+      {
+        "ml": 100,
+        "price": 1420000,
+        "oldPrice": null,
+        "stock": 10
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Bahor bog'ining yumshoq ovozi",
+      "ru": "Нежный голос весеннего сада"
+    },
+    "description": {
+      "uz": "MYSLF — Yves Saint Laurent uyidan erkaklar uchun gulli va yog'ochli hid. Ochilishida bergamot seziladi, yuragida apelsin guli ochiladi, izida esa pachuli va ambra qoladi. Ayniqsa bahor, yoz va kuz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "MYSLF — аромат дома Yves Saint Laurent для мужчин: цветочный и древесный. В начале звучат бергамот, в сердце раскрываются цветок апельсина, в шлейфе остаются пачули и амбра. Лучше всего раскрывается: весна, лето и осень, днём."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#C9C1B6",
+      "cap": "black"
+    },
+    "badge": "new",
+    "featured": true,
+    "isNew": true,
+    "rating": 4.9,
+    "reviews": 62,
+    "popularity": 236,
+    "createdAt": "2026-05-19"
+  },
+  {
+    "id": 1017,
+    "slug": "giorgio-armani-acqua-di-gio-profondo",
+    "name": "Acqua di Gio Profondo",
+    "brand": "armani",
+    "gender": "men",
+    "families": [
+      "aquatic",
+      "citrus"
+    ],
+    "notes": {
+      "top": [
+        "marine",
+        "bergamot",
+        "mandarin"
+      ],
+      "heart": [
+        "lavender",
+        "cardamom"
+      ],
+      "base": [
+        "musk",
+        "patchouli",
+        "amber"
+      ]
+    },
+    "seasons": [
+      "summer",
+      "spring"
+    ],
+    "time": "day",
+    "longevity": 3,
+    "sillage": 3,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 430000,
+        "oldPrice": 480000,
+        "stock": 10
+      },
+      {
+        "ml": 50,
+        "price": 660000,
+        "oldPrice": 740000,
+        "stock": 0
+      },
+      {
+        "ml": 100,
+        "price": 1070000,
+        "oldPrice": 1190000,
+        "stock": 8
+      }
+    ],
+    "discount": 10,
+    "tagline": {
+      "uz": "Dengiz shabadasi teringizda",
+      "ru": "Морской бриз на коже"
+    },
+    "description": {
+      "uz": "Acqua di Gio Profondo — Giorgio Armani uyidan erkaklar uchun suvli va sitrusli hid. Ochilishida dengiz notalari, bergamot va mandarin seziladi, yuragida lavanda va kardamon ochiladi, izida esa mushk, pachuli va ambra qoladi. Ayniqsa yoz va bahor fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Acqua di Gio Profondo — аромат дома Giorgio Armani для мужчин: водный и цитрусовый. В начале звучат морские ноты, бергамот и мандарин, в сердце раскрываются лаванда и кардамон, в шлейфе остаются мускус, пачули и амбра. Лучше всего раскрывается: лето и весна, днём."
+    },
+    "art": {
+      "shape": "round",
+      "liquid": "#3A7BB8",
+      "cap": "silver"
+    },
+    "badge": null,
+    "featured": false,
+    "isNew": false,
+    "rating": 4.8,
+    "reviews": 54,
+    "popularity": 758,
+    "createdAt": "2026-06-22"
+  },
+  {
+    "id": 1018,
+    "slug": "giorgio-armani-si-passione",
+    "name": "Si Passione",
+    "brand": "armani",
+    "gender": "women",
+    "families": [
+      "fruity",
+      "floral"
+    ],
+    "notes": {
+      "top": [
+        "blackcurrant",
+        "pear",
+        "pinkpepper"
+      ],
+      "heart": [
+        "rose",
+        "jasmine"
+      ],
+      "base": [
+        "vanilla",
+        "cedar"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 4,
+    "sillage": 3,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 500000,
+        "oldPrice": null,
+        "stock": 8
+      },
+      {
+        "ml": 50,
+        "price": 780000,
+        "oldPrice": null,
+        "stock": 10
+      },
+      {
+        "ml": 100,
+        "price": 1250000,
+        "oldPrice": null,
+        "stock": 6
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Quvnoq va yorqin xarakter",
+      "ru": "Весёлый и яркий характер"
+    },
+    "description": {
+      "uz": "Si Passione — Giorgio Armani uyidan ayollar uchun mevali va gulli hid. Ochilishida qora smorodina, nok va pushti qalampir seziladi, yuragida atirgul va yasmin ochiladi, izida esa vanil va sadr qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Si Passione — аромат дома Giorgio Armani для женщин: фруктовый и цветочный. В начале звучат чёрная смородина, груша и розовый перец, в сердце раскрываются роза и жасмин, в шлейфе остаются ваниль и кедр. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#B41F3A",
+      "cap": "black"
+    },
+    "badge": null,
+    "featured": false,
+    "isNew": false,
+    "rating": 4.8,
+    "reviews": 22,
+    "popularity": 223,
+    "createdAt": "2026-07-25"
+  },
+  {
+    "id": 1019,
+    "slug": "giorgio-armani-stronger-with-you-intensely",
+    "name": "Stronger With You Intensely",
+    "brand": "armani",
+    "gender": "men",
+    "families": [
+      "oriental",
+      "spicy"
+    ],
+    "notes": {
+      "top": [
+        "pinkpepper",
+        "cardamom"
+      ],
+      "heart": [
+        "lavender",
+        "cinnamon"
+      ],
+      "base": [
+        "vanilla",
+        "tonka",
+        "amber"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 5,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 360000,
+        "oldPrice": 480000,
+        "stock": 6
+      },
+      {
+        "ml": 50,
+        "price": 550000,
+        "oldPrice": 740000,
+        "stock": 8
+      },
+      {
+        "ml": 100,
+        "price": 890000,
+        "oldPrice": 1190000,
+        "stock": 4
+      }
+    ],
+    "discount": 25,
+    "tagline": {
+      "uz": "Issiq, sirli va unutilmas",
+      "ru": "Тёплый, загадочный, незабываемый"
+    },
+    "description": {
+      "uz": "Stronger With You Intensely — Giorgio Armani uyidan erkaklar uchun sharqona va ziravorli hid. Ochilishida pushti qalampir va kardamon seziladi, yuragida lavanda va dolchin ochiladi, izida esa vanil, tonka loviya va ambra qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Stronger With You Intensely — аромат дома Giorgio Armani для мужчин: восточный и пряный. В начале звучат розовый перец и кардамон, в сердце раскрываются лаванда и корица, в шлейфе остаются ваниль, бобы тонка и амбра. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "round",
+      "liquid": "#6B2D24",
+      "cap": "black"
+    },
+    "badge": "sale",
+    "featured": true,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 16,
+    "popularity": 47,
+    "createdAt": "2026-08-01"
+  },
+  {
+    "id": 1020,
+    "slug": "versace-eros",
+    "name": "Eros",
+    "brand": "versace",
+    "gender": "men",
+    "families": [
+      "fougere",
+      "oriental"
+    ],
+    "notes": {
+      "top": [
+        "mint",
+        "apple",
+        "lemon"
+      ],
+      "heart": [
+        "tonka",
+        "geranium"
+      ],
+      "base": [
+        "vanilla",
+        "vetiver",
+        "cedar"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
+    "time": "evening",
+    "longevity": 4,
+    "sillage": 4,
+    "concentration": "EDT",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 320000,
+        "oldPrice": 400000,
+        "stock": 4
+      },
+      {
+        "ml": 50,
+        "price": 490000,
+        "oldPrice": 610000,
+        "stock": 6
+      },
+      {
+        "ml": 100,
+        "price": 790000,
+        "oldPrice": 990000,
+        "stock": 11
+      }
+    ],
+    "discount": 20,
+    "tagline": {
+      "uz": "Toza, ishonchli, har kunga",
+      "ru": "Чисто, уверенно, на каждый день"
+    },
+    "description": {
+      "uz": "Eros — Versace uyidan erkaklar uchun fujer va sharqona hid. Ochilishida yalpiz, olma va limon seziladi, yuragida tonka loviya va geran ochiladi, izida esa vanil, vetiver va sadr qoladi. Ayniqsa kuz, qish va bahor fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Eros — аромат дома Versace для мужчин: фужерный и восточный. В начале звучат мята, яблоко и лимон, в сердце раскрываются бобы тонка и герань, в шлейфе остаются ваниль, ветивер и кедр. Лучше всего раскрывается: осень, зима и весна, вечером."
+    },
+    "art": {
+      "shape": "tall",
+      "liquid": "#39B6A8",
+      "cap": "gold"
+    },
+    "badge": "sale",
+    "featured": false,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 87,
+    "popularity": 646,
+    "createdAt": "2026-09-04"
+  },
+  {
+    "id": 1021,
+    "slug": "versace-pour-homme",
+    "name": "Pour Homme",
+    "brand": "versace",
+    "gender": "men",
+    "families": [
+      "fougere",
+      "citrus"
+    ],
+    "notes": {
+      "top": [
+        "bergamot",
+        "neroli",
+        "lemon"
+      ],
+      "heart": [
+        "geranium",
+        "sage"
+      ],
+      "base": [
+        "musk",
+        "tonka",
+        "amber"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "time": "day",
+    "longevity": 3,
+    "sillage": 3,
+    "concentration": "EDT",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 320000,
+        "oldPrice": null,
+        "stock": 11
+      },
+      {
+        "ml": 50,
+        "price": 490000,
+        "oldPrice": null,
+        "stock": 4
+      },
+      {
+        "ml": 100,
+        "price": 790000,
+        "oldPrice": null,
+        "stock": 9
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Klassik erkaklik, zamonaviy ohangda",
+      "ru": "Классическая мужественность в новом звучании"
+    },
+    "description": {
+      "uz": "Pour Homme — Versace uyidan erkaklar uchun fujer va sitrusli hid. Ochilishida bergamot, neroli va limon seziladi, yuragida geran va shalfey ochiladi, izida esa mushk, tonka loviya va ambra qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Pour Homme — аромат дома Versace для мужчин: фужерный и цитрусовый. В начале звучат бергамот, нероли и лимон, в сердце раскрываются герань и шалфей, в шлейфе остаются мускус, бобы тонка и амбра. Лучше всего раскрывается: весна и лето, днём."
+    },
+    "art": {
+      "shape": "tall",
+      "liquid": "#6EA6D9",
+      "cap": "silver"
+    },
+    "badge": null,
+    "featured": false,
+    "isNew": false,
+    "rating": 5,
+    "reviews": 44,
+    "popularity": 438,
+    "createdAt": "2026-10-07"
+  },
+  {
+    "id": 1022,
+    "slug": "versace-bright-crystal",
+    "name": "Bright Crystal",
+    "brand": "versace",
+    "gender": "women",
+    "families": [
+      "floral",
+      "fruity"
+    ],
+    "notes": {
+      "top": [
+        "pinkpepper",
+        "mandarin"
+      ],
+      "heart": [
+        "peony"
+      ],
+      "base": [
+        "musk",
+        "amber"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "time": "day",
+    "longevity": 3,
+    "sillage": 2,
+    "concentration": "EDT",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 250000,
+        "oldPrice": 360000,
+        "stock": 9
+      },
+      {
+        "ml": 50,
+        "price": 390000,
+        "oldPrice": 550000,
+        "stock": 11
+      },
+      {
+        "ml": 100,
+        "price": 620000,
+        "oldPrice": 890000,
+        "stock": 0
+      }
+    ],
+    "discount": 30,
+    "tagline": {
+      "uz": "Bahor bog'ining yumshoq ovozi",
+      "ru": "Нежный голос весеннего сада"
+    },
+    "description": {
+      "uz": "Bright Crystal — Versace uyidan ayollar uchun gulli va mevali hid. Ochilishida pushti qalampir va mandarin seziladi, yuragida pion ochiladi, izida esa mushk va ambra qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Bright Crystal — аромат дома Versace для женщин: цветочный и фруктовый. В начале звучат розовый перец и мандарин, в сердце раскрываются пион, в шлейфе остаются мускус и амбра. Лучше всего раскрывается: весна и лето, днём."
+    },
+    "art": {
+      "shape": "facet",
+      "liquid": "#F3B9C6",
+      "cap": "silver"
+    },
+    "badge": "sale",
+    "featured": true,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 58,
+    "popularity": 838,
+    "createdAt": "2026-11-10"
+  },
+  {
+    "id": 1023,
+    "slug": "creed-aventus",
+    "name": "Aventus",
+    "brand": "creed",
+    "gender": "men",
+    "families": [
+      "fruity",
+      "woody"
+    ],
+    "notes": {
+      "top": [
+        "pineapple",
+        "bergamot",
+        "blackcurrant"
+      ],
+      "heart": [
+        "birch",
+        "jasmine"
+      ],
+      "base": [
+        "musk",
+        "amber",
+        "vetiver"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "time": "any",
+    "longevity": 5,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1560000,
+        "oldPrice": null,
+        "stock": 7
+      },
+      {
+        "ml": 50,
+        "price": 2420000,
+        "oldPrice": null,
+        "stock": 9
+      },
+      {
+        "ml": 100,
+        "price": 3900000,
+        "oldPrice": null,
+        "stock": 5
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Shirali mevalar va yengil kayfiyat",
+      "ru": "Сочные фрукты и лёгкое настроение"
+    },
+    "description": {
+      "uz": "Aventus — Creed uyidan erkaklar uchun mevali va yog'ochli hid. Ochilishida ananas, bergamot va qora smorodina seziladi, yuragida qayin va yasmin ochiladi, izida esa mushk, ambra va vetiver qoladi. Ayniqsa bahor, yoz va kuz fasllarida, istalgan vaqtda yaxshi ochiladi.",
+      "ru": "Aventus — аромат дома Creed для мужчин: фруктовый и древесный. В начале звучат ананас, бергамот и чёрная смородина, в сердце раскрываются берёза и жасмин, в шлейфе остаются мускус, амбра и ветивер. Лучше всего раскрывается: весна, лето и осень, в любое время."
+    },
+    "art": {
+      "shape": "tall",
+      "liquid": "#20242C",
+      "cap": "silver"
+    },
+    "badge": "top",
+    "featured": true,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 58,
+    "popularity": 264,
+    "createdAt": "2026-01-13"
+  },
+  {
+    "id": 1024,
+    "slug": "creed-silver-mountain-water",
+    "name": "Silver Mountain Water",
+    "brand": "creed",
+    "gender": "unisex",
+    "families": [
+      "aquatic",
+      "citrus"
+    ],
+    "notes": {
+      "top": [
+        "bergamot",
+        "mandarin"
+      ],
+      "heart": [
+        "tea",
+        "blackcurrant"
+      ],
+      "base": [
+        "musk",
+        "sandalwood"
+      ]
+    },
+    "seasons": [
+      "summer",
+      "spring"
+    ],
+    "time": "day",
+    "longevity": 3,
+    "sillage": 3,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1380000,
+        "oldPrice": null,
+        "stock": 5
+      },
+      {
+        "ml": 50,
+        "price": 2140000,
+        "oldPrice": null,
+        "stock": 7
+      },
+      {
+        "ml": 100,
+        "price": 3450000,
+        "oldPrice": null,
+        "stock": 3
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Salqin, toza, erkin",
+      "ru": "Прохладно, чисто, свободно"
+    },
+    "description": {
+      "uz": "Silver Mountain Water — Creed uyidan har kim uchun suvli va sitrusli hid. Ochilishida bergamot va mandarin seziladi, yuragida choy va qora smorodina ochiladi, izida esa mushk va sandal qoladi. Ayniqsa yoz va bahor fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Silver Mountain Water — аромат дома Creed для всех: водный и цитрусовый. В начале звучат бергамот и мандарин, в сердце раскрываются чай и чёрная смородина, в шлейфе остаются мускус и сандал. Лучше всего раскрывается: лето и весна, днём."
+    },
+    "art": {
+      "shape": "tall",
+      "liquid": "#C7D6DE",
+      "cap": "silver"
+    },
+    "badge": null,
+    "featured": false,
+    "isNew": false,
+    "rating": 4.6,
+    "reviews": 95,
+    "popularity": 131,
+    "createdAt": "2026-02-16"
+  },
+  {
+    "id": 1025,
+    "slug": "maison-francis-kurkdjian-baccarat-rouge-540",
+    "name": "Baccarat Rouge 540",
+    "brand": "mfk",
+    "gender": "unisex",
+    "families": [
+      "oriental",
+      "woody"
+    ],
+    "notes": {
+      "top": [
+        "saffron",
+        "jasmine"
+      ],
+      "heart": [
+        "amber",
+        "cedar"
+      ],
+      "base": [
+        "ambroxan",
+        "musk"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
+    "time": "any",
+    "longevity": 5,
+    "sillage": 5,
+    "concentration": "Extrait",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1960000,
+        "oldPrice": null,
+        "stock": 3
+      },
+      {
+        "ml": 50,
+        "price": 3040000,
+        "oldPrice": null,
+        "stock": 5
+      },
+      {
+        "ml": 100,
+        "price": 4900000,
+        "oldPrice": null,
+        "stock": 10
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Issiq, sirli va unutilmas",
+      "ru": "Тёплый, загадочный, незабываемый"
+    },
+    "description": {
+      "uz": "Baccarat Rouge 540 — Maison Francis Kurkdjian uyidan har kim uchun sharqona va yog'ochli hid. Ochilishida za'faron va yasmin seziladi, yuragida ambra va sadr ochiladi, izida esa ambroksan va mushk qoladi. Ayniqsa kuz, qish va bahor fasllarida, istalgan vaqtda yaxshi ochiladi.",
+      "ru": "Baccarat Rouge 540 — аромат дома Maison Francis Kurkdjian для всех: восточный и древесный. В начале звучат шафран и жасмин, в сердце раскрываются амбра и кедр, в шлейфе остаются амброксан и мускус. Лучше всего раскрывается: осень, зима и весна, в любое время."
+    },
+    "art": {
+      "shape": "facet",
+      "liquid": "#C7352E",
+      "cap": "gold"
+    },
+    "badge": "top",
+    "featured": true,
+    "isNew": false,
+    "rating": 4.6,
+    "reviews": 97,
+    "popularity": 858,
+    "createdAt": "2026-03-19"
+  },
+  {
+    "id": 1026,
+    "slug": "maison-francis-kurkdjian-gentle-fluidity-gold",
+    "name": "Gentle Fluidity Gold",
+    "brand": "mfk",
+    "gender": "unisex",
+    "families": [
+      "oriental",
+      "gourmand"
+    ],
+    "notes": {
+      "top": [
+        "musk"
+      ],
+      "heart": [
+        "vanilla",
+        "amber"
+      ],
+      "base": [
+        "sandalwood",
+        "tonka"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 4,
+    "sillage": 3,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1440000,
+        "oldPrice": null,
+        "stock": 0
+      },
+      {
+        "ml": 50,
+        "price": 2230000,
+        "oldPrice": null,
+        "stock": 3
+      },
+      {
+        "ml": 100,
+        "price": 3600000,
+        "oldPrice": null,
+        "stock": 8
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Kechki shaharning oltin izi",
+      "ru": "Золотой шлейф вечернего города"
+    },
+    "description": {
+      "uz": "Gentle Fluidity Gold — Maison Francis Kurkdjian uyidan har kim uchun sharqona va shirin (gurmand) hid. Ochilishida mushk seziladi, yuragida vanil va ambra ochiladi, izida esa sandal va tonka loviya qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Gentle Fluidity Gold — аромат дома Maison Francis Kurkdjian для всех: восточный и гурманский. В начале звучат мускус, в сердце раскрываются ваниль и амбра, в шлейфе остаются сандал и бобы тонка. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "facet",
+      "liquid": "#D9B061",
+      "cap": "gold"
+    },
+    "badge": "new",
+    "featured": false,
+    "isNew": true,
+    "rating": 5,
+    "reviews": 117,
+    "popularity": 860,
+    "createdAt": "2026-04-22"
+  },
+  {
+    "id": 1027,
+    "slug": "xerjoff-naxos",
+    "name": "Naxos",
+    "brand": "xerjoff",
+    "gender": "unisex",
+    "families": [
+      "oriental",
+      "gourmand"
+    ],
+    "notes": {
+      "top": [
+        "lavender",
+        "bergamot",
+        "lemon"
+      ],
+      "heart": [
+        "honey",
+        "cinnamon",
+        "jasmine"
+      ],
+      "base": [
+        "tobacco",
+        "tonka",
+        "vanilla"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 5,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1280000,
+        "oldPrice": null,
+        "stock": 8
+      },
+      {
+        "ml": 50,
+        "price": 1980000,
+        "oldPrice": null,
+        "stock": 10
+      },
+      {
+        "ml": 100,
+        "price": 3200000,
+        "oldPrice": null,
+        "stock": 6
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Issiq, sirli va unutilmas",
+      "ru": "Тёплый, загадочный, незабываемый"
+    },
+    "description": {
+      "uz": "Naxos — Xerjoff uyidan har kim uchun sharqona va shirin (gurmand) hid. Ochilishida lavanda, bergamot va limon seziladi, yuragida asal, dolchin va yasmin ochiladi, izida esa tamaki, tonka loviya va vanil qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Naxos — аромат дома Xerjoff для всех: восточный и гурманский. В начале звучат лаванда, бергамот и лимон, в сердце раскрываются мёд, корица и жасмин, в шлейфе остаются табак, бобы тонка и ваниль. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "orb",
+      "liquid": "#C98A3A",
+      "cap": "gold"
+    },
+    "badge": null,
+    "featured": false,
+    "isNew": false,
+    "rating": 4.9,
+    "reviews": 82,
+    "popularity": 554,
+    "createdAt": "2026-05-25"
+  },
+  {
+    "id": 1028,
+    "slug": "xerjoff-erba-pura",
+    "name": "Erba Pura",
+    "brand": "xerjoff",
+    "gender": "unisex",
+    "families": [
+      "fruity",
+      "citrus"
+    ],
+    "notes": {
+      "top": [
+        "mandarin",
+        "lemon",
+        "bergamot"
+      ],
+      "heart": [
+        "fig",
+        "pear"
+      ],
+      "base": [
+        "vanilla",
+        "musk",
+        "amber"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "time": "day",
+    "longevity": 5,
+    "sillage": 5,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1120000,
+        "oldPrice": 1240000,
+        "stock": 6
+      },
+      {
+        "ml": 50,
+        "price": 1730000,
+        "oldPrice": 1920000,
+        "stock": 0
+      },
+      {
+        "ml": 100,
+        "price": 2790000,
+        "oldPrice": 3100000,
+        "stock": 4
+      }
+    ],
+    "discount": 10,
+    "tagline": {
+      "uz": "Quvnoq va yorqin xarakter",
+      "ru": "Весёлый и яркий характер"
+    },
+    "description": {
+      "uz": "Erba Pura — Xerjoff uyidan har kim uchun mevali va sitrusli hid. Ochilishida mandarin, limon va bergamot seziladi, yuragida anjir va nok ochiladi, izida esa vanil, mushk va ambra qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Erba Pura — аромат дома Xerjoff для всех: фруктовый и цитрусовый. В начале звучат мандарин, лимон и бергамот, в сердце раскрываются инжир и груша, в шлейфе остаются ваниль, мускус и амбра. Лучше всего раскрывается: весна и лето, днём."
+    },
+    "art": {
+      "shape": "orb",
+      "liquid": "#E7A33C",
+      "cap": "gold"
+    },
+    "badge": null,
+    "featured": true,
+    "isNew": false,
+    "rating": 4.5,
+    "reviews": 44,
+    "popularity": 357,
+    "createdAt": "2026-06-01"
+  },
+  {
+    "id": 1029,
+    "slug": "kilian-paris-angels-share",
+    "name": "Angels' Share",
+    "brand": "kilian",
+    "gender": "unisex",
+    "families": [
+      "gourmand",
+      "spicy"
+    ],
+    "notes": {
+      "top": [
+        "cinnamon"
+      ],
+      "heart": [
+        "tonka",
+        "almond"
+      ],
+      "base": [
+        "vanilla",
+        "sandalwood",
+        "caramel"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 4,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1400000,
+        "oldPrice": null,
+        "stock": 4
+      },
+      {
+        "ml": 50,
+        "price": 2170000,
+        "oldPrice": null,
+        "stock": 6
+      },
+      {
+        "ml": 100,
+        "price": 3500000,
+        "oldPrice": null,
+        "stock": 11
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Shirin, ammo shirinlikdan ko'proq",
+      "ru": "Сладкий, но больше чем сладость"
+    },
+    "description": {
+      "uz": "Angels' Share — Kilian Paris uyidan har kim uchun shirin (gurmand) va ziravorli hid. Ochilishida dolchin seziladi, yuragida tonka loviya va bodom ochiladi, izida esa vanil, sandal va karamel qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Angels' Share — аромат дома Kilian Paris для всех: гурманский и пряный. В начале звучат корица, в сердце раскрываются бобы тонка и миндаль, в шлейфе остаются ваниль, сандал и карамель. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#A55A1E",
+      "cap": "gold"
+    },
+    "badge": "top",
+    "featured": true,
+    "isNew": false,
+    "rating": 4.6,
+    "reviews": 53,
+    "popularity": 685,
+    "createdAt": "2026-07-04"
+  },
+  {
+    "id": 1030,
+    "slug": "kilian-paris-good-girl-gone-bad",
+    "name": "Good Girl Gone Bad",
+    "brand": "kilian",
+    "gender": "women",
+    "families": [
+      "floral"
+    ],
+    "notes": {
+      "top": [
+        "plum",
+        "orangeblossom"
+      ],
+      "heart": [
+        "tuberose",
+        "jasmine",
+        "rose"
+      ],
+      "base": [
+        "amber",
+        "cedar"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "time": "day",
+    "longevity": 3,
+    "sillage": 3,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1320000,
+        "oldPrice": null,
+        "stock": 11
+      },
+      {
+        "ml": 50,
+        "price": 2050000,
+        "oldPrice": null,
+        "stock": 4
+      },
+      {
+        "ml": 100,
+        "price": 3300000,
+        "oldPrice": null,
+        "stock": 9
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Bahor bog'ining yumshoq ovozi",
+      "ru": "Нежный голос весеннего сада"
+    },
+    "description": {
+      "uz": "Good Girl Gone Bad — Kilian Paris uyidan ayollar uchun gulli hid. Ochilishida olxo'ri va apelsin guli seziladi, yuragida tuberoza, yasmin va atirgul ochiladi, izida esa ambra va sadr qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Good Girl Gone Bad — аромат дома Kilian Paris для женщин: цветочный. В начале звучат слива и цветок апельсина, в сердце раскрываются тубероза, жасмин и роза, в шлейфе остаются амбра и кедр. Лучше всего раскрывается: весна и лето, днём."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#E9A9B5",
+      "cap": "gold"
+    },
+    "badge": null,
+    "featured": false,
+    "isNew": false,
+    "rating": 4.9,
+    "reviews": 38,
+    "popularity": 956,
+    "createdAt": "2026-08-07"
+  },
+  {
+    "id": 1031,
+    "slug": "initio-oud-for-greatness",
+    "name": "Oud for Greatness",
+    "brand": "initio",
+    "gender": "unisex",
+    "families": [
+      "woody",
+      "oriental"
+    ],
+    "notes": {
+      "top": [
+        "saffron",
+        "lavender"
+      ],
+      "heart": [
+        "oud"
+      ],
+      "base": [
+        "patchouli",
+        "musk"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 5,
+    "sillage": 5,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1480000,
+        "oldPrice": null,
+        "stock": 9
+      },
+      {
+        "ml": 50,
+        "price": 2290000,
+        "oldPrice": null,
+        "stock": 11
+      },
+      {
+        "ml": 100,
+        "price": 3700000,
+        "oldPrice": null,
+        "stock": 7
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Tinch kuch va ishonch",
+      "ru": "Спокойная сила и уверенность"
+    },
+    "description": {
+      "uz": "Oud for Greatness — Initio uyidan har kim uchun yog'ochli va sharqona hid. Ochilishida za'faron va lavanda seziladi, yuragida ud ochiladi, izida esa pachuli va mushk qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Oud for Greatness — аромат дома Initio для всех: древесный и восточный. В начале звучат шафран и лаванда, в сердце раскрываются уд, в шлейфе остаются пачули и мускус. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "tall",
+      "liquid": "#2A1A14",
+      "cap": "gold"
+    },
+    "badge": null,
+    "featured": true,
+    "isNew": false,
+    "rating": 4.5,
+    "reviews": 49,
+    "popularity": 585,
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": 1032,
+    "slug": "initio-side-effect",
+    "name": "Side Effect",
+    "brand": "initio",
+    "gender": "unisex",
+    "families": [
+      "oriental",
+      "gourmand"
+    ],
+    "notes": {
+      "top": [
+        "tobacco",
+        "cinnamon"
+      ],
+      "heart": [
+        "vanilla"
+      ],
+      "base": [
+        "amber",
+        "tonka"
+      ]
+    },
+    "seasons": [
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 5,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1240000,
+        "oldPrice": 1460000,
+        "stock": 7
+      },
+      {
+        "ml": 50,
+        "price": 1920000,
+        "oldPrice": 2260000,
+        "stock": 9
+      },
+      {
+        "ml": 100,
+        "price": 3100000,
+        "oldPrice": 3650000,
+        "stock": 5
+      }
+    ],
+    "discount": 15,
+    "tagline": {
+      "uz": "Kechki shaharning oltin izi",
+      "ru": "Золотой шлейф вечернего города"
+    },
+    "description": {
+      "uz": "Side Effect — Initio uyidan har kim uchun sharqona va shirin (gurmand) hid. Ochilishida tamaki va dolchin seziladi, yuragida vanil ochiladi, izida esa ambra va tonka loviya qoladi. Ayniqsa qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Side Effect — аромат дома Initio для всех: восточный и гурманский. В начале звучат табак и корица, в сердце раскрываются ваниль, в шлейфе остаются амбра и бобы тонка. Лучше всего раскрывается: зима, вечером."
+    },
+    "art": {
+      "shape": "tall",
+      "liquid": "#5B2330",
+      "cap": "gold"
+    },
+    "badge": null,
+    "featured": false,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 16,
+    "popularity": 990,
+    "createdAt": "2026-10-13"
+  },
+  {
+    "id": 1033,
+    "slug": "parfums-de-marly-layton",
+    "name": "Layton",
+    "brand": "pdm",
+    "gender": "men",
+    "families": [
+      "fougere",
+      "spicy"
+    ],
+    "notes": {
+      "top": [
+        "apple",
+        "lavender",
+        "bergamot"
+      ],
+      "heart": [
+        "geranium",
+        "jasmine"
+      ],
+      "base": [
+        "vanilla",
+        "cardamom",
+        "sandalwood"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
+    "time": "any",
+    "longevity": 5,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1240000,
+        "oldPrice": null,
+        "stock": 5
+      },
+      {
+        "ml": 50,
+        "price": 1920000,
+        "oldPrice": null,
+        "stock": 7
+      },
+      {
+        "ml": 100,
+        "price": 3100000,
+        "oldPrice": null,
+        "stock": 0
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Klassik erkaklik, zamonaviy ohangda",
+      "ru": "Классическая мужественность в новом звучании"
+    },
+    "description": {
+      "uz": "Layton — Parfums de Marly uyidan erkaklar uchun fujer va ziravorli hid. Ochilishida olma, lavanda va bergamot seziladi, yuragida geran va yasmin ochiladi, izida esa vanil, kardamon va sandal qoladi. Ayniqsa kuz, qish va bahor fasllarida, istalgan vaqtda yaxshi ochiladi.",
+      "ru": "Layton — аромат дома Parfums de Marly для мужчин: фужерный и пряный. В начале звучат яблоко, лаванда и бергамот, в сердце раскрываются герань и жасмин, в шлейфе остаются ваниль, кардамон и сандал. Лучше всего раскрывается: осень, зима и весна, в любое время."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#1F2E5A",
+      "cap": "gold"
+    },
+    "badge": "top",
+    "featured": true,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 110,
+    "popularity": 587,
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": 1034,
+    "slug": "parfums-de-marly-delina",
+    "name": "Delina",
+    "brand": "pdm",
+    "gender": "women",
+    "families": [
+      "floral",
+      "fruity"
+    ],
+    "notes": {
+      "top": [
+        "pear",
+        "bergamot"
+      ],
+      "heart": [
+        "rose",
+        "peony"
+      ],
+      "base": [
+        "vanilla",
+        "musk",
+        "cedar"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "autumn"
+    ],
+    "time": "any",
+    "longevity": 4,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1320000,
+        "oldPrice": null,
+        "stock": 3
+      },
+      {
+        "ml": 50,
+        "price": 2050000,
+        "oldPrice": null,
+        "stock": 5
+      },
+      {
+        "ml": 100,
+        "price": 3300000,
+        "oldPrice": null,
+        "stock": 10
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Bahor bog'ining yumshoq ovozi",
+      "ru": "Нежный голос весеннего сада"
+    },
+    "description": {
+      "uz": "Delina — Parfums de Marly uyidan ayollar uchun gulli va mevali hid. Ochilishida nok va bergamot seziladi, yuragida atirgul va pion ochiladi, izida esa vanil, mushk va sadr qoladi. Ayniqsa bahor va kuz fasllarida, istalgan vaqtda yaxshi ochiladi.",
+      "ru": "Delina — аромат дома Parfums de Marly для женщин: цветочный и фруктовый. В начале звучат груша и бергамот, в сердце раскрываются роза и пион, в шлейфе остаются ваниль, мускус и кедр. Лучше всего раскрывается: весна и осень, в любое время."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#F0A5BC",
+      "cap": "gold"
+    },
+    "badge": null,
+    "featured": true,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 21,
+    "popularity": 793,
+    "createdAt": "2026-01-19"
+  },
+  {
+    "id": 1035,
+    "slug": "parfums-de-marly-pegasus",
+    "name": "Pegasus",
+    "brand": "pdm",
+    "gender": "men",
+    "families": [
+      "oriental",
+      "gourmand"
+    ],
+    "notes": {
+      "top": [
+        "bergamot",
+        "almond"
+      ],
+      "heart": [
+        "lavender",
+        "jasmine"
+      ],
+      "base": [
+        "vanilla",
+        "sandalwood",
+        "amber"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 4,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 930000,
+        "oldPrice": 1160000,
+        "stock": 10
+      },
+      {
+        "ml": 50,
+        "price": 1440000,
+        "oldPrice": 1800000,
+        "stock": 3
+      },
+      {
+        "ml": 100,
+        "price": 2320000,
+        "oldPrice": 2900000,
+        "stock": 8
+      }
+    ],
+    "discount": 20,
+    "tagline": {
+      "uz": "Issiq, sirli va unutilmas",
+      "ru": "Тёплый, загадочный, незабываемый"
+    },
+    "description": {
+      "uz": "Pegasus — Parfums de Marly uyidan erkaklar uchun sharqona va shirin (gurmand) hid. Ochilishida bergamot va bodom seziladi, yuragida lavanda va yasmin ochiladi, izida esa vanil, sandal va ambra qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Pegasus — аромат дома Parfums de Marly для мужчин: восточный и гурманский. В начале звучат бергамот и миндаль, в сердце раскрываются лаванда и жасмин, в шлейфе остаются ваниль, сандал и амбра. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#7E8C9A",
+      "cap": "gold"
+    },
+    "badge": "sale",
+    "featured": false,
+    "isNew": false,
+    "rating": 4.9,
+    "reviews": 37,
+    "popularity": 24,
+    "createdAt": "2026-02-22"
+  },
+  {
+    "id": 1036,
+    "slug": "guerlain-shalimar",
+    "name": "Shalimar",
+    "brand": "guerlain",
+    "gender": "women",
+    "families": [
+      "oriental",
+      "gourmand"
+    ],
+    "notes": {
+      "top": [
+        "bergamot",
+        "lemon"
+      ],
+      "heart": [
+        "iris",
+        "jasmine",
+        "rose"
+      ],
+      "base": [
+        "vanilla",
+        "incense",
+        "tonka"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 4,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 620000,
+        "oldPrice": null,
+        "stock": 8
+      },
+      {
+        "ml": 50,
+        "price": 960000,
+        "oldPrice": null,
+        "stock": 10
+      },
+      {
+        "ml": 100,
+        "price": 1550000,
+        "oldPrice": null,
+        "stock": 6
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Kechki shaharning oltin izi",
+      "ru": "Золотой шлейф вечернего города"
+    },
+    "description": {
+      "uz": "Shalimar — Guerlain uyidan ayollar uchun sharqona va shirin (gurmand) hid. Ochilishida bergamot va limon seziladi, yuragida iris, yasmin va atirgul ochiladi, izida esa vanil, ladan va tonka loviya qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Shalimar — аромат дома Guerlain для женщин: восточный и гурманский. В начале звучат бергамот и лимон, в сердце раскрываются ирис, жасмин и роза, в шлейфе остаются ваниль, ладан и бобы тонка. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "facet",
+      "liquid": "#5F7FB8",
+      "cap": "gold"
+    },
+    "badge": null,
+    "featured": false,
+    "isNew": false,
+    "rating": 4.6,
+    "reviews": 90,
+    "popularity": 697,
+    "createdAt": "2026-03-25"
+  },
+  {
+    "id": 1037,
+    "slug": "guerlain-lhomme-ideal",
+    "name": "L'Homme Ideal",
+    "brand": "guerlain",
+    "gender": "men",
+    "families": [
+      "gourmand",
+      "woody"
+    ],
+    "notes": {
+      "top": [
+        "almond",
+        "bergamot"
+      ],
+      "heart": [
+        "leather",
+        "tonka"
+      ],
+      "base": [
+        "vetiver",
+        "cedar"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 4,
+    "sillage": 3,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 520000,
+        "oldPrice": null,
+        "stock": 0
+      },
+      {
+        "ml": 50,
+        "price": 800000,
+        "oldPrice": null,
+        "stock": 8
+      },
+      {
+        "ml": 100,
+        "price": 1290000,
+        "oldPrice": null,
+        "stock": 4
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Shirin, ammo shirinlikdan ko'proq",
+      "ru": "Сладкий, но больше чем сладость"
+    },
+    "description": {
+      "uz": "L'Homme Ideal — Guerlain uyidan erkaklar uchun shirin (gurmand) va yog'ochli hid. Ochilishida bodom va bergamot seziladi, yuragida teri va tonka loviya ochiladi, izida esa vetiver va sadr qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "L'Homme Ideal — аромат дома Guerlain для мужчин: гурманский и древесный. В начале звучат миндаль и бергамот, в сердце раскрываются кожа и бобы тонка, в шлейфе остаются ветивер и кедр. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "tall",
+      "liquid": "#6D4A2F",
+      "cap": "black"
+    },
+    "badge": null,
+    "featured": true,
+    "isNew": false,
+    "rating": 4.8,
+    "reviews": 110,
+    "popularity": 229,
+    "createdAt": "2026-04-01"
+  },
+  {
+    "id": 1038,
+    "slug": "lancome-la-vie-est-belle",
+    "name": "La Vie Est Belle",
+    "brand": "lancome",
+    "gender": "women",
+    "families": [
+      "gourmand",
+      "fruity"
+    ],
+    "notes": {
+      "top": [
+        "blackcurrant",
+        "pear"
+      ],
+      "heart": [
+        "iris",
+        "jasmine",
+        "orangeblossom"
+      ],
+      "base": [
+        "vanilla",
+        "patchouli",
+        "tonka"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "any",
+    "longevity": 5,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 490000,
+        "oldPrice": 540000,
+        "stock": 4
+      },
+      {
+        "ml": 50,
+        "price": 750000,
+        "oldPrice": 840000,
+        "stock": 6
+      },
+      {
+        "ml": 100,
+        "price": 1220000,
+        "oldPrice": 1350000,
+        "stock": 11
+      }
+    ],
+    "discount": 10,
+    "tagline": {
+      "uz": "Qishki kechaning iliq quchog'i",
+      "ru": "Тёплые объятия зимнего вечера"
+    },
+    "description": {
+      "uz": "La Vie Est Belle — Lancôme uyidan ayollar uchun shirin (gurmand) va mevali hid. Ochilishida qora smorodina va nok seziladi, yuragida iris, yasmin va apelsin guli ochiladi, izida esa vanil, pachuli va tonka loviya qoladi. Ayniqsa kuz va qish fasllarida, istalgan vaqtda yaxshi ochiladi.",
+      "ru": "La Vie Est Belle — аромат дома Lancôme для женщин: гурманский и фруктовый. В начале звучат чёрная смородина и груша, в сердце раскрываются ирис, жасмин и цветок апельсина, в шлейфе остаются ваниль, пачули и бобы тонка. Лучше всего раскрывается: осень и зима, в любое время."
+    },
+    "art": {
+      "shape": "facet",
+      "liquid": "#E7B3B8",
+      "cap": "silver"
+    },
+    "badge": "top",
+    "featured": true,
+    "isNew": false,
+    "rating": 4.9,
+    "reviews": 26,
+    "popularity": 37,
+    "createdAt": "2026-05-04"
+  },
+  {
+    "id": 1039,
+    "slug": "lancome-idole",
+    "name": "Idole",
+    "brand": "lancome",
+    "gender": "women",
+    "families": [
+      "floral"
+    ],
+    "notes": {
+      "top": [
+        "bergamot",
+        "pear"
+      ],
+      "heart": [
+        "rose",
+        "jasmine"
+      ],
+      "base": [
+        "vanilla",
+        "musk"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "time": "day",
+    "longevity": 3,
+    "sillage": 3,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 520000,
+        "oldPrice": null,
+        "stock": 11
+      },
+      {
+        "ml": 50,
+        "price": 800000,
+        "oldPrice": null,
+        "stock": 0
+      },
+      {
+        "ml": 100,
+        "price": 1290000,
+        "oldPrice": null,
+        "stock": 9
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Gullar bilan nafas oladigan nafislik",
+      "ru": "Изящество, которое дышит цветами"
+    },
+    "description": {
+      "uz": "Idole — Lancôme uyidan ayollar uchun gulli hid. Ochilishida bergamot va nok seziladi, yuragida atirgul va yasmin ochiladi, izida esa vanil va mushk qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Idole — аромат дома Lancôme для женщин: цветочный. В начале звучат бергамот и груша, в сердце раскрываются роза и жасмин, в шлейфе остаются ваниль и мускус. Лучше всего раскрывается: весна и лето, днём."
+    },
+    "art": {
+      "shape": "slim",
+      "liquid": "#F1C9B7",
+      "cap": "gold"
+    },
+    "badge": "new",
+    "featured": false,
+    "isNew": true,
+    "rating": 4.5,
+    "reviews": 8,
+    "popularity": 537,
+    "createdAt": "2026-06-07"
+  },
+  {
+    "id": 1040,
+    "slug": "byredo-gypsy-water",
+    "name": "Gypsy Water",
+    "brand": "byredo",
+    "gender": "unisex",
+    "families": [
+      "woody",
+      "citrus"
+    ],
+    "notes": {
+      "top": [
+        "bergamot",
+        "lemon",
+        "blackpepper"
+      ],
+      "heart": [
+        "incense",
+        "iris"
+      ],
+      "base": [
+        "vanilla",
+        "sandalwood"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "time": "day",
+    "longevity": 3,
+    "sillage": 2,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1080000,
+        "oldPrice": null,
+        "stock": 9
+      },
+      {
+        "ml": 50,
+        "price": 1670000,
+        "oldPrice": null,
+        "stock": 11
+      },
+      {
+        "ml": 100,
+        "price": 2700000,
+        "oldPrice": null,
+        "stock": 7
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Quruq yog'och va toza havo",
+      "ru": "Сухое дерево и чистый воздух"
+    },
+    "description": {
+      "uz": "Gypsy Water — Byredo uyidan har kim uchun yog'ochli va sitrusli hid. Ochilishida bergamot, limon va qora qalampir seziladi, yuragida ladan va iris ochiladi, izida esa vanil va sandal qoladi. Ayniqsa bahor, yoz va kuz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Gypsy Water — аромат дома Byredo для всех: древесный и цитрусовый. В начале звучат бергамот, лимон и чёрный перец, в сердце раскрываются ладан и ирис, в шлейфе остаются ваниль и сандал. Лучше всего раскрывается: весна, лето и осень, днём."
+    },
+    "art": {
+      "shape": "slim",
+      "liquid": "#E9E3D6",
+      "cap": "black"
+    },
+    "badge": null,
+    "featured": true,
+    "isNew": false,
+    "rating": 4.9,
+    "reviews": 107,
+    "popularity": 145,
+    "createdAt": "2026-07-10"
+  },
+  {
+    "id": 1041,
+    "slug": "byredo-mojave-ghost",
+    "name": "Mojave Ghost",
+    "brand": "byredo",
+    "gender": "unisex",
+    "families": [
+      "woody",
+      "floral"
+    ],
+    "notes": {
+      "top": [
+        "pear"
+      ],
+      "heart": [
+        "sandalwood",
+        "iris"
+      ],
+      "base": [
+        "amber",
+        "musk",
+        "cedar"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "time": "day",
+    "longevity": 3,
+    "sillage": 2,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1080000,
+        "oldPrice": null,
+        "stock": 7
+      },
+      {
+        "ml": 50,
+        "price": 1670000,
+        "oldPrice": null,
+        "stock": 9
+      },
+      {
+        "ml": 100,
+        "price": 2700000,
+        "oldPrice": null,
+        "stock": 5
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Tinch kuch va ishonch",
+      "ru": "Спокойная сила и уверенность"
+    },
+    "description": {
+      "uz": "Mojave Ghost — Byredo uyidan har kim uchun yog'ochli va gulli hid. Ochilishida nok seziladi, yuragida sandal va iris ochiladi, izida esa ambra, mushk va sadr qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Mojave Ghost — аромат дома Byredo для всех: древесный и цветочный. В начале звучат груша, в сердце раскрываются сандал и ирис, в шлейфе остаются амбра, мускус и кедр. Лучше всего раскрывается: весна и лето, днём."
+    },
+    "art": {
+      "shape": "slim",
+      "liquid": "#D8D2C2",
+      "cap": "black"
+    },
+    "badge": "new",
+    "featured": false,
+    "isNew": true,
+    "rating": 4.7,
+    "reviews": 12,
+    "popularity": 279,
+    "createdAt": "2026-08-13"
+  },
+  {
+    "id": 1042,
+    "slug": "le-labo-santal-33",
+    "name": "Santal 33",
+    "brand": "le-labo",
+    "gender": "unisex",
+    "families": [
+      "woody",
+      "leather"
+    ],
+    "notes": {
+      "top": [
+        "cardamom",
+        "iris"
+      ],
+      "heart": [
+        "leather",
+        "cedar"
+      ],
+      "base": [
+        "sandalwood",
+        "amber"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "spring"
+    ],
+    "time": "any",
+    "longevity": 4,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1240000,
+        "oldPrice": null,
+        "stock": 5
+      },
+      {
+        "ml": 50,
+        "price": 1920000,
+        "oldPrice": null,
+        "stock": 7
+      },
+      {
+        "ml": 100,
+        "price": 3100000,
+        "oldPrice": null,
+        "stock": 3
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Quruq yog'och va toza havo",
+      "ru": "Сухое дерево и чистый воздух"
+    },
+    "description": {
+      "uz": "Santal 33 — Le Labo uyidan har kim uchun yog'ochli va teri hid. Ochilishida kardamon va iris seziladi, yuragida teri va sadr ochiladi, izida esa sandal va ambra qoladi. Ayniqsa kuz va bahor fasllarida, istalgan vaqtda yaxshi ochiladi.",
+      "ru": "Santal 33 — аромат дома Le Labo для всех: древесный и кожаный. В начале звучат кардамон и ирис, в сердце раскрываются кожа и кедр, в шлейфе остаются сандал и амбра. Лучше всего раскрывается: осень и весна, в любое время."
+    },
+    "art": {
+      "shape": "slim",
+      "liquid": "#D7C4A3",
+      "cap": "black"
+    },
+    "badge": "top",
+    "featured": true,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 13,
+    "popularity": 355,
+    "createdAt": "2026-09-16"
+  },
+  {
+    "id": 1043,
+    "slug": "le-labo-another-13",
+    "name": "Another 13",
+    "brand": "le-labo",
+    "gender": "unisex",
+    "families": [
+      "woody"
+    ],
+    "notes": {
+      "top": [
+        "pear"
+      ],
+      "heart": [
+        "jasmine",
+        "ambroxan"
+      ],
+      "base": [
+        "musk",
+        "amber"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "time": "any",
+    "longevity": 4,
+    "sillage": 3,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1120000,
+        "oldPrice": 1240000,
+        "stock": 3
+      },
+      {
+        "ml": 50,
+        "price": 1730000,
+        "oldPrice": 1920000,
+        "stock": 5
+      },
+      {
+        "ml": 100,
+        "price": 2790000,
+        "oldPrice": 3100000,
+        "stock": 10
+      }
+    ],
+    "discount": 10,
+    "tagline": {
+      "uz": "Tinch kuch va ishonch",
+      "ru": "Спокойная сила и уверенность"
+    },
+    "description": {
+      "uz": "Another 13 — Le Labo uyidan har kim uchun yog'ochli hid. Ochilishida nok seziladi, yuragida yasmin va ambroksan ochiladi, izida esa mushk va ambra qoladi. Ayniqsa bahor, yoz, kuz va qish fasllarida, istalgan vaqtda yaxshi ochiladi.",
+      "ru": "Another 13 — аромат дома Le Labo для всех: древесный. В начале звучат груша, в сердце раскрываются жасмин и амброксан, в шлейфе остаются мускус и амбра. Лучше всего раскрывается: весна, лето, осень и зима, в любое время."
+    },
+    "art": {
+      "shape": "slim",
+      "liquid": "#ECE7DA",
+      "cap": "black"
+    },
+    "badge": null,
+    "featured": true,
+    "isNew": false,
+    "rating": 4.6,
+    "reviews": 41,
+    "popularity": 790,
+    "createdAt": "2026-10-19"
+  },
+  {
+    "id": 1044,
+    "slug": "montale-intense-cafe",
+    "name": "Intense Cafe",
+    "brand": "montale",
+    "gender": "unisex",
+    "families": [
+      "gourmand",
+      "floral"
+    ],
+    "notes": {
+      "top": [
+        "coffee",
+        "rose"
+      ],
+      "heart": [
+        "amber",
+        "vanilla"
+      ],
+      "base": [
+        "musk"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 5,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 580000,
+        "oldPrice": null,
+        "stock": 10
+      },
+      {
+        "ml": 50,
+        "price": 900000,
+        "oldPrice": null,
+        "stock": 3
+      },
+      {
+        "ml": 100,
+        "price": 1450000,
+        "oldPrice": null,
+        "stock": 0
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Qishki kechaning iliq quchog'i",
+      "ru": "Тёплые объятия зимнего вечера"
+    },
+    "description": {
+      "uz": "Intense Cafe — Montale uyidan har kim uchun shirin (gurmand) va gulli hid. Ochilishida qahva va atirgul seziladi, yuragida ambra va vanil ochiladi, izida esa mushk qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Intense Cafe — аромат дома Montale для всех: гурманский и цветочный. В начале звучат кофе и роза, в сердце раскрываются амбра и ваниль, в шлейфе остаются мускус. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "round",
+      "liquid": "#6B3E2B",
+      "cap": "gold"
+    },
+    "badge": null,
+    "featured": false,
+    "isNew": false,
+    "rating": 4.6,
+    "reviews": 25,
+    "popularity": 0,
+    "createdAt": "2026-11-22"
+  },
+  {
+    "id": 1045,
+    "slug": "montale-arabians-tonka",
+    "name": "Arabians Tonka",
+    "brand": "montale",
+    "gender": "unisex",
+    "families": [
+      "oriental",
+      "woody"
+    ],
+    "notes": {
+      "top": [
+        "saffron",
+        "bergamot"
+      ],
+      "heart": [
+        "oud",
+        "rose"
+      ],
+      "base": [
+        "tonka",
+        "amber"
+      ]
+    },
+    "seasons": [
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 5,
+    "sillage": 5,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 480000,
+        "oldPrice": 600000,
+        "stock": 8
+      },
+      {
+        "ml": 50,
+        "price": 740000,
+        "oldPrice": 920000,
+        "stock": 10
+      },
+      {
+        "ml": 100,
+        "price": 1190000,
+        "oldPrice": 1490000,
+        "stock": 6
+      }
+    ],
+    "discount": 20,
+    "tagline": {
+      "uz": "Issiq, sirli va unutilmas",
+      "ru": "Тёплый, загадочный, незабываемый"
+    },
+    "description": {
+      "uz": "Arabians Tonka — Montale uyidan har kim uchun sharqona va yog'ochli hid. Ochilishida za'faron va bergamot seziladi, yuragida ud va atirgul ochiladi, izida esa tonka loviya va ambra qoladi. Ayniqsa qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Arabians Tonka — аромат дома Montale для всех: восточный и древесный. В начале звучат шафран и бергамот, в сердце раскрываются уд и роза, в шлейфе остаются бобы тонка и амбра. Лучше всего раскрывается: зима, вечером."
+    },
+    "art": {
+      "shape": "round",
+      "liquid": "#3D2016",
+      "cap": "gold"
+    },
+    "badge": "sale",
+    "featured": false,
+    "isNew": false,
+    "rating": 4.8,
+    "reviews": 16,
+    "popularity": 403,
+    "createdAt": "2026-01-25"
+  },
+  {
+    "id": 1046,
+    "slug": "amouage-interlude-man",
+    "name": "Interlude Man",
+    "brand": "amouage",
+    "gender": "men",
+    "families": [
+      "oriental",
+      "woody"
+    ],
+    "notes": {
+      "top": [
+        "bergamot",
+        "cardamom"
+      ],
+      "heart": [
+        "incense",
+        "amber"
+      ],
+      "base": [
+        "oud",
+        "leather",
+        "patchouli"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 5,
+    "sillage": 5,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1520000,
+        "oldPrice": null,
+        "stock": 6
+      },
+      {
+        "ml": 50,
+        "price": 2360000,
+        "oldPrice": null,
+        "stock": 8
+      },
+      {
+        "ml": 100,
+        "price": 3800000,
+        "oldPrice": null,
+        "stock": 4
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Kechki shaharning oltin izi",
+      "ru": "Золотой шлейф вечернего города"
+    },
+    "description": {
+      "uz": "Interlude Man — Amouage uyidan erkaklar uchun sharqona va yog'ochli hid. Ochilishida bergamot va kardamon seziladi, yuragida ladan va ambra ochiladi, izida esa ud, teri va pachuli qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Interlude Man — аромат дома Amouage для мужчин: восточный и древесный. В начале звучат бергамот и кардамон, в сердце раскрываются ладан и амбра, в шлейфе остаются уд, кожа и пачули. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "orb",
+      "liquid": "#2C4C6E",
+      "cap": "gold"
+    },
+    "badge": null,
+    "featured": true,
+    "isNew": false,
+    "rating": 4.6,
+    "reviews": 63,
+    "popularity": 414,
+    "createdAt": "2026-02-01"
+  },
+  {
+    "id": 1047,
+    "slug": "amouage-guidance",
+    "name": "Guidance",
+    "brand": "amouage",
+    "gender": "unisex",
+    "families": [
+      "floral",
+      "oriental"
+    ],
+    "notes": {
+      "top": [
+        "pear",
+        "saffron"
+      ],
+      "heart": [
+        "rose",
+        "jasmine"
+      ],
+      "base": [
+        "incense",
+        "sandalwood",
+        "vanilla"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 5,
+    "sillage": 4,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1560000,
+        "oldPrice": null,
+        "stock": 4
+      },
+      {
+        "ml": 50,
+        "price": 2420000,
+        "oldPrice": null,
+        "stock": 6
+      },
+      {
+        "ml": 100,
+        "price": 3900000,
+        "oldPrice": null,
+        "stock": 11
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Gullar bilan nafas oladigan nafislik",
+      "ru": "Изящество, которое дышит цветами"
+    },
+    "description": {
+      "uz": "Guidance — Amouage uyidan har kim uchun gulli va sharqona hid. Ochilishida nok va za'faron seziladi, yuragida atirgul va yasmin ochiladi, izida esa ladan, sandal va vanil qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Guidance — аромат дома Amouage для всех: цветочный и восточный. В начале звучат груша и шафран, в сердце раскрываются роза и жасмин, в шлейфе остаются ладан, сандал и ваниль. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "orb",
+      "liquid": "#D3B57A",
+      "cap": "gold"
+    },
+    "badge": "new",
+    "featured": false,
+    "isNew": true,
+    "rating": 4.5,
+    "reviews": 96,
+    "popularity": 451,
+    "createdAt": "2026-03-04"
+  },
+  {
+    "id": 1048,
+    "slug": "amouage-reflection-man",
+    "name": "Reflection Man",
+    "brand": "amouage",
+    "gender": "men",
+    "families": [
+      "floral",
+      "woody"
+    ],
+    "notes": {
+      "top": [
+        "neroli",
+        "pinkpepper"
+      ],
+      "heart": [
+        "jasmine",
+        "orangeblossom"
+      ],
+      "base": [
+        "sandalwood",
+        "vetiver",
+        "cedar"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "time": "day",
+    "longevity": 4,
+    "sillage": 3,
+    "concentration": "EDP",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 1300000,
+        "oldPrice": 1440000,
+        "stock": 0
+      },
+      {
+        "ml": 50,
+        "price": 2010000,
+        "oldPrice": 2230000,
+        "stock": 4
+      },
+      {
+        "ml": 100,
+        "price": 3240000,
+        "oldPrice": 3600000,
+        "stock": 9
+      }
+    ],
+    "discount": 10,
+    "tagline": {
+      "uz": "Bahor bog'ining yumshoq ovozi",
+      "ru": "Нежный голос весеннего сада"
+    },
+    "description": {
+      "uz": "Reflection Man — Amouage uyidan erkaklar uchun gulli va yog'ochli hid. Ochilishida neroli va pushti qalampir seziladi, yuragida yasmin va apelsin guli ochiladi, izida esa sandal, vetiver va sadr qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Reflection Man — аромат дома Amouage для мужчин: цветочный и древесный. В начале звучат нероли и розовый перец, в сердце раскрываются жасмин и цветок апельсина, в шлейфе остаются сандал, ветивер и кедр. Лучше всего раскрывается: весна и лето, днём."
+    },
+    "art": {
+      "shape": "orb",
+      "liquid": "#BFD0D9",
+      "cap": "silver"
+    },
+    "badge": null,
+    "featured": false,
+    "isNew": false,
+    "rating": 4.9,
+    "reviews": 46,
+    "popularity": 930,
+    "createdAt": "2026-04-07"
+  }
+]

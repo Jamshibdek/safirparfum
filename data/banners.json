@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "uz": "Hidingizni topamiz",
+      "ru": "Найдём ваш аромат"
+    },
+    "text": {
+      "uz": "48 ta original atir — 30, 50 va 100 ml. Do'konda hidlab, uyda kutib oling.",
+      "ru": "48 оригинальных ароматов — 30, 50 и 100 мл. Попробуйте в бутике, получите дома."
+    },
+    "cta": {
+      "uz": "Katalogni ko'rish",
+      "ru": "Смотреть каталог"
+    },
+    "to": "/shop",
+    "scene": "trio",
+    "tone": [
+      "#F4F6FA",
+      "#BFCBE3"
+    ]
+  },
+  {
+    "id": 2,
+    "title": {
+      "uz": "Kech uchun yaratilgan",
+      "ru": "Создано для вечера"
+    },
+    "text": {
+      "uz": "Ud, ambra va vanil — kechki atirlar to'plami",
+      "ru": "Уд, амбра и ваниль — вечерняя коллекция"
+    },
+    "cta": {
+      "uz": "To'plamni ochish",
+      "ru": "Открыть подборку"
+    },
+    "to": "/collections/kechki",
+    "scene": "night",
+    "tone": [
+      "#16264A",
+      "#0E1A33"
+    ]
+  },
+  {
+    "id": 3,
+    "title": {
+      "uz": "30% gacha chegirma",
+      "ru": "Скидки до 30%"
+    },
+    "text": {
+      "uz": "Tanlangan atirlar — faqat shu hafta",
+      "ru": "Избранные ароматы — только на этой неделе"
+    },
+    "cta": {
+      "uz": "Chegirmalarni ko'rish",
+      "ru": "Смотреть скидки"
+    },
+    "to": "/collections/chegirma",
+    "scene": "sale",
+    "tone": [
+      "#F3EEE6",
+      "#D9C7A6"
+    ]
+  }
+]

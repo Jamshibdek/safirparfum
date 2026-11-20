@@ -1,0 +1,18 @@
+{
+  "spring": {
+    "uz": "bahor",
+    "ru": "весна"
+  },
+  "summer": {
+    "uz": "yoz",
+    "ru": "лето"
+  },
+  "autumn": {
+    "uz": "kuz",
+    "ru": "осень"
+  },
+  "winter": {
+    "uz": "qish",
+    "ru": "зима"
+  }
+}

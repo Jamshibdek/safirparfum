@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "user": "madina.r",
+    "source": "instagram",
+    "date": "2026-10-28",
+    "text": {
+      "uz": "Baccarat Rouge oldim, hidi do'kondagidek — originalligi aniq sezilyapti. Kuryer 3 soatda olib keldi, rahmat!",
+      "ru": "Взяла Baccarat Rouge — аромат как в бутике. Курьер привёз за 3 часа, спасибо!"
+    },
+    "product": "maison-francis-kurkdjian-baccarat-rouge-540"
+  },
+  {
+    "id": 2,
+    "user": "jasur_t",
+    "source": "telegram",
+    "date": "2026-10-21",
+    "text": {
+      "uz": "Konsultant 10 daqiqada menga mos 3 ta atir topib berdi. Layton'ni tanladim, ish joyida hamma so'rayapti.",
+      "ru": "Консультант за 10 минут подобрал 3 аромата. Выбрал Layton — на работе все спрашивают."
+    },
+    "product": "parfums-de-marly-layton"
+  },
+  {
+    "id": 3,
+    "user": "nilufar.k",
+    "source": "instagram",
+    "date": "2026-10-14",
+    "text": {
+      "uz": "Onamga sovg'a qildim, qutisi juda chiroyli ekan. 50 ml hajm sovg'a uchun ideal.",
+      "ru": "Подарила маме, упаковка очень красивая. 50 мл — идеально для подарка."
+    },
+    "product": "guerlain-shalimar"
+  },
+  {
+    "id": 4,
+    "user": "sardor",
+    "source": "telegram",
+    "date": "2026-10-09",
+    "text": {
+      "uz": "Samarqandga 2 kunda keldi, hammasi butun. Narxi ham boshqa joylardan arzonroq chiqdi.",
+      "ru": "В Самарканд доставили за 2 дня, всё целое. И цена ниже, чем у других."
+    },
+    "product": "creed-aventus"
+  },
+  {
+    "id": 5,
+    "user": "aziza_m",
+    "source": "instagram",
+    "date": "2026-09-30",
+    "text": {
+      "uz": "Testni o'tib ko'rdim — tavsiya qilingan Delina rostdan menga mos keldi!",
+      "ru": "Прошла тест — рекомендованная Delina действительно мне подошла!"
+    },
+    "product": "parfums-de-marly-delina"
+  },
+  {
+    "id": 6,
+    "user": "bekzod.a",
+    "source": "telegram",
+    "date": "2026-09-22",
+    "text": {
+      "uz": "Aventus 30 ml oldim, avval sinab ko'rish uchun. Endi 100 ml olaman.",
+      "ru": "Взял Aventus 30 мл на пробу. Теперь возьму 100 мл."
+    },
+    "product": "versace-bright-crystal"
+  }
+]

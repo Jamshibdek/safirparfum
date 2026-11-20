@@ -1,0 +1,194 @@
+{
+  "bergamot": {
+    "uz": "bergamot",
+    "ru": "бергамот"
+  },
+  "lemon": {
+    "uz": "limon",
+    "ru": "лимон"
+  },
+  "grapefruit": {
+    "uz": "greypfrut",
+    "ru": "грейпфрут"
+  },
+  "mandarin": {
+    "uz": "mandarin",
+    "ru": "мандарин"
+  },
+  "pinkpepper": {
+    "uz": "pushti qalampir",
+    "ru": "розовый перец"
+  },
+  "blackpepper": {
+    "uz": "qora qalampir",
+    "ru": "чёрный перец"
+  },
+  "cardamom": {
+    "uz": "kardamon",
+    "ru": "кардамон"
+  },
+  "saffron": {
+    "uz": "za'faron",
+    "ru": "шафран"
+  },
+  "lavender": {
+    "uz": "lavanda",
+    "ru": "лаванда"
+  },
+  "geranium": {
+    "uz": "geran",
+    "ru": "герань"
+  },
+  "rose": {
+    "uz": "atirgul",
+    "ru": "роза"
+  },
+  "jasmine": {
+    "uz": "yasmin",
+    "ru": "жасмин"
+  },
+  "iris": {
+    "uz": "iris",
+    "ru": "ирис"
+  },
+  "tuberose": {
+    "uz": "tuberoza",
+    "ru": "тубероза"
+  },
+  "peony": {
+    "uz": "pion",
+    "ru": "пион"
+  },
+  "neroli": {
+    "uz": "neroli",
+    "ru": "нероли"
+  },
+  "orangeblossom": {
+    "uz": "apelsin guli",
+    "ru": "цветок апельсина"
+  },
+  "vanilla": {
+    "uz": "vanil",
+    "ru": "ваниль"
+  },
+  "tonka": {
+    "uz": "tonka loviya",
+    "ru": "бобы тонка"
+  },
+  "amber": {
+    "uz": "ambra",
+    "ru": "амбра"
+  },
+  "musk": {
+    "uz": "mushk",
+    "ru": "мускус"
+  },
+  "sandalwood": {
+    "uz": "sandal",
+    "ru": "сандал"
+  },
+  "cedar": {
+    "uz": "sadr",
+    "ru": "кедр"
+  },
+  "vetiver": {
+    "uz": "vetiver",
+    "ru": "ветивер"
+  },
+  "patchouli": {
+    "uz": "pachuli",
+    "ru": "пачули"
+  },
+  "oud": {
+    "uz": "ud",
+    "ru": "уд"
+  },
+  "leather": {
+    "uz": "teri",
+    "ru": "кожа"
+  },
+  "tobacco": {
+    "uz": "tamaki",
+    "ru": "табак"
+  },
+  "coffee": {
+    "uz": "qahva",
+    "ru": "кофе"
+  },
+  "caramel": {
+    "uz": "karamel",
+    "ru": "карамель"
+  },
+  "almond": {
+    "uz": "bodom",
+    "ru": "миндаль"
+  },
+  "cherry": {
+    "uz": "olcha",
+    "ru": "вишня"
+  },
+  "apple": {
+    "uz": "olma",
+    "ru": "яблоко"
+  },
+  "pear": {
+    "uz": "nok",
+    "ru": "груша"
+  },
+  "blackcurrant": {
+    "uz": "qora smorodina",
+    "ru": "чёрная смородина"
+  },
+  "marine": {
+    "uz": "dengiz notalari",
+    "ru": "морские ноты"
+  },
+  "mint": {
+    "uz": "yalpiz",
+    "ru": "мята"
+  },
+  "sage": {
+    "uz": "shalfey",
+    "ru": "шалфей"
+  },
+  "ambroxan": {
+    "uz": "ambroksan",
+    "ru": "амброксан"
+  },
+  "incense": {
+    "uz": "ladan",
+    "ru": "ладан"
+  },
+  "honey": {
+    "uz": "asal",
+    "ru": "мёд"
+  },
+  "cinnamon": {
+    "uz": "dolchin",
+    "ru": "корица"
+  },
+  "coconut": {
+    "uz": "kokos",
+    "ru": "кокос"
+  },
+  "tea": {
+    "uz": "choy",
+    "ru": "чай"
+  },
+  "fig": {
+    "uz": "anjir",
+    "ru": "инжир"
+  },
+  "pineapple": {
+    "uz": "ananas",
+    "ru": "ананас"
+  },
+  "birch": {
+    "uz": "qayin",
+    "ru": "берёза"
+  },
+  "plum": {
+    "uz": "olxo'ri",
+    "ru": "слива"
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "slug": "markaz",
+    "name": {
+      "uz": "SafirParfum Markaz",
+      "ru": "SafirParfum Центр"
+    },
+    "city": {
+      "uz": "Toshkent",
+      "ru": "Ташкент"
+    },
+    "address": {
+      "uz": "Amir Temur ko'chasi, 15",
+      "ru": "ул. Амира Темура, 15"
+    },
+    "landmark": {
+      "uz": "Mo'ljal: Amir Temur xiyoboni",
+      "ru": "Ориентир: сквер Амира Темура"
+    },
+    "hours": "10:00 — 22:00",
+    "phone": "+998 90 000 00 01",
+    "lat": 41.3111,
+    "lng": 69.2797
+  },
+  {
+    "id": 2,
+    "slug": "chilonzor",
+    "name": {
+      "uz": "SafirParfum Chilonzor",
+      "ru": "SafirParfum Чиланзар"
+    },
+    "city": {
+      "uz": "Toshkent",
+      "ru": "Ташкент"
+    },
+    "address": {
+      "uz": "Bunyodkor shoh ko'chasi, 42",
+      "ru": "пр. Бунёдкор, 42"
+    },
+    "landmark": {
+      "uz": "Mo'ljal: Chilonzor metrosi",
+      "ru": "Ориентир: метро Чиланзар"
+    },
+    "hours": "10:00 — 22:00",
+    "phone": "+998 90 000 00 02",
+    "lat": 41.2756,
+    "lng": 69.2034
+  },
+  {
+    "id": 3,
+    "slug": "samarqand",
+    "name": {
+      "uz": "SafirParfum Samarqand",
+      "ru": "SafirParfum Самарканд"
+    },
+    "city": {
+      "uz": "Samarqand",
+      "ru": "Самарканд"
+    },
+    "address": {
+      "uz": "Universitet xiyoboni, 8",
+      "ru": "Университетский бульвар, 8"
+    },
+    "landmark": {
+      "uz": "Mo'ljal: Registon maydoni yaqinida",
+      "ru": "Ориентир: рядом с Регистаном"
+    },
+    "hours": "10:00 — 21:00",
+    "phone": "+998 90 000 00 03",
+    "lat": 39.6542,
+    "lng": 66.9597
+  }
+]

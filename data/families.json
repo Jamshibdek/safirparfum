@@ -1,0 +1,42 @@
+{
+  "floral": {
+    "uz": "Gulli",
+    "ru": "Цветочный"
+  },
+  "oriental": {
+    "uz": "Sharqona",
+    "ru": "Восточный"
+  },
+  "woody": {
+    "uz": "Yog'ochli",
+    "ru": "Древесный"
+  },
+  "citrus": {
+    "uz": "Sitrusli",
+    "ru": "Цитрусовый"
+  },
+  "fougere": {
+    "uz": "Fujer",
+    "ru": "Фужерный"
+  },
+  "fruity": {
+    "uz": "Mevali",
+    "ru": "Фруктовый"
+  },
+  "aquatic": {
+    "uz": "Suvli",
+    "ru": "Водный"
+  },
+  "gourmand": {
+    "uz": "Shirin (gurmand)",
+    "ru": "Гурманский"
+  },
+  "leather": {
+    "uz": "Teri",
+    "ru": "Кожаный"
+  },
+  "spicy": {
+    "uz": "Ziravorli",
+    "ru": "Пряный"
+  }
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "yangi",
+    "rule": "new",
+    "name": {
+      "uz": "Yangi kelganlar",
+      "ru": "Новинки"
+    },
+    "text": {
+      "uz": "Bu oy javonlarimizga qo'shilgan atirlar",
+      "ru": "Ароматы, появившиеся в этом месяце"
+    },
+    "tone": [
+      "#1F3F78",
+      "#0E1A33"
+    ]
+  },
+  {
+    "slug": "top",
+    "rule": "top",
+    "name": {
+      "uz": "Eng ko'p sotilganlar",
+      "ru": "Бестселлеры"
+    },
+    "text": {
+      "uz": "Mijozlarimiz qayta-qayta tanlayotganlar",
+      "ru": "То, что выбирают снова и снова"
+    },
+    "tone": [
+      "#A8844F",
+      "#5B4222"
+    ]
+  },
+  {
+    "slug": "sovga",
+    "rule": "gift",
+    "name": {
+      "uz": "Sovg'a uchun",
+      "ru": "В подарок"
+    },
+    "text": {
+      "uz": "Xato qilib bo'lmaydigan tanlovlar",
+      "ru": "Беспроигрышный выбор"
+    },
+    "tone": [
+      "#8E1B2C",
+      "#3D0C14"
+    ]
+  },
+  {
+    "slug": "yozgi",
+    "rule": "summer",
+    "name": {
+      "uz": "Yozgi tanlov",
+      "ru": "Летняя подборка"
+    },
+    "text": {
+      "uz": "Issiqda ham og'irlashmaydigan hidlar",
+      "ru": "Ароматы, которые не тяжелеют в жару"
+    },
+    "tone": [
+      "#3A7BB8",
+      "#123A63"
+    ]
+  },
+  {
+    "slug": "kechki",
+    "rule": "evening",
+    "name": {
+      "uz": "Kechki atirlar",
+      "ru": "Вечерние ароматы"
+    },
+    "text": {
+      "uz": "Uchrashuv va tadbirlar uchun",
+      "ru": "Для встреч и выходов"
+    },
+    "tone": [
+      "#2B1E2E",
+      "#120C14"
+    ]
+  },
+  {
+    "slug": "chegirma",
+    "rule": "sale",
+    "name": {
+      "uz": "Chegirmalar",
+      "ru": "Скидки"
+    },
+    "text": {
+      "uz": "30% gacha arzonroq",
+      "ru": "Выгода до 30%"
+    },
+    "tone": [
+      "#B23A2E",
+      "#5E1A14"
+    ]
+  }
+]

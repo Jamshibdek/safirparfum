@@ -1,0 +1,32 @@
+{
+  "brand": "SafirParfum",
+  "domain": "sefir.uz",
+  "phone1": "+998 90 000 00 01",
+  "phone2": "+998 90 000 00 02",
+  "hours": "10:00 — 22:00",
+  "telegram": "https://t.me/safirparfum",
+  "instagram": "https://instagram.com/safirparfum",
+  "youtube": "https://youtube.com/@safirparfum",
+  "tiktok": "https://tiktok.com/@safirparfum",
+  "facebook": "https://facebook.com/safirparfum",
+  "delivery": {
+    "tashkent": 30000,
+    "regions": 45000,
+    "freeFrom": 500000
+  },
+  "promo": [
+    {
+      "code": "SAFIR10",
+      "type": "percent",
+      "value": 10,
+      "min": 0
+    },
+    {
+      "code": "YANGI50",
+      "type": "fixed",
+      "value": 50000,
+      "min": 500000
+    }
+  ],
+  "demoOtp": "1234"
+}

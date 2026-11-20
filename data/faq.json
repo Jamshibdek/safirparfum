@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "q": {
+      "uz": "Atirlaringiz originalmi?",
+      "ru": "Ваши ароматы оригинальные?"
+    },
+    "a": {
+      "uz": "Ha. Barcha atirlar rasmiy distribyutorlardan keladi, har bir flakonda partiya raqami bor. Do'konda hidlab ko'rishingiz mumkin.",
+      "ru": "Да. Все ароматы поступают от официальных дистрибьюторов, у каждого флакона есть номер партии. В бутике можно попробовать."
+    }
+  },
+  {
+    "id": 2,
+    "q": {
+      "uz": "Yetkazib berish qanday?",
+      "ru": "Как работает доставка?"
+    },
+    "a": {
+      "uz": "Toshkent bo'ylab kuryer bir kunda olib boradi, 500 000 so'mdan yuqori buyurtmada bepul. Viloyatlarga 1–3 kunda pochta orqali yuboramiz.",
+      "ru": "По Ташкенту курьер доставит за день, бесплатно от 500 000 сум. В регионы отправляем почтой за 1–3 дня."
+    }
+  },
+  {
+    "id": 3,
+    "q": {
+      "uz": "To'lovni qanday qilaman?",
+      "ru": "Как оплатить?"
+    },
+    "a": {
+      "uz": "Naqd pul yoki bank kartasi (Uzcard, Humo) orqali — kuryerga yoki filialda. Online to'lov tez orada qo'shiladi.",
+      "ru": "Наличными или картой Uzcard / Humo — курьеру или в бутике. Онлайн-оплата скоро появится."
+    }
+  },
+  {
+    "id": 4,
+    "q": {
+      "uz": "Sotib olishdan oldin hidlab ko'rsam bo'ladimi?",
+      "ru": "Можно ли попробовать перед покупкой?"
+    },
+    "a": {
+      "uz": "Albatta. Filiallarimizda barcha atirlarning testerlari bor, maslahatchi tanlashga yordam beradi.",
+      "ru": "Конечно. В бутиках есть тестеры всех ароматов, консультант поможет с выбором."
+    }
+  },
+  {
+    "id": 5,
+    "q": {
+      "uz": "Qaysi hajmlar bor?",
+      "ru": "Какие есть объёмы?"
+    },
+    "a": {
+      "uz": "Har bir atir 30, 50 va 100 ml hajmda. 30 ml sinab ko'rish yoki safar uchun qulay.",
+      "ru": "Каждый аромат — 30, 50 и 100 мл. 30 мл удобно для знакомства и поездок."
+    }
+  },
+  {
+    "id": 6,
+    "q": {
+      "uz": "Atirni qaytarsa bo'ladimi?",
+      "ru": "Можно ли вернуть аромат?"
+    },
+    "a": {
+      "uz": "Ochilmagan va plyonkasi butun atirni 14 kun ichida qaytarish mumkin.",
+      "ru": "Невскрытый аромат в целой плёнке можно вернуть в течение 14 дней."
+    }
+  }
+]
