@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { branches, getProduct, useL, settings } from '~/lib/catalog'
 import { formatPhone } from '~/utils/text'
-import { useAccount } from '~/stores/account'
+import { useOrders } from '~/stores/orders'
 const route = useRoute()
 const { t } = useI18n()
 const lp = useLocalePath()
 const { L, money } = useL()
-const acc = useAccount()
-const order = computed(() => acc.orders.find(o => o.id === String(route.params.id)))
+const store = useOrders()
+const order = computed(() => store.orders.find(o => o.id === String(route.params.id)))
 const branch = computed(() => branches.find(b => b.slug === order.value?.branch))
 useSeoMeta({ title: () => `${t('order.thanks')} — SafirParfum`, robots: 'noindex' })
 </script>
@@ -42,7 +42,6 @@ useSeoMeta({ title: () => `${t('order.thanks')} — SafirParfum`, robots: 'noind
       </dl>
       <div class="acts">
         <a :href="settings.telegram" target="_blank" rel="noopener" class="btn"><Icon name="telegram" :size="17" />{{ t('order.track') }}</a>
-        <NuxtLink :to="lp('/account')" class="btn ghost">{{ t('order.toAccount') }}</NuxtLink>
         <NuxtLink :to="lp('/shop')" class="btn ghost">{{ t('order.toShop') }}</NuxtLink>
       </div>
     </div>

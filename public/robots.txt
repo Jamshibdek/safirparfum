@@ -1,11 +1,9 @@
 User-agent: *
 Allow: /
 Disallow: /checkout
-Disallow: /account
 Disallow: /order/
 Disallow: /wishlist
 Disallow: /ru/checkout
-Disallow: /ru/account
 Disallow: /ru/order/
 Disallow: /ru/wishlist
 

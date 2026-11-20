@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { settings, useL } from '~/lib/catalog'
 import { useCart, useWishlist, useUi } from '~/stores/shop'
-import { useAccount } from '~/stores/account'
 
 const { t } = useI18n()
 const lp = useLocalePath()
@@ -10,7 +9,6 @@ const { money } = useL()
 const cart = useCart()
 const wish = useWishlist()
 const ui = useUi()
-const acc = useAccount()
 const mounted = ref(false)
 const scrolled = ref(false)
 const megaRoot = ref<HTMLElement | null>(null)
@@ -42,11 +40,6 @@ onBeforeUnmount(() => {
   document.removeEventListener('keydown', key)
 })
 watch(() => route.fullPath, () => { ui.mega = false; ui.menu = false })
-
-function openAccount() {
-  if (acc.loggedIn) navigateTo(lp('/account'))
-  else ui.login = true
-}
 </script>
 
 <template>
@@ -66,7 +59,6 @@ function openAccount() {
             <span class="ph">{{ t('header.hours') }} {{ settings.hours }}</span>
           </a>
           <LangSwitch />
-          <button class="icon-btn only-d" :aria-label="t('nav.account')" @click="openAccount"><Icon name="user" /></button>
           <NuxtLink :to="lp('/wishlist')" class="icon-btn only-d" :aria-label="t('nav.wishlist')">
             <Icon name="heart" />
             <span v-if="mounted && wish.count" class="badge-dot">{{ wish.count }}</span>

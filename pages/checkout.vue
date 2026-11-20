@@ -3,19 +3,19 @@
 import { branches, settings, brandName, useL } from '~/lib/catalog'
 import { isValidPhone } from '~/utils/text'
 import { useCart } from '~/stores/shop'
-import { useAccount } from '~/stores/account'
+import { useOrders } from '~/stores/orders'
 
 const { t } = useI18n()
 const lp = useLocalePath()
 const { L, money } = useL()
 const cart = useCart()
-const acc = useAccount()
+const orders = useOrders()
 
 const REGIONS = ['Toshkent', 'Toshkent viloyati', 'Samarqand', 'Buxoro', 'Andijon', 'Farg\'ona', 'Namangan', 'Qashqadaryo', 'Surxondaryo', 'Xorazm', 'Navoiy', 'Jizzax', 'Sirdaryo', 'Qoraqalpog\'iston']
 
 const form = reactive({
-  name: acc.user?.name ?? '', phone: acc.user?.phone ?? '', phone2: '',
-  method: 'delivery' as 'delivery' | 'pickup', city: 'Toshkent', street: acc.addresses.find(a => a.main)?.street ?? '', note: '',
+  name: '', phone: '', phone2: '',
+  method: 'delivery' as 'delivery' | 'pickup', city: 'Toshkent', street: '', note: '',
   branch: branches[0].slug, payment: 'cash' as 'cash' | 'card'
 })
 const promoInput = ref(cart.promo)
@@ -57,7 +57,7 @@ async function submit() {
   }
   sending.value = true
   await new Promise(r => setTimeout(r, 700))
-  const order = acc.placeOrder({
+  const order = orders.placeOrder({
     lines: cart.items.map(i => ({ slug: i.slug, ml: i.ml, qty: i.qty, name: i.p.name, brand: brandName(i.p.brand), price: i.size.price })),
     subtotal: cart.subtotal, delivery: shipping.value, discount: cart.discount, total: total.value,
     method: form.method, payment: form.payment,
@@ -65,7 +65,6 @@ async function submit() {
     address: form.method === 'delivery' ? { city: form.city, street: form.street.trim(), note: form.note.trim() || undefined } : undefined,
     branch: form.method === 'pickup' ? form.branch : undefined
   })
-  if (!acc.user) acc.login(form.phone, form.name.trim())
   cart.clear()
   navigateTo(lp(`/order/${order.id}`))
 }

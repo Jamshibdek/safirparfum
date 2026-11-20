@@ -64,12 +64,12 @@ export const useRecent = defineStore('recent', {
 
 export const useUi = defineStore('ui', {
   state: () => ({
-    cart: false, quiz: false, login: false, menu: false, mega: false,
+    cart: false, quiz: false, menu: false, mega: false,
     quick: null as string | null,
     toast: null as null | { text: string; id: number; action?: { label: string; to: string } }
   }),
   actions: {
-    closeAll() { this.cart = this.quiz = this.login = this.menu = this.mega = false; this.quick = null },
+    closeAll() { this.cart = this.quiz = this.menu = this.mega = false; this.quick = null },
     notify(text: string, action?: { label: string; to: string }) {
       const id = Date.now()
       this.toast = { text, id, action }

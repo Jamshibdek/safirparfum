@@ -2,7 +2,7 @@
 import { useUi } from '~/stores/shop'
 const ui = useUi()
 const route = useRoute()
-const anyOpen = computed(() => ui.cart || ui.quiz || ui.login || ui.menu || !!ui.quick)
+const anyOpen = computed(() => ui.cart || ui.quiz || ui.menu || !!ui.quick)
 
 watch(anyOpen, v => { if (import.meta.client) document.documentElement.style.overflow = v ? 'hidden' : '' })
 watch(() => route.fullPath, () => { ui.cart = false; ui.quiz = false; ui.quick = null; ui.menu = false })
@@ -25,7 +25,6 @@ onBeforeUnmount(() => document.removeEventListener('keydown', key))
       <Transition name="slide-r"><QuizPanel v-if="ui.quiz" /></Transition>
       <Transition name="mm"><MobileMenu v-if="ui.menu" /></Transition>
       <Transition name="pop"><QuickView v-if="ui.quick" :key="ui.quick" /></Transition>
-      <Transition name="pop"><LoginModal v-if="ui.login" /></Transition>
       <ToastBar />
     </ClientOnly>
   </div>

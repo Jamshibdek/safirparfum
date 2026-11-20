@@ -1,18 +1,11 @@
 <script setup lang="ts">
 import { settings, collections, useL } from '~/lib/catalog'
 import { useUi } from '~/stores/shop'
-import { useAccount } from '~/stores/account'
 const { t } = useI18n()
 const lp = useLocalePath()
 const { L } = useL()
 const ui = useUi()
-const acc = useAccount()
 const close = () => (ui.menu = false)
-function account() {
-  close()
-  if (acc.loggedIn) navigateTo(lp('/account'))
-  else ui.login = true
-}
 </script>
 
 <template>
@@ -33,7 +26,6 @@ function account() {
         <NuxtLink :to="lp('/about')" @click="close">{{ t('nav.about') }}</NuxtLink>
         <NuxtLink :to="lp('/locations')" @click="close">{{ t('nav.locations') }}</NuxtLink>
         <NuxtLink :to="lp('/contact')" @click="close">{{ t('nav.contact') }}</NuxtLink>
-        <button @click="account">{{ t('nav.account') }}</button>
       </nav>
       <p class="overline gold">{{ t('mega.collections') }}</p>
       <div class="chips">
