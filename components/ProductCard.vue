@@ -58,8 +58,7 @@ function like() {
       <span v-if="product.videos.length" class="vid-badge" aria-hidden="true"><Icon name="play" :size="11" />Video</span>
       <SizeGauge v-if="product.real" class="gauge-pos" :ml="ml" :color="product.art.liquid" small />
       <div class="badges">
-        <span v-if="product.discount" class="b sale">−{{ product.discount }}%</span>
-        <span v-else-if="product.badge === 'top'" class="b top">{{ t('badge.top') }}</span>
+        <span v-if="product.badge === 'top'" class="b top">{{ t('badge.top') }}</span>
         <span v-else-if="product.isNew" class="b new">{{ t('badge.new') }}</span>
       </div>
       <button class="like" :class="{ on: liked }" :aria-pressed="liked" :aria-label="t('product.wish')" @click="like">
@@ -68,40 +67,42 @@ function like() {
       <button class="quick" @click="ui.quick = product.slug"><Icon name="eye" :size="16" />{{ t('card.quick') }}</button>
     </div>
 
+    <!-- tartib: narx → eski narx → qisqa ma'lumot → reyting → hajm → eni to'liq tugma -->
     <div class="body">
-      <p class="tag">{{ tag }}</p>
+      <div class="price num">
+        <strong>{{ money(size.price) }}</strong>
+        <span v-if="size.oldPrice && size.oldPrice > size.price" class="pct">−{{ Math.round((1 - size.price / size.oldPrice) * 100) }}%</span>
+      </div>
+      <!-- eski narx qatori doim joy egallaydi — bir qatordagi kartochkalar tugmalari tekis turadi -->
+      <s v-if="size.oldPrice && size.oldPrice > size.price" class="old num">{{ money(size.oldPrice) }}</s>
+      <span v-else class="old" aria-hidden="true">&nbsp;</span>
       <NuxtLink :to="lp(`/product/${product.slug}`)" class="name">
         <span class="brand">{{ brandName(product.brand) }}</span>
         <!-- nom rasm/yorliq ichida bor — ko'rinmaydi, lekin SEO va ekran o'quvchilar uchun qoladi -->
         <span class="title visually-hidden">{{ product.name }}</span>
+        <span class="tag">{{ tag }}</span>
       </NuxtLink>
+      <p class="rate"><span class="st">★</span> {{ product.rating.toFixed(1) }} <span class="muted">({{ t('product.reviewsCount', { n: product.reviews }) }})</span></p>
 
       <div class="sizes" role="radiogroup" :aria-label="t('product.size')">
         <button
           v-for="s in product.sizes" :key="s.ml" role="radio" :aria-checked="s.ml === ml"
           :class="{ on: s.ml === ml, off: !s.stock }" @click="ml = s.ml"
-        >{{ s.ml }}</button>
-        <span class="ml">ml</span>
+        >{{ s.ml }} ml</button>
       </div>
 
-      <div class="foot">
-        <div class="price num">
-          <strong>{{ money(size.price) }}</strong>
-          <s v-if="size.oldPrice && size.oldPrice > size.price">{{ money(size.oldPrice) }}</s>
-        </div>
-        <button class="add" :disabled="!size.stock" :aria-label="t('card.add')" @click="add">
-          <Icon name="bag" :size="18" />
-          <span>{{ size.stock ? t('card.add') : t('card.outOfStock') }}</span>
-        </button>
-      </div>
+      <button class="add" :disabled="!size.stock" :aria-label="t('card.add')" @click="add">
+        <Icon name="bag" :size="17" />
+        <span>{{ size.stock ? t('card.add') : t('card.outOfStock') }}</span>
+      </button>
     </div>
   </article>
 </template>
 
 <style scoped>
 /* Butik vitrinasi: rasm o'z plitasida, matn ochiq — "kartochka qutisi" yo'q */
-.pc { display: flex; flex-direction: column; min-width: 0; }
-.media { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--bg-2); border-radius: 18px; }
+.pc { position: relative; display: flex; flex-direction: column; min-width: 0; } /* ko'rinmas nom karta ichida qolsin (lentada sahifani kengaytirmasin) */
+.media { position: relative; aspect-ratio: 3 / 4; overflow: hidden; background: var(--bg-2); border-radius: 18px; }
 .media-link { position: absolute; inset: 0; }
 .media-link > :deep(svg) { transition: transform .7s var(--ease); transform-origin: 50% 85%; }
 .media.open .media-link > :deep(svg) { transform: scale(1.08) translateY(-2%); }
@@ -139,44 +140,52 @@ function like() {
 @media (hover: hover) { .pc:hover .quick { opacity: 1; transform: translate(-50%, 0); } }
 @media (hover: none) { .quick { display: none; } }
 
-.body { padding: 14px 2px 4px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
-.tag { font-size: 12.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.name { display: grid; gap: 2px; }
-.brand { font-size: 12px; font-weight: 600; color: var(--ink-2); }
-.title { font-family: var(--f-display); font-size: 21px; font-weight: 600; line-height: 1.08; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.name:hover .title { color: var(--sapphire); }
+.body { padding: 10px 2px 2px; display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0; }
+.price { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; line-height: 1.15; }
+.price strong { font-size: 18px; font-weight: 700; color: var(--ink); }
+.pct { font-size: 12px; font-weight: 700; color: #fff; background: var(--sale); padding: 2px 6px; border-radius: 6px; }
+.old { display: block; min-height: 1.1em; font-size: 12.5px; color: var(--muted); line-height: 1.1; }
+.name { display: block; min-width: 0; margin-top: 2px; font-size: 13px; line-height: 1.3; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.brand { font-weight: 600; color: var(--ink); }
+.brand::after { content: " · "; font-weight: 400; color: var(--muted); }
+.tag { color: var(--muted); }
+.name:hover .brand { color: var(--sapphire); }
+.rate { font-size: 12.5px; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rate .st { color: #F3B802; }
+.rate .muted { color: var(--muted); }
 
-.sizes { display: flex; align-items: center; gap: 4px; margin-top: 2px; }
+.sizes { display: flex; gap: 4px; margin-top: 4px; }
 .sizes button {
-  min-width: 38px; height: 26px; padding: 0 8px; border-radius: var(--pill); border: 1px solid var(--line);
-  background: transparent; font-size: 12px; font-weight: 600; color: var(--ink-2); transition: all .2s;
+  flex: 1 1 0; min-width: 0; height: 28px; padding: 0 4px; border-radius: 8px; border: 1px solid var(--line);
+  background: transparent; font-size: 12px; font-weight: 600; color: var(--ink-2); white-space: nowrap; transition: all .2s;
 }
 .sizes button:hover { border-color: var(--ink); }
 .sizes button.on { background: var(--ink); border-color: var(--ink); color: #fff; }
 .sizes button.off { text-decoration: line-through; opacity: .45; }
-.sizes .ml { font-size: 11.5px; color: var(--muted); margin-left: 2px; }
 
-.foot { display: flex; align-items: flex-end; justify-content: space-between; gap: 8px; min-width: 0; margin-top: auto; padding-top: 6px; }
-.price { display: grid; line-height: 1.15; }
-.price strong { font-size: 17px; font-weight: 700; }
-.price s { font-size: 12.5px; color: var(--muted); }
 .add {
-  display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 14px; border-radius: var(--pill);
-  border: 1px solid var(--ink); background: var(--ink); color: #fff; font-size: 13px; font-weight: 600; transition: all .2s; flex: none;
+  display: flex; align-items: center; justify-content: center; gap: 6px; width: 100%; height: 40px; margin-top: auto;
+  border-radius: 12px; border: 1px solid var(--ink); background: var(--ink); color: #fff; font-size: 13.5px; font-weight: 600; transition: all .2s;
 }
+.sizes + .add { margin-top: 8px; }
 .add:hover { background: var(--sapphire); border-color: var(--sapphire); }
 .add[disabled] { background: transparent; color: var(--muted); border-color: var(--line); cursor: default; }
 
 @media (max-width: 767px) {
-  .body { padding: 10px 10px 12px; gap: 6px; }
-  .title { font-size: 17px; }
-  .brand { font-size: 11px; }
-  .tag { font-size: 9.5px; letter-spacing: .08em; }
-  .sizes button { min-width: 0; padding: 0 7px; height: 24px; font-size: 11px; }
-  .sizes .ml { display: none; }
-  .foot { flex-direction: column; align-items: stretch; }
-  .price strong { font-size: 15px; }
-  .add { justify-content: center; height: 36px; }
-  .like { width: 34px; height: 34px; }
+  .media { border-radius: 14px; }
+  .body { padding: 8px 0 0; gap: 3px; }
+  .price strong { font-size: 16px; }
+  .pct { font-size: 11px; padding: 1px 5px; }
+  .old { font-size: 12px; }
+  .name { font-size: 12.5px; }
+  .rate { font-size: 12px; }
+  .sizes button { height: 28px; font-size: 11.5px; }
+  .sizes + .add { margin-top: 6px; }
+  .add { height: 38px; font-size: 13px; }
+  .like { width: 32px; height: 32px; top: 8px; right: 8px; }
+  .badges { top: 8px; left: 8px; }
+  .b { font-size: 11px; padding: 4px 7px; }
+  .vid-badge { left: 8px; bottom: 8px; }
+  .gauge-pos { right: 8px; bottom: 8px; }
 }
 </style>

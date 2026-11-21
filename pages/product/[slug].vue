@@ -25,6 +25,13 @@ const mainImg = ref<HTMLElement | null>(null)
 const scenes = ['studio', 'notes', 'box', 'mood'] as const
 const shot = ref<(typeof scenes)[number]>('studio')
 const photo = ref(0)
+// mobil galereya: qaysi slayd ko'rinayotgani (nuqtalar uchun)
+const mgTrack = ref<HTMLElement | null>(null)
+const mgIdx = ref(0)
+const mgCount = computed(() => (prod.value.real ? prod.value.images.length : scenes.length))
+function onMgScroll() { const el = mgTrack.value; if (el) mgIdx.value = Math.round(el.scrollLeft / Math.max(1, el.clientWidth)) }
+const router = useRouter()
+function goBack() { if (window.history.length > 1) router.back(); else navigateTo(lp('/shop')) }
 const zoom = ref(false)
 const more = ref(false)
 const notified = ref(false)
@@ -35,7 +42,7 @@ const recentList = computed(() => (mounted.value ? recent.slugs.filter(s => s !=
 const reviews = computed(() => testimonials.filter(x => x.product === prod.value.slug))
 
 onMounted(() => { mounted.value = true; recent.push(prod.value.slug) })
-watch(() => route.params.slug, () => { shot.value = 'studio'; photo.value = 0; qty.value = 1; ml.value = prod.value.sizes.find(s => s.stock)?.ml ?? 30; recent.push(prod.value.slug) })
+watch(() => route.params.slug, () => { shot.value = 'studio'; photo.value = 0; mgIdx.value = 0; mgTrack.value?.scrollTo({ left: 0 }); qty.value = 1; ml.value = prod.value.sizes.find(s => s.stock)?.ml ?? 30; recent.push(prod.value.slug) })
 
 function add() {
   cart.add(prod.value.slug, ml.value, qty.value)
@@ -89,8 +96,33 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
         <span>{{ prod.name }}</span>
       </nav>
 
+      <!-- MOBIL galereya: ekran eniga to'liq, barmoq bilan suriladi, ustida tugmalar, burchakda kichik Reels -->
+      <div class="mg" :class="{ photo: prod.real }">
+        <div ref="mgTrack" class="mg-track" @scroll.passive="onMgScroll">
+          <template v-if="prod.real">
+            <div v-for="(img, k) in prod.images" :key="img" class="mg-slide" :style="{ '--sz': prod.photoFit !== 'cover' ? sizeScale(ml) : 1 }" @click="photo = k; zoom = true">
+              <ProductVisual :product="prod" :index="k" :eager="k === 0" sizes="100vw" />
+            </div>
+          </template>
+          <template v-else>
+            <div v-for="s in scenes" :key="s" class="mg-slide" @click="shot = s; zoom = true"><BottleArt :product="prod" :scene="s" :level="fillLevel(ml)" /></div>
+          </template>
+        </div>
+        <div class="mg-top">
+          <button class="mg-btn" :aria-label="t('common.back')" @click="goBack"><Icon name="left" :size="20" /></button>
+          <span class="mg-sp" />
+          <button class="mg-btn" :class="{ liked }" :aria-label="t('product.wish')" @click="like"><Icon :name="liked ? 'heart-fill' : 'heart'" :size="20" /></button>
+          <button class="mg-btn" :aria-label="t('common.share')" @click="share"><Icon name="share" :size="19" /></button>
+        </div>
+        <div v-if="mgCount > 1" class="mg-dots" aria-hidden="true"><i v-for="k in mgCount" :key="k" :class="{ on: k - 1 === mgIdx }" /></div>
+        <SizeGauge v-if="prod.real" class="mg-gauge" :ml="ml" :color="prod.art.liquid" small />
+        <ClientOnly>
+          <div v-if="prod.videos.length" class="mg-reel"><PhoneReel :videos="prod.videos" :title="`${brandName(prod.brand)} ${prod.name}`" /></div>
+        </ClientOnly>
+      </div>
+
       <div class="top">
-        <!-- galereya -->
+        <!-- galereya (kompyuter) -->
         <div class="gallery" :class="{ 'has-reel': prod.videos.length, photo: prod.real }">
           <!-- haqiqiy suratlar bo'lsa — ular; bo'lmasa chizilgan 4 sahna -->
           <div v-if="prod.real" class="thumbs" :class="{ single: prod.images.length < 2 }" role="tablist">
@@ -122,25 +154,31 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
 
         <!-- ma'lumot -->
         <div class="info">
-          <p class="fam">{{ prod.families.map((x, i) => i ? familyL(x).toLowerCase() : familyL(x)).join(", ") }}, {{ t(`genderOne.${prod.gender}`).toLowerCase() }}</p>
-          <NuxtLink :to="lp({ path: '/shop', query: { brand: prod.brand } })" class="brand">{{ brandName(prod.brand) }}</NuxtLink>
-          <h1 class="name">{{ prod.name }}</h1>
-          <p class="tl">{{ L(prod.tagline) }}</p>
-          <div class="rating">
-            <span class="stars" :style="{ '--v': prod.rating / 5 }" aria-hidden="true">★★★★★</span>
-            <span class="num">{{ prod.rating.toFixed(1) }}</span>
-            <span class="muted">· {{ t('product.reviewsCount', { n: prod.reviews }) }}</span>
+          <!-- telefonda bloklar kartalarga aylanadi: narx → nom/reyting → hajm -->
+          <div class="b-title">
+            <p class="fam">{{ prod.families.map((x, i) => i ? familyL(x).toLowerCase() : familyL(x)).join(", ") }}, {{ t(`genderOne.${prod.gender}`).toLowerCase() }}</p>
+            <NuxtLink :to="lp({ path: '/shop', query: { brand: prod.brand } })" class="brand">{{ brandName(prod.brand) }}</NuxtLink>
+            <h1 class="name">{{ prod.name }}</h1>
+            <p class="tl">{{ L(prod.tagline) }}</p>
+            <div class="rating">
+              <span class="stars" :style="{ '--v': prod.rating / 5 }" aria-hidden="true">★★★★★</span>
+              <span class="num">{{ prod.rating.toFixed(1) }}</span>
+              <span class="muted">· {{ t('product.reviewsCount', { n: prod.reviews }) }}</span>
+            </div>
           </div>
 
-          <div class="price num">
-            <strong>{{ money(priceShown) }}</strong>
-            <s v-if="size.oldPrice && size.oldPrice > size.price">{{ money(size.oldPrice) }}</s>
-            <span class="pml">{{ ml }} ml · {{ prod.concentration }}</span>
+          <div class="b-price">
+            <div class="price num">
+              <strong>{{ money(priceShown) }}</strong>
+              <span v-if="size.oldPrice && size.oldPrice > size.price" class="off-pct">−{{ Math.round((1 - size.price / size.oldPrice) * 100) }}%</span>
+              <s v-if="size.oldPrice && size.oldPrice > size.price">{{ money(size.oldPrice) }}</s>
+              <span class="pml">{{ ml }} ml · {{ prod.concentration }}</span>
+            </div>
+            <p class="per muted num">{{ t('product.per') }}: {{ money(Math.round(size.price / ml / 100) * 100) }}</p>
           </div>
-          <p class="per muted num">{{ t('product.per') }}: {{ money(Math.round(size.price / ml / 100) * 100) }}</p>
 
-          <div class="sizes">
-            <p class="lbl">{{ t('product.size') }}</p>
+          <div class="sizes b-size">
+            <p class="lbl">{{ t('product.size') }}<span class="lbl-v">: {{ ml }} ml</span></p>
             <div class="opts">
               <button v-for="s in prod.sizes" :key="s.ml" class="sz" :class="{ on: s.ml === ml, off: !s.stock }" :aria-pressed="s.ml === ml" @click="ml = s.ml">
                 <svg viewBox="0 0 24 32" aria-hidden="true" :style="{ height: 14 + s.ml / 8 + 'px' }"><rect x="9" y="1" width="6" height="5" rx="1" fill="currentColor" opacity=".6" /><rect x="3" y="7" width="18" height="24" rx="3" fill="none" stroke="currentColor" stroke-width="1.6" /></svg>
@@ -224,15 +262,11 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
 
     <!-- mobil xarid paneli -->
     <!-- mobil: hajm tanlash va savat doim pastda, bosh barmoq yetadigan joyda -->
+    <!-- mobil: pastda faqat keng "Savatga qo'shish" tugmasi, ostida tanlangan hajm va narx -->
     <div class="mbar">
-      <div class="msz" role="radiogroup" :aria-label="t('product.size')">
-        <button
-          v-for="s in prod.sizes" :key="s.ml" role="radio" :aria-checked="s.ml === ml"
-          :class="{ on: s.ml === ml, off: !s.stock }" @click="ml = s.ml"
-        ><b>{{ s.ml }}</b><small>ml</small></button>
-      </div>
       <button class="btn grow madd" :disabled="!size.stock" @click="add">
-        <Icon name="bag" :size="17" /><span class="num">{{ size.stock ? money(totalShown) : t('card.outOfStock') }}</span>
+        <span class="madd-t">{{ size.stock ? t('product.add') : t('card.outOfStock') }}</span>
+        <span class="madd-s num">{{ ml }} ml · {{ money(totalShown) }}</span>
       </button>
     </div>
 
@@ -344,44 +378,75 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
   .reel-slot { right: 14px; bottom: 14px; width: 118px; }
   .detail { grid-template-columns: 1fr; gap: 36px; margin-top: 48px; }
 }
+/* kompyuterda mobil galereya yo'q; bloklar oddiy ustun */
+.mg { display: none; }
+.b-title, .b-price { display: flex; flex-direction: column; gap: 8px; }
+.off-pct { font-size: 15px; font-weight: 700; color: var(--sale); }
+.lbl-v { font-weight: 500; color: var(--muted); }
+
 @media (max-width: 767px) {
-  .pdp { padding-top: 10px; padding-bottom: 84px; }
-  /* breadcrumb bitta qatorda, oxiri xira bo'lib kesiladi */
-  .crumbs { flex-wrap: nowrap; overflow: hidden; white-space: nowrap; -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); font-size: 12.5px; }
-  .top { margin-top: 12px; gap: 16px; }
-  /* rasm ekranning ~40% i — nom, narx va hajmlar birinchi ekranda ko'rinadi */
-  .main-img { display: block; width: 100%; aspect-ratio: auto; height: clamp(220px, 36vh, 360px); border-radius: 18px; }
-  @supports (height: 1svh) { .main-img { height: clamp(220px, 36svh, 360px); } }
-  .thumbs.single { display: none; }
-  .thumbs { gap: 8px; }
-  .thumbs button { width: 52px; height: 52px; border-radius: 10px; }
-  .reel-slot { width: 74px; right: 10px; top: 10px; bottom: auto; }
-  .zoom-ic { width: 34px; height: 34px; right: 10px; bottom: 10px; }
-  .gauge-main { left: 10px; bottom: 10px; }
-  .info { gap: 6px; padding-top: 0; }
-  .name { font-size: clamp(30px, 8.5vw, 38px); }
-  .tl { font-size: 14.5px; }
-  .price { margin-top: 8px; padding-top: 12px; }
-  .price strong { font-size: 26px; }
-  .sz { min-height: 84px; padding: 10px 6px; }
+  .pdp { padding-top: 0; padding-bottom: 88px; }
+  .pdp > .wrap > .crumbs { display: none; }
+  .gallery { display: none; }
+  .top { margin-top: 0; gap: 10px; }
+
+  /* ---- ekran eniga to'liq galereya ---- */
+  .mg { display: block; position: relative; margin: 0 calc(-1 * var(--gut)); background: var(--bg-2); }
+  .mg.photo { background: #fff; }
+  .mg-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; height: clamp(320px, 56vh, 520px); }
+  @supports (height: 1svh) { .mg-track { height: clamp(320px, 56svh, 520px); } }
+  .mg-track::-webkit-scrollbar { display: none; }
+  .mg-slide { flex: 0 0 100%; scroll-snap-align: center; overflow: hidden; }
+  .mg-slide :deep(img) { transform: scale(var(--sz, 1)); transform-origin: 50% 60%; transition: transform .8s var(--ease); }
+  .mg-slide > :deep(svg) { width: 100%; height: 100%; }
+  .mg-top { position: absolute; top: 10px; left: 12px; right: 12px; display: flex; gap: 8px; z-index: 3; }
+  .mg-sp { flex: 1; }
+  .mg-btn { width: 40px; height: 40px; border-radius: 50%; border: 0; display: grid; place-items: center; background: rgba(255, 255, 255, .88); color: var(--ink); box-shadow: 0 4px 14px -6px rgba(11, 22, 49, .35); backdrop-filter: blur(6px); }
+  .mg-btn.liked { color: var(--sale); }
+  .mg-dots { position: absolute; left: 0; right: 0; bottom: 12px; display: flex; justify-content: center; gap: 5px; z-index: 3; pointer-events: none; }
+  .mg-dots i { width: 6px; height: 6px; border-radius: 3px; background: rgba(20, 33, 61, .25); transition: width .3s, background .3s; }
+  .mg-dots i.on { width: 18px; background: var(--ink); }
+  .mg-gauge { position: absolute; left: 12px; bottom: 12px; z-index: 3; }
+  /* kichik Reels oyna burchakda */
+  .mg-reel { position: absolute; right: 12px; bottom: 12px; width: 64px; z-index: 3; }
+
+  /* ---- kartalar: narx → nom/reyting → hajm ---- */
+  .info { gap: 10px; padding-top: 0; }
+  .b-price, .b-title, .b-size { background: var(--surface); border-radius: 18px; padding: 14px 16px; margin: 0 calc(-1 * var(--gut) + 8px); }
+  .b-price { order: 1; gap: 2px; }
+  .b-title { order: 2; gap: 4px; }
+  .b-size { order: 3; }
+  .info > :not(.b-price):not(.b-title):not(.b-size) { order: 4; }
+  .price { margin-top: 0; padding-top: 0; border-top: 0; gap: 8px; align-items: baseline; }
+  .price strong { font-size: 28px; }
+  .price s { order: 3; flex-basis: 100%; font-size: 14px; }
+  .pml { order: 4; flex-basis: 100%; font-size: 13px; }
+  .per { font-size: 12.5px; }
+  .fam { font-size: 12.5px; }
+  .name { font-size: clamp(26px, 7.4vw, 34px); }
+  .tl { font-size: 14px; }
+  .rating { font-size: 13px; }
+  .b-size .lbl { margin: 0 0 10px; font-size: 14px; }
+  /* hajmlar — gorizontal tabletkalar, kerak bo'lsa suriladi */
+  .b-size .opts { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; margin: 0 -16px; padding: 0 16px 2px; }
+  .b-size .opts::-webkit-scrollbar { display: none; }
+  .sz { flex: none; min-height: 0; display: grid; justify-items: center; gap: 0; padding: 9px 16px; border-radius: 14px; }
+  .sz svg { display: none; }
+  .szm { font-size: 15px; }
+  .szp { font-size: 12px; }
+  /* sahifa ichidagi xarid qatori: miqdor + sevimli (asosiy tugma pastda) */
+  .buy .addbtn { display: none; }
+  .buy { margin-top: 2px; }
+  .share { display: none; }
+
+  /* ---- pastda keng tugma ---- */
   .mbar {
-    display: flex; align-items: center; gap: 8px; position: fixed; left: 0; right: 0; z-index: 44;
+    display: block; position: fixed; left: 0; right: 0; z-index: 44;
     bottom: calc(64px + env(safe-area-inset-bottom)); padding: 8px 12px; background: var(--surface); border-top: 1px solid var(--line);
     box-shadow: 0 -10px 24px -18px rgba(11, 22, 49, .45);
   }
-  .msz { display: flex; gap: 4px; flex: none; }
-  .msz button { display: grid; justify-items: center; align-content: center; width: 46px; height: 46px; border-radius: 12px; border: 1px solid var(--line-2); background: var(--bg); padding: 0; line-height: 1.05; }
-  .msz b { font-size: 14px; }
-  .msz small { font-size: 9.5px; color: var(--muted); }
-  .msz button.on { background: var(--ink); border-color: var(--ink); color: #fff; }
-  .msz button.on small { color: rgba(255, 255, 255, .7); }
-  .msz button.off { opacity: .45; text-decoration: line-through; }
-  .madd { height: 46px; padding: 0 12px; gap: 8px; font-size: 14px; }
-  /* sahifa ichidagi tugmada narx yo'q — u tepada va pastki panelda bor */
-  .addbtn .pr-part { display: none; }
-}
-@media (max-width: 359px) {
-  .msz button { width: 40px; }
-  .madd { font-size: 13px; padding: 0 8px; }
+  .madd { width: 100%; height: 52px; flex-direction: column; gap: 0; line-height: 1.15; border-radius: 16px; }
+  .madd-t { font-size: 15px; font-weight: 700; }
+  .madd-s { font-size: 12px; font-weight: 500; opacity: .75; }
 }
 </style>
