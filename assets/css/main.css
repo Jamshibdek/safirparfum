@@ -220,3 +220,10 @@ textarea.input { height: auto; min-height: 104px; padding: 14px 16px; resize: ve
 @media (max-width: 767px) {
   body { padding-bottom: calc(64px + env(safe-area-inset-bottom)); }
 }
+
+/* savat belgisi: atir uchib tushganda bir sakraydi */
+.cart-bump { animation: cart-bump .45s var(--ease); }
+@keyframes cart-bump { 40% { transform: scale(1.18); } }
+
+/* Kirishdagi atir sepilishi: sarlavha tuman orasidan chiqquncha yashirin turadi (faqat bosh banner matni) */
+html.sp-intro .hero .slide.trio .copy > * { opacity: 0; }

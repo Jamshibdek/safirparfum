@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { Product } from '~/lib/catalog'
-import { brandName, useL } from '~/lib/catalog'
+import { brandName, useL, fillLevel } from '~/lib/catalog'
 import { useCart, useWishlist, useUi } from '~/stores/shop'
+import { flyToCart } from '~/utils/fly'
 
 const props = defineProps<{ product: Product }>()
 const { t } = useI18n()
@@ -20,9 +21,23 @@ const tag = computed(() => {
 })
 const liked = computed(() => wish.has(props.product.slug))
 
+// Qopqoq ochilishi: sichqonchada hover bilan; sensorli ekranda kartochka ekran o'rtasiga kelganda
+const media = ref<HTMLElement | null>(null)
+const open = ref(false)
+const onEnter = (e: PointerEvent) => { if (e.pointerType === 'mouse') open.value = true }
+const onLeave = (e: PointerEvent) => { if (e.pointerType === 'mouse') open.value = false }
+let io: IntersectionObserver | null = null
+onMounted(() => {
+  if (!media.value || matchMedia('(hover: hover)').matches || !('IntersectionObserver' in window)) return
+  io = new IntersectionObserver(([e]) => { open.value = e.isIntersecting }, { rootMargin: '-38% 0px -38% 0px' })
+  io.observe(media.value)
+})
+onBeforeUnmount(() => io?.disconnect())
+
 function add() {
   if (!size.value.stock) return
   cart.add(props.product.slug, ml.value)
+  flyToCart(media.value)
   ui.notify(`${props.product.name} · ${ml.value} ml — ${t('card.added').toLowerCase()}`, { label: t('card.openCart'), to: '#cart' })
 }
 function like() {
@@ -33,10 +48,9 @@ function like() {
 
 <template>
   <article class="pc">
-    <div class="media">
-      <NuxtLink :to="lp(`/product/${product.slug}`)" class="media-link" :aria-label="product.name">
-        <BottleArt :product="product" />
-        <span class="second"><BottleArt :product="product" scene="notes" /></span>
+    <div ref="media" class="media" :class="{ open }" @pointerenter="onEnter" @pointerleave="onLeave">
+      <NuxtLink :to="lp(`/product/${product.slug}`)" class="media-link" :aria-label="product.name" @focus="open = true" @blur="open = false">
+        <BottleArt :product="product" :open="open" wisps :level="fillLevel(ml)" />
       </NuxtLink>
       <div class="badges">
         <span v-if="product.discount" class="b sale">−{{ product.discount }}%</span>
@@ -83,10 +97,8 @@ function like() {
 .pc { display: flex; flex-direction: column; min-width: 0; }
 .media { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--bg-2); border-radius: 18px; }
 .media-link { position: absolute; inset: 0; }
-.media-link > :deep(svg) { transition: transform .8s var(--ease); }
-.pc:hover .media-link > :deep(svg) { transform: scale(1.04); }
-.second { position: absolute; inset: 0; opacity: 0; transition: opacity .5s; }
-@media (hover: hover) { .pc:hover .second { opacity: 1; } }
+.media-link > :deep(svg) { transition: transform .7s var(--ease); transform-origin: 50% 85%; }
+.media.open .media-link > :deep(svg) { transform: scale(1.08) translateY(-2%); }
 
 .badges { position: absolute; top: 12px; left: 12px; display: flex; gap: 6px; pointer-events: none; }
 .b { font-size: 12px; font-weight: 600; padding: 5px 9px; border-radius: 6px; background: var(--ink); color: #fff; }

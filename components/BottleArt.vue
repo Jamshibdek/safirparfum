@@ -4,7 +4,8 @@
 import type { Product } from '~/lib/catalog'
 import { brandName } from '~/lib/catalog'
 
-const props = withDefaults(defineProps<{ product: Product; scene?: 'studio' | 'notes' | 'box' | 'mood'; rounded?: boolean; bare?: boolean }>(), { scene: 'studio', rounded: false, bare: false })
+// level: suyuqlik sathi 0..1 (hajm tanlanganda o'zgaradi); open: qopqoq ochiladi va hid izi ko'tariladi; wisps: hid izlarini chizish
+const props = withDefaults(defineProps<{ product: Product; scene?: 'studio' | 'notes' | 'box' | 'mood'; rounded?: boolean; bare?: boolean; level?: number | null; open?: boolean; wisps?: boolean }>(), { scene: 'studio', rounded: false, bare: false, level: null, open: false, wisps: false })
 
 const uid = useId()
 const id = (s: string) => `${uid}-${s}`
@@ -54,6 +55,21 @@ const geo = computed(() => {
   }
 })
 
+// shisha tanasining yuqori cheti (suyuqlik sathini hisoblash uchun)
+const BODY_TOP: Record<string, number> = { tall: 132, round: 158, facet: 150, slim: 120, orb: 168, square: 150 }
+const liqShift = computed(() => {
+  if (props.level == null) return 0
+  const top = BODY_TOP[props.product.art.shape] ?? 150
+  const y = top + (340 - top) * (1 - Math.min(1, Math.max(0, props.level)))
+  return y - geo.value.liq
+})
+const wispPaths = computed(() => {
+  const y = geo.value.neck[1]
+  return [`M200 ${y} C 186 ${y - 24}, 214 ${y - 46}, 200 ${y - 70} S 192 ${y - 108}, 206 ${y - 130}`,
+    `M190 ${y + 2} C 172 ${y - 22}, 196 ${y - 44}, 182 ${y - 66} S 172 ${y - 100}, 182 ${y - 120}`,
+    `M210 ${y + 2} C 228 ${y - 22}, 204 ${y - 44}, 218 ${y - 66} S 228 ${y - 100}, 218 ${y - 120}`]
+})
+
 const noteDots = computed(() => {
   const keys = [...props.product.notes.top, ...props.product.notes.heart].slice(0, 4)
   const tones = ['#E9C46A', '#E76F51', '#8AB17D', '#B5838D', '#6D9DC5', '#D4A373']
@@ -62,7 +78,7 @@ const noteDots = computed(() => {
 </script>
 
 <template>
-  <svg class="bottle-art" :class="{ rounded }" viewBox="0 0 400 400" role="img" :aria-label="`${brand} ${product.name}`" preserveAspectRatio="xMidYMid slice">
+  <svg class="bottle-art" :class="{ rounded, open }" viewBox="0 0 400 400" role="img" :aria-label="`${brand} ${product.name}`" preserveAspectRatio="xMidYMid slice">
     <defs>
       <radialGradient :id="id('bg')" cx="50%" cy="38%" r="75%">
         <stop offset="0" :stop-color="bgA" />
@@ -108,7 +124,7 @@ const noteDots = computed(() => {
     <g v-else-if="scene === 'box'">
       <rect x="236" y="120" width="128" height="214" rx="4" :fill="mix(liquid, '#1a1a1a', .55)" />
       <rect x="248" y="132" width="104" height="190" rx="2" fill="none" stroke="#d8c3a0" stroke-width="1" opacity=".8" />
-      <text x="300" y="232" text-anchor="middle" fill="#d8c3a0" font-family="Cormorant Garamond, serif" font-size="13" letter-spacing="3">{{ brand.split(' ')[0] }}</text>
+      <text x="300" y="232" text-anchor="middle" fill="#d8c3a0" font-family="Prata, serif" font-size="13" letter-spacing="3">{{ brand.split(' ')[0] }}</text>
     </g>
     <g v-else>
       <circle cx="200" cy="170" r="140" :fill="liquid" opacity=".18" :filter="`url(#${id('blur')})`" />
@@ -118,15 +134,23 @@ const noteDots = computed(() => {
     <g :transform="scene === 'box' ? 'translate(-56 6) scale(.96)' : ''">
       <!-- soya -->
       <ellipse cx="200" cy="344" rx="104" ry="14" :fill="`url(#${id('floor')})`" />
+      <!-- hid izlari (qopqoq ochilganda ko'tariladi) -->
+      <g v-if="wisps" class="wisps" aria-hidden="true">
+        <path v-for="(d, i) in wispPaths" :key="i" class="wisp" :d="d" :stroke="liqLight" />
+      </g>
       <!-- bo'yin va qopqoq -->
       <rect :x="geo.neck[0]" :y="geo.neck[1]" :width="geo.neck[2]" :height="geo.neck[3]" :fill="capStops[1]" opacity=".9" />
-      <rect :x="geo.cap[0]" :y="geo.cap[1]" :width="geo.cap[2]" :height="geo.cap[3]" :rx="geo.cap[4]" :fill="`url(#${id('cap')})`" />
-      <rect :x="geo.cap[0] + 6" :y="geo.cap[1] + 4" :width="6" :height="geo.cap[3] - 8" rx="3" fill="#fff" opacity=".35" />
+      <g class="cap">
+        <rect :x="geo.cap[0]" :y="geo.cap[1]" :width="geo.cap[2]" :height="geo.cap[3]" :rx="geo.cap[4]" :fill="`url(#${id('cap')})`" />
+        <rect :x="geo.cap[0] + 6" :y="geo.cap[1] + 4" :width="6" :height="geo.cap[3] - 8" rx="3" fill="#fff" opacity=".35" />
+      </g>
       <!-- shisha -->
       <path :d="geo.body" :fill="isDark ? 'rgba(255,255,255,.08)' : 'rgba(255,255,255,.45)'" />
       <g :clip-path="`url(#${id('body')})`">
-        <rect x="80" :y="geo.liq" width="240" height="220" :fill="`url(#${id('liq')})`" />
-        <rect x="80" :y="geo.liq" width="240" height="4" fill="#fff" opacity=".35" />
+        <g class="liq" :style="{ transform: `translateY(${liqShift}px)` }">
+          <rect x="80" :y="geo.liq" width="240" height="260" :fill="`url(#${id('liq')})`" />
+          <rect x="80" :y="geo.liq" width="240" height="4" fill="#fff" opacity=".35" />
+        </g>
         <rect x="80" y="100" width="240" height="260" :fill="`url(#${id('glass')})`" />
       </g>
       <path :d="geo.body" fill="none" :stroke="isDark ? 'rgba(255,255,255,.35)' : 'rgba(255,255,255,.9)'" stroke-width="2" />
@@ -138,10 +162,10 @@ const noteDots = computed(() => {
         <rect :x="geo.label[0] + 4" :y="geo.label[1] + 4" :width="geo.label[2] - 8" :height="geo.label[3] - 8" rx="1" fill="none"
           :stroke="lightLiquid ? '#d8c3a0' : '#a8844f'" stroke-width=".6" opacity=".9" />
         <text :x="200" :y="geo.label[1] + geo.label[3] * .42" text-anchor="middle"
-          :fill="lightLiquid ? '#F3EFE7' : '#121318'" font-family="Manrope, sans-serif" font-weight="700"
+          :fill="lightLiquid ? '#F3EFE7' : '#121318'" font-family="Onest, sans-serif" font-weight="700"
           :font-size="brandSize * (geo.label[2] / 120)" letter-spacing="1.6">{{ brand }}</text>
         <text :x="200" :y="geo.label[1] + geo.label[3] * .76" text-anchor="middle"
-          :fill="lightLiquid ? '#d8c3a0' : '#3b3d45'" font-family="Cormorant Garamond, serif" font-style="italic" font-weight="600"
+          :fill="lightLiquid ? '#d8c3a0' : '#3b3d45'" font-family="Prata, serif"
           :font-size="nameSize * (geo.label[2] / 120)">{{ product.name }}</text>
       </g>
     </g>
@@ -149,6 +173,19 @@ const noteDots = computed(() => {
 </template>
 
 <style scoped>
-.bottle-art { width: 100%; height: 100%; display: block; }
+.bottle-art { width: 100%; height: 100%; display: block; overflow: visible; }
 .bottle-art.rounded { border-radius: var(--r); }
+.liq { transition: transform .8s var(--ease); }
+.cap { transition: transform .6s var(--ease); transform-box: fill-box; transform-origin: 0% 100%; }
+.open .cap { transform: translate(52px, -46px) rotate(22deg); }
+.wisp { fill: none; stroke-width: 3.2; stroke-linecap: round; opacity: 0; stroke-dasharray: 140; stroke-dashoffset: 140; }
+.open .wisp { animation: wisp 2.4s ease-out .35s infinite; }
+.open .wisp:nth-child(2) { animation-delay: .9s; }
+.open .wisp:nth-child(3) { animation-delay: 1.45s; }
+@keyframes wisp {
+  0% { opacity: 0; stroke-dashoffset: 140; transform: translateY(0); }
+  25% { opacity: .85; }
+  100% { opacity: 0; stroke-dashoffset: -80; transform: translateY(-30px); }
+}
+@media (prefers-reduced-motion: reduce) { .open .wisp { animation: none; } }
 </style>

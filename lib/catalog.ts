@@ -171,3 +171,6 @@ export const popularNotes = (() => {
   products.forEach(p => [...p.notes.top, ...p.notes.heart, ...p.notes.base].forEach(n => (c[n] = (c[n] || 0) + 1)))
   return Object.entries(c).sort((a, b) => b[1] - a[1]).slice(0, 18).map(([k]) => k)
 })()
+
+/** Flakondagi suyuqlik sathi tanlangan hajmga qarab (animatsiya uchun). */
+export const fillLevel = (ml: number) => (ml <= 30 ? 0.6 : ml <= 50 ? 0.75 : 0.9)

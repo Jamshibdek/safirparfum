@@ -228,5 +228,5 @@
   },
   "footer": { "tagline": "Toshkentda original Yevropa atirlari.", "catalog": "Katalog", "company": "Kompaniya", "contacts": "Aloqa", "delivery": "Yetkazib berish", "returns": "Qaytarish", "offer": "Ommaviy oferta", "rights": "Barcha huquqlar himoyalangan.", "demo": "Demo versiya · ma'lumotlar namunaviy" },
   "errors": { "notFound": "Sahifa topilmadi", "notFoundText": "Bu manzil o'zgargan yoki hech qachon bo'lmagan. Qidiruvdan foydalaning yoki bosh sahifaga qayting.", "home": "Bosh sahifaga", "server": "Nimadir xato ketdi" },
-  "common": { "close": "Yopish", "back": "Ortga", "share": "Ulashish", "copied": "Havola nusxalandi", "loading": "Yuklanmoqda…", "and": "va" }
+  "common": { "skip": "O'tkazib yuborish", "close": "Yopish", "back": "Ortga", "share": "Ulashish", "copied": "Havola nusxalandi", "loading": "Yuklanmoqda…", "and": "va" }
 }

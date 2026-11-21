@@ -20,7 +20,7 @@ const path = computed(() => route.path.replace(/^\/ru(?=\/|$)/, '') || '/')
       <Icon name="heart" /><span>{{ t('nav.wishlist') }}</span>
       <i v-if="mounted && wish.count" class="dot">{{ wish.count }}</i>
     </NuxtLink>
-    <button @click="ui.cart = true">
+    <button data-cart-target @click="ui.cart = true">
       <Icon name="bag" /><span>{{ t('nav.cart') }}</span>
       <i v-if="mounted && cart.count" class="dot">{{ cart.count }}</i>
     </button>

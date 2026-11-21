@@ -64,7 +64,7 @@ watch(() => route.fullPath, () => { ui.mega = false; ui.menu = false })
             <span v-if="mounted && wish.count" class="badge-dot">{{ wish.count }}</span>
           </NuxtLink>
           <a :href="settings.telegram" target="_blank" rel="noopener" class="btn sm tg only-d"><Icon name="telegram" :size="16" />{{ t('header.telegram') }}</a>
-          <button class="icon-btn only-m" :aria-label="t('nav.cart')" @click="ui.cart = true">
+          <button class="icon-btn only-m" data-cart-target :aria-label="t('nav.cart')" @click="ui.cart = true">
             <Icon name="bag" :size="22" />
             <span v-if="mounted && cart.count" class="badge-dot">{{ cart.count }}</span>
           </button>
@@ -79,7 +79,7 @@ watch(() => route.fullPath, () => { ui.mega = false; ui.menu = false })
           {{ t('nav.catalog') }}
         </button>
         <SearchBox dark />
-        <button class="cart-btn only-d" @click="ui.cart = true">
+        <button class="cart-btn only-d" data-cart-target @click="ui.cart = true">
           <Icon name="bag" :size="19" />
           <span>{{ t('nav.cart') }}</span>
           <template v-if="mounted && cart.count">

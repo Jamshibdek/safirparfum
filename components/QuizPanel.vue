@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { recommend, type QuizAnswers, type Pick } from '~/lib/recommend'
 import { brandName, useL, minSize } from '~/lib/catalog'
+import { flyToCart } from '~/utils/fly'
 import { useCart, useUi } from '~/stores/shop'
 
 const { t } = useI18n()
@@ -52,9 +53,10 @@ function restart() {
 function reasonText(r: Pick['reasons'][number]) {
   return t(`quiz.why.${r.key}`, { season: r.season ? seasonL(r.season) : '', family: r.family ? familyL(r.family).toLowerCase() : '', n: r.n ?? '' })
 }
-function add(p: Pick['p']) {
+function add(p: Pick['p'], e?: Event) {
   const s = p.sizes.find(x => x.stock) ?? p.sizes[0]
   cart.add(p.slug, s.ml)
+  flyToCart((e?.currentTarget as HTMLElement | undefined)?.closest('.rc'))
   ui.notify(`${p.name} · ${s.ml} ml — ${t('card.added').toLowerCase()}`, { label: t('card.openCart'), to: '#cart' })
 }
 </script>
@@ -154,7 +156,7 @@ function add(p: Pick['p']) {
             <ul class="why"><li v-for="(w, i) in r.reasons" :key="i">{{ reasonText(w) }}</li></ul>
             <div class="rfoot">
               <span class="num pr">{{ minSize(r.p).ml }} ml · {{ money(minSize(r.p).price) }}</span>
-              <button class="btn sm" @click="add(r.p)"><Icon name="bag" :size="15" />{{ t('card.add') }}</button>
+              <button class="btn sm" @click="add(r.p, $event)"><Icon name="bag" :size="15" />{{ t('card.add') }}</button>
             </div>
           </div>
         </article>

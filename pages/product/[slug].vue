@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { getProduct, brandName, relatedProducts, useL, testimonials } from '~/lib/catalog'
+import { getProduct, brandName, relatedProducts, useL, testimonials, fillLevel } from '~/lib/catalog'
+import { flyToCart } from '~/utils/fly'
 import { useCart, useWishlist, useRecent, useUi } from '~/stores/shop'
 
 const route = useRoute()
@@ -18,6 +19,9 @@ const prod = computed(() => p.value!)
 const ml = ref(prod.value.sizes.find(s => s.stock)?.ml ?? prod.value.sizes[0].ml)
 const qty = ref(1)
 const size = computed(() => prod.value.sizes.find(s => s.ml === ml.value)!)
+const priceShown = useTween(() => size.value.price)
+const totalShown = useTween(() => size.value.price * qty.value)
+const mainImg = ref<HTMLElement | null>(null)
 const scenes = ['studio', 'notes', 'box', 'mood'] as const
 const shot = ref<(typeof scenes)[number]>('studio')
 const zoom = ref(false)
@@ -34,6 +38,7 @@ watch(() => route.params.slug, () => { shot.value = 'studio'; qty.value = 1; ml.
 
 function add() {
   cart.add(prod.value.slug, ml.value, qty.value)
+  flyToCart(mainImg.value)
   ui.notify(`${prod.value.name} · ${ml.value} ml × ${qty.value} — ${t('card.added').toLowerCase()}`, { label: t('card.openCart'), to: '#cart' })
 }
 function like() { ui.notify(wish.toggle(prod.value.slug) ? t('wish.added') : t('wish.removed')) }
@@ -91,8 +96,8 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
               <BottleArt :product="prod" :scene="s" />
             </button>
           </div>
-          <button class="main-img" :aria-label="t('product.more')" @click="zoom = true">
-            <Transition name="fade" mode="out-in"><BottleArt :key="shot" :product="prod" :scene="shot" /></Transition>
+          <button ref="mainImg" class="main-img" :aria-label="t('product.more')" @click="zoom = true">
+            <Transition name="fade" mode="out-in"><BottleArt :key="shot" :product="prod" :scene="shot" :level="fillLevel(ml)" /></Transition>
             <span class="zoom-ic"><Icon name="zoom" :size="18" /></span>
             <span v-if="prod.discount" class="disc">−{{ prod.discount }}%</span>
           </button>
@@ -111,7 +116,7 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
           </div>
 
           <div class="price num">
-            <strong>{{ money(size.price) }}</strong>
+            <strong>{{ money(priceShown) }}</strong>
             <s v-if="size.oldPrice && size.oldPrice > size.price">{{ money(size.oldPrice) }}</s>
             <span class="pml">{{ ml }} ml · {{ prod.concentration }}</span>
           </div>
@@ -134,7 +139,7 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
               <span class="num">{{ qty }}</span>
               <button aria-label="+" :disabled="qty >= size.stock" @click="qty++"><Icon name="plus" :size="15" /></button>
             </div>
-            <button class="btn grow" @click="add"><Icon name="bag" :size="18" />{{ t('product.add') }} · {{ money(size.price * qty) }}</button>
+            <button class="btn grow" @click="add"><Icon name="bag" :size="18" />{{ t('product.add') }} · {{ money(totalShown) }}</button>
             <button class="icon-btn sq" :class="{ liked }" :aria-pressed="liked" :aria-label="t('product.wish')" @click="like"><Icon :name="liked ? 'heart-fill' : 'heart'" /></button>
           </div>
           <div v-else class="buy">
@@ -209,7 +214,7 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
     <Teleport to="body">
       <Transition name="fade">
         <div v-if="zoom" class="lightbox" role="dialog" aria-modal="true" @click="zoom = false">
-          <div class="lb-img"><BottleArt :product="prod" :scene="shot" /></div>
+          <div class="lb-img"><BottleArt :product="prod" :scene="shot" :level="fillLevel(ml)" /></div>
           <button class="icon-btn lb-x" :aria-label="t('common.close')"><Icon name="close" /></button>
         </div>
       </Transition>

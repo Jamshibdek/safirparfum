@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { getProduct, brandName, useL } from '~/lib/catalog'
+import { getProduct, brandName, useL, fillLevel } from '~/lib/catalog'
+import { flyToCart } from '~/utils/fly'
 import { useCart, useUi } from '~/stores/shop'
 const { t } = useI18n()
 const lp = useLocalePath()
@@ -9,8 +10,10 @@ const cart = useCart()
 const p = computed(() => getProduct(ui.quick!)!)
 const ml = ref(p.value.sizes.find(s => s.stock)?.ml ?? 30)
 const size = computed(() => p.value.sizes.find(s => s.ml === ml.value)!)
+const art = ref<HTMLElement | null>(null)
 function add() {
   cart.add(p.value.slug, ml.value)
+  flyToCart(art.value)
   ui.quick = null
   ui.notify(`${p.value.name} · ${ml.value} ml — ${t('card.added').toLowerCase()}`, { label: t('card.openCart'), to: '#cart' })
 }
@@ -20,7 +23,7 @@ function add() {
   <div class="modal" role="dialog" aria-modal="true" :aria-label="p.name" @click.self="ui.quick = null">
     <div class="box">
       <button class="icon-btn x" :aria-label="t('common.close')" @click="ui.quick = null"><Icon name="close" /></button>
-      <div class="art"><BottleArt :product="p" /></div>
+      <div ref="art" class="art"><BottleArt :product="p" :level="fillLevel(ml)" /></div>
       <div class="info">
         <p class="overline">{{ p.families.map(familyL).join(' · ') }}</p>
         <p class="br">{{ brandName(p.brand) }}</p>
