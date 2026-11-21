@@ -93,7 +93,7 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
         <!-- galereya -->
         <div class="gallery" :class="{ 'has-reel': prod.videos.length, photo: prod.real }">
           <!-- haqiqiy suratlar bo'lsa — ular; bo'lmasa chizilgan 4 sahna -->
-          <div v-if="prod.real" class="thumbs" role="tablist">
+          <div v-if="prod.real" class="thumbs" :class="{ single: prod.images.length < 2 }" role="tablist">
             <button v-for="(img, k) in prod.images" :key="img" role="tab" :aria-selected="photo === k" :class="{ on: photo === k }" @click="photo = k">
               <ProductVisual :product="prod" :index="k" sizes="80px" />
             </button>
@@ -223,9 +223,17 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
     </div>
 
     <!-- mobil xarid paneli -->
-    <div v-if="size.stock" class="mbar">
-      <div class="num"><strong>{{ money(size.price) }}</strong><span>{{ ml }} ml</span></div>
-      <button class="btn grow" @click="add"><Icon name="bag" :size="17" />{{ t('product.add') }}</button>
+    <!-- mobil: hajm tanlash va savat doim pastda, bosh barmoq yetadigan joyda -->
+    <div class="mbar">
+      <div class="msz" role="radiogroup" :aria-label="t('product.size')">
+        <button
+          v-for="s in prod.sizes" :key="s.ml" role="radio" :aria-checked="s.ml === ml"
+          :class="{ on: s.ml === ml, off: !s.stock }" @click="ml = s.ml"
+        ><b>{{ s.ml }}</b><small>ml</small></button>
+      </div>
+      <button class="btn grow madd" :disabled="!size.stock" @click="add">
+        <Icon name="bag" :size="17" /><span class="num">{{ size.stock ? money(totalShown) : t('card.outOfStock') }}</span>
+      </button>
     </div>
 
     <Teleport to="body">
@@ -335,12 +343,41 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
   .detail { grid-template-columns: 1fr; gap: 36px; margin-top: 48px; }
 }
 @media (max-width: 767px) {
-  .thumbs button { width: 64px; height: 76px; }
-  .reel-slot { width: 96px; right: 10px; bottom: 10px; }
-  .price strong { font-size: 28px; }
-  .mbar { display: flex; align-items: center; gap: 14px; position: fixed; left: 0; right: 0; bottom: calc(64px + env(safe-area-inset-bottom)); z-index: 44; padding: 10px 16px; background: var(--surface); border-top: 1px solid var(--line); }
-  .mbar > div { display: grid; line-height: 1.2; }
-  .mbar span { font-size: 12px; color: var(--muted); }
-  .pdp { padding-bottom: 70px; }
+  .pdp { padding-top: 10px; padding-bottom: 84px; }
+  /* breadcrumb bitta qatorda, oxiri xira bo'lib kesiladi */
+  .crumbs { flex-wrap: nowrap; overflow: hidden; white-space: nowrap; -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); font-size: 12.5px; }
+  .top { margin-top: 12px; gap: 16px; }
+  /* rasm ekranning ~40% i — nom, narx va hajmlar birinchi ekranda ko'rinadi */
+  .main-img { display: block; width: 100%; aspect-ratio: auto; height: clamp(220px, 36vh, 360px); border-radius: 18px; }
+  @supports (height: 1svh) { .main-img { height: clamp(220px, 36svh, 360px); } }
+  .thumbs.single { display: none; }
+  .thumbs { gap: 8px; }
+  .thumbs button { width: 52px; height: 52px; border-radius: 10px; }
+  .reel-slot { width: 74px; right: 10px; top: 10px; bottom: auto; }
+  .zoom-ic { width: 34px; height: 34px; right: 10px; bottom: 10px; }
+  .gauge-main { left: 10px; bottom: 10px; }
+  .info { gap: 6px; padding-top: 0; }
+  .name { font-size: clamp(30px, 8.5vw, 38px); }
+  .tl { font-size: 14.5px; }
+  .price { margin-top: 8px; padding-top: 12px; }
+  .price strong { font-size: 26px; }
+  .sz { min-height: 84px; padding: 10px 6px; }
+  .mbar {
+    display: flex; align-items: center; gap: 8px; position: fixed; left: 0; right: 0; z-index: 44;
+    bottom: calc(64px + env(safe-area-inset-bottom)); padding: 8px 12px; background: var(--surface); border-top: 1px solid var(--line);
+    box-shadow: 0 -10px 24px -18px rgba(11, 22, 49, .45);
+  }
+  .msz { display: flex; gap: 4px; flex: none; }
+  .msz button { display: grid; justify-items: center; align-content: center; width: 46px; height: 46px; border-radius: 12px; border: 1px solid var(--line-2); background: var(--bg); padding: 0; line-height: 1.05; }
+  .msz b { font-size: 14px; }
+  .msz small { font-size: 9.5px; color: var(--muted); }
+  .msz button.on { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .msz button.on small { color: rgba(255, 255, 255, .7); }
+  .msz button.off { opacity: .45; text-decoration: line-through; }
+  .madd { height: 46px; padding: 0 12px; gap: 8px; font-size: 14px; }
+}
+@media (max-width: 359px) {
+  .msz button { width: 40px; }
+  .madd { font-size: 13px; padding: 0 8px; }
 }
 </style>

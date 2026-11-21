@@ -102,7 +102,7 @@ watch(() => props.videos, () => { i.value = 0; progress.value = 0 })
 </template>
 
 <style scoped>
-.reel { width: 100%; }
+.reel { width: 100%; container-type: inline-size; }
 .phone {
   position: relative; display: block; width: 100%; aspect-ratio: 9 / 19; padding: 6px; border: 0; border-radius: 30px;
   background: #0B0F1A; box-shadow: 0 30px 60px -24px rgba(11, 22, 49, .6), inset 0 0 0 1.5px #2A3142; cursor: zoom-in;
@@ -128,5 +128,7 @@ watch(() => props.videos, () => { i.value = 0; progress.value = 0 })
 .dots button { width: 7px; height: 7px; padding: 0; border: 0; border-radius: 50%; background: rgba(255, 255, 255, .4); }
 .dots button.on { background: #fff; }
 .x { position: absolute; top: max(16px, env(safe-area-inset-top)); right: 16px; background: #fff; color: var(--ink); }
+/* juda kichik oynada (telefonda) faqat kattalashtirish belgisi qoladi — oxirida turadi, asosiy qoidalarni bosib o'tishi uchun */
+@container (max-width: 100px) { .tag { display: none; } .exp { right: 8px; bottom: 9px; width: 22px; height: 22px; } .notch { top: 8px; height: 10px; } .phone { border-radius: 20px; padding: 4px; } .screen { border-radius: 16px; } .bars { top: 22px; left: 9px; right: 9px; } }
 @media (prefers-reduced-motion: reduce) { .phone:hover { transform: none; } }
 </style>
