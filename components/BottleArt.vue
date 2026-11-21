@@ -40,8 +40,9 @@ const capStops = computed(() => {
 })
 
 const brand = computed(() => brandName(props.product.brand).toUpperCase())
-const brandSize = computed(() => Math.min(12, 150 / Math.max(brand.value.length, 6) * 1.25))
-const nameSize = computed(() => Math.min(17, 150 / Math.max(props.product.name.length, 8) * 1.7))
+// Yorliq matni yorliq eniga sig'adi: Onest qalin bosh harflar ~0,72em + 1,6 oraliq; Prata ~0,6em
+const brandSize = computed(() => { const w = geo.value.label[2] - 14, n = brand.value.length; return Math.min(12 * (w + 14) / 120, Math.max(4, (w / n - 1.6) / 0.72)) })
+const nameSize = computed(() => { const w = geo.value.label[2] - 16; return Math.min(17 * (w + 16) / 120, w / (props.product.name.length * 0.6)) })
 
 // flakon geometriyasi (viewBox 400x400)
 const geo = computed(() => {
@@ -163,10 +164,10 @@ const noteDots = computed(() => {
           :stroke="lightLiquid ? '#d8c3a0' : '#a8844f'" stroke-width=".6" opacity=".9" />
         <text :x="200" :y="geo.label[1] + geo.label[3] * .42" text-anchor="middle"
           :fill="lightLiquid ? '#F3EFE7' : '#121318'" font-family="Onest, sans-serif" font-weight="700"
-          :font-size="brandSize * (geo.label[2] / 120)" letter-spacing="1.6">{{ brand }}</text>
+          :font-size="brandSize" letter-spacing="1.6">{{ brand }}</text>
         <text :x="200" :y="geo.label[1] + geo.label[3] * .76" text-anchor="middle"
           :fill="lightLiquid ? '#d8c3a0' : '#3b3d45'" font-family="Prata, serif"
-          :font-size="nameSize * (geo.label[2] / 120)">{{ product.name }}</text>
+          :font-size="nameSize">{{ product.name }}</text>
       </g>
     </g>
   </svg>

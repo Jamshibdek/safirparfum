@@ -39,7 +39,7 @@ watch(() => route.params.slug, () => { shot.value = 'studio'; qty.value = 1; ml.
 function add() {
   cart.add(prod.value.slug, ml.value, qty.value)
   flyToCart(mainImg.value)
-  ui.notify(`${prod.value.name} · ${ml.value} ml × ${qty.value} — ${t('card.added').toLowerCase()}`, { label: t('card.openCart'), to: '#cart' })
+  ui.notify(t('card.added'), { label: t('card.openCart'), to: '#cart' }, `${prod.value.name} · ${ml.value} ml × ${qty.value}`)
 }
 function like() { ui.notify(wish.toggle(prod.value.slug) ? t('wish.added') : t('wish.removed')) }
 async function share() {

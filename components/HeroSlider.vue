@@ -205,12 +205,28 @@ onBeforeUnmount(() => { cancelAnimationFrame(raf); clearTimeout(introTimer); doc
 
 @media (max-width: 767px) {
   .hero { padding-top: 12px; }
-  .stage { height: 560px; border-radius: 20px; }
-  .slide { grid-template-columns: 1fr; grid-template-rows: auto 1fr; align-items: start; }
-  .copy { padding: 30px 22px 0; gap: 12px; }
-  .title { font-size: 38px; }
-  .sub { font-size: 14.5px; }
-  .art { height: 100%; }
-  .ctrl { left: 22px; bottom: 18px; }
+  /* Banner telefonning ko'rinadigan qismiga sig'adi: ekran − header − pastki panel */
+  .stage { height: clamp(400px, calc(100vh - var(--header-h) - 64px - 28px), 540px); height: clamp(400px, calc(100svh - var(--header-h) - 64px - env(safe-area-inset-bottom, 0px) - 28px), 540px); border-radius: 20px; }
+  .slide { grid-template-columns: 1fr; grid-template-rows: auto minmax(0, 1fr); align-items: start; }
+  .copy { padding: 24px 20px 0; gap: 10px; }
+  .title { font-size: clamp(30px, 9vw, 38px); }
+  .sub { font-size: 14px; }
+  .copy .btn { height: 44px; padding: 0 20px; }
+  /* flakonlar qolgan joyning eniga ham, bo'yiga ham qarab o'lchanadi */
+  .art { height: 100%; container-type: size; }
+  .bt { bottom: 40px !important; }
+  .b1 { width: 64cqmin; left: -6%; }
+  .b2 { width: 78cqmin; left: 50%; margin-left: -39cqmin; }
+  .b3 { width: 62cqmin; left: auto; right: -6%; }
+  .n1 { width: 84cqmin; left: 0; }
+  .n2 { width: 66cqmin; left: auto; right: -6%; }
+  .s1 { width: 64cqmin; left: -6%; }
+  .s2 { width: 72cqmin; left: 50%; margin-left: -36cqmin; }
+  .s3 { width: 62cqmin; left: auto; right: -6%; }
+  .tag { font-size: 56px; top: 4%; }
+  .moon { width: 70cqmin; right: 10%; }
+  .plinth { bottom: 46px; }
+  .ctrl { left: 18px; bottom: 12px; }
+  .arr { width: 38px; height: 38px; }
 }
 </style>

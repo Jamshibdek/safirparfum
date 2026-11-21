@@ -13,8 +13,11 @@ function act() {
 <template>
   <Transition name="pop">
     <div v-if="ui.toast" :key="ui.toast.id" class="toast" role="status" aria-live="polite">
-      <Icon name="check" :size="18" class="ic" />
-      <span>{{ ui.toast.text }}</span>
+      <span class="ic"><Icon name="check" :size="16" :stroke="2.2" /></span>
+      <span class="txt">
+        <strong>{{ ui.toast.text }}</strong>
+        <small v-if="ui.toast.sub">{{ ui.toast.sub }}</small>
+      </span>
       <button v-if="ui.toast.action" @click="act">{{ ui.toast.action.label }}</button>
     </div>
   </Transition>
@@ -22,12 +25,17 @@ function act() {
 
 <style scoped>
 .toast {
-  position: fixed; left: 50%; bottom: 28px; transform: translateX(-50%); z-index: 120;
-  display: flex; align-items: center; gap: 12px; max-width: calc(100vw - 32px);
-  padding: 12px 12px 12px 18px; border-radius: 16px; background: var(--night); color: #F3EFE7;
-  box-shadow: var(--shadow-pop); font-size: 14px;
+  /* markazlash transform'siz — chiqish animatsiyasi transform'ni ishlatadi */
+  position: fixed; left: 0; right: 0; margin: 0 auto; bottom: 28px; z-index: 120;
+  width: min(440px, calc(100vw - 24px));
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 10px 10px 12px; border-radius: 16px; background: var(--night); color: #F2F3F6;
+  box-shadow: var(--shadow-pop);
 }
-.ic { color: var(--champagne); flex: none; }
-button { border: 0; border-radius: 10px; background: rgba(216, 195, 160, .16); color: var(--champagne); font-weight: 700; font-size: 13px; height: 34px; padding: 0 12px; white-space: nowrap; }
-@media (max-width: 767px) { .toast { bottom: calc(76px + env(safe-area-inset-bottom)); } }
+.ic { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; flex: none; background: rgba(203, 179, 137, .18); color: var(--champagne); }
+.txt { flex: 1; min-width: 0; display: grid; line-height: 1.3; }
+.txt strong { font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.txt small { font-size: 12.5px; color: rgba(242, 243, 246, .7); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+button { flex: none; border: 0; border-radius: 12px; background: var(--champagne); color: var(--ink); font-weight: 600; font-size: 13px; height: 38px; padding: 0 14px; white-space: nowrap; }
+@media (max-width: 767px) { .toast { bottom: calc(74px + env(safe-area-inset-bottom)); } }
 </style>

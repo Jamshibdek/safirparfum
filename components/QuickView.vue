@@ -15,7 +15,7 @@ function add() {
   cart.add(p.value.slug, ml.value)
   flyToCart(art.value)
   ui.quick = null
-  ui.notify(`${p.value.name} · ${ml.value} ml — ${t('card.added').toLowerCase()}`, { label: t('card.openCart'), to: '#cart' })
+  ui.notify(t('card.added'), { label: t('card.openCart'), to: '#cart' }, `${p.value.name} · ${ml.value} ml`)
 }
 </script>
 

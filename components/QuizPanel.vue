@@ -57,7 +57,7 @@ function add(p: Pick['p'], e?: Event) {
   const s = p.sizes.find(x => x.stock) ?? p.sizes[0]
   cart.add(p.slug, s.ml)
   flyToCart((e?.currentTarget as HTMLElement | undefined)?.closest('.rc'))
-  ui.notify(`${p.name} · ${s.ml} ml — ${t('card.added').toLowerCase()}`, { label: t('card.openCart'), to: '#cart' })
+  ui.notify(t('card.added'), { label: t('card.openCart'), to: '#cart' }, `${p.name} · ${s.ml} ml`)
 }
 </script>
 

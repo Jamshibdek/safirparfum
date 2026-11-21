@@ -66,13 +66,14 @@ export const useUi = defineStore('ui', {
   state: () => ({
     cart: false, quiz: false, menu: false, mega: false,
     quick: null as string | null,
-    toast: null as null | { text: string; id: number; action?: { label: string; to: string } }
+    toast: null as null | { text: string; sub?: string; id: number; action?: { label: string; to: string } }
   }),
   actions: {
     closeAll() { this.cart = this.quiz = this.menu = this.mega = false; this.quick = null },
-    notify(text: string, action?: { label: string; to: string }) {
+    /** text — qisqa sarlavha ("Savatga qo'shildi"), sub — tafsilot ("Delina · 30 ml") */
+    notify(text: string, action?: { label: string; to: string }, sub?: string) {
       const id = Date.now()
-      this.toast = { text, id, action }
+      this.toast = { text, sub, id, action }
       setTimeout(() => { if (this.toast?.id === id) this.toast = null }, 3200)
     }
   }

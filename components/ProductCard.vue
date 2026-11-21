@@ -38,7 +38,7 @@ function add() {
   if (!size.value.stock) return
   cart.add(props.product.slug, ml.value)
   flyToCart(media.value)
-  ui.notify(`${props.product.name} · ${ml.value} ml — ${t('card.added').toLowerCase()}`, { label: t('card.openCart'), to: '#cart' })
+  ui.notify(t('card.added'), { label: t('card.openCart'), to: '#cart' }, `${props.product.name} · ${ml.value} ml`)
 }
 function like() {
   const on = wish.toggle(props.product.slug)
