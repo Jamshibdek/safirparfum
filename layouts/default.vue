@@ -13,7 +13,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', key))
 
 <template>
   <div class="app">
-    <a href="#main" class="skip">Kontentga o'tish</a>
+    <a href="#main" class="skip-link">Kontentga o'tish</a>
     <AppHeader />
     <main id="main"><slot /></main>
     <AppFooter />
@@ -31,8 +31,8 @@ onBeforeUnmount(() => document.removeEventListener('keydown', key))
 </template>
 
 <style>
-.skip { position: absolute; left: -999px; top: 8px; z-index: 200; background: var(--ink); color: #fff; padding: 10px 16px; border-radius: 8px; }
-.skip:focus { left: 8px; }
+.skip-link { position: absolute; left: -999px; top: 8px; z-index: 200; background: var(--ink); color: #fff; padding: 10px 16px; border-radius: 8px; }
+.skip-link:focus { left: 8px; }
 main { min-height: 60vh; }
 .mm-enter-active, .mm-leave-active { transition: transform .45s var(--ease); }
 .mm-enter-from, .mm-leave-to { transform: translateX(-100%); }

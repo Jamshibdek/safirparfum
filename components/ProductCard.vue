@@ -72,7 +72,8 @@ function like() {
       <p class="tag">{{ tag }}</p>
       <NuxtLink :to="lp(`/product/${product.slug}`)" class="name">
         <span class="brand">{{ brandName(product.brand) }}</span>
-        <span class="title">{{ product.name }}</span>
+        <!-- nom rasm/yorliq ichida bor — ko'rinmaydi, lekin SEO va ekran o'quvchilar uchun qoladi -->
+        <span class="title visually-hidden">{{ product.name }}</span>
       </NuxtLink>
 
       <div class="sizes" role="radiogroup" :aria-label="t('product.size')">

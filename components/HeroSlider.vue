@@ -123,7 +123,7 @@ onBeforeUnmount(() => { cancelAnimationFrame(raf); clearTimeout(introTimer); doc
   <section class="hero wrap" @mouseenter="paused = true" @mouseleave="paused = false" @touchstart.passive="ts" @touchend="te">
     <div ref="stage" class="stage" :class="{ intro }">
       <canvas ref="mist" class="mist" aria-hidden="true" />
-      <button v-if="intro" class="skip" @click="endIntro">{{ t('common.skip') }}</button>
+      <button v-if="intro" class="intro-skip" @click="endIntro">{{ t('common.skip') }}</button>
       <TransitionGroup name="xf">
         <div
           v-for="(b, k) in banners" v-show="k === i" :key="b.id" class="slide" :class="b.theme" :data-k="k"
@@ -169,7 +169,7 @@ onBeforeUnmount(() => { cancelAnimationFrame(raf); clearTimeout(introTimer); doc
 .sub { font-size: 16px; max-width: 36ch; opacity: .85; }
 
 .mist { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 4; pointer-events: none; }
-.skip { position: absolute; top: 14px; right: 14px; z-index: 6; border: 0; border-radius: 999px; padding: 7px 14px; font-size: 12.5px; font-weight: 600; color: var(--ink); background: rgba(250, 250, 251, .82); backdrop-filter: blur(6px); }
+.intro-skip { position: absolute; top: 14px; right: 14px; z-index: 6; border: 0; border-radius: 999px; padding: 7px 14px; font-size: 12.5px; font-weight: 600; color: var(--ink); background: rgba(250, 250, 251, .82); backdrop-filter: blur(6px); }
 /* kirish: sarlavha tuman orasidan chiqadi */
 .intro .slide[data-k="0"] .copy > * { animation: copy-in .8s var(--ease) both; }
 .intro .slide[data-k="0"] .copy > :nth-child(1) { animation-delay: .95s; }
