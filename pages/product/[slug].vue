@@ -156,7 +156,7 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
               <span class="num">{{ qty }}</span>
               <button aria-label="+" :disabled="qty >= size.stock" @click="qty++"><Icon name="plus" :size="15" /></button>
             </div>
-            <button class="btn grow" @click="add"><Icon name="bag" :size="18" />{{ t('product.add') }} · {{ money(totalShown) }}</button>
+            <button class="btn grow addbtn" @click="add"><Icon name="bag" :size="18" /><span class="lbl">{{ t('product.add') }}<span class="pr-part num"> · {{ money(totalShown) }}</span></span></button>
             <button class="icon-btn sq" :class="{ liked }" :aria-pressed="liked" :aria-label="t('product.wish')" @click="like"><Icon :name="liked ? 'heart-fill' : 'heart'" /></button>
           </div>
           <div v-else class="buy">
@@ -295,6 +295,8 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
 .qty button[disabled] { opacity: .3; }
 .qty span { min-width: 26px; text-align: center; font-weight: 700; }
 .grow { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.addbtn :deep(svg) { flex: none; }
+.addbtn .lbl { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .sq { width: 48px; height: 48px; border: 1px solid var(--line-2); }
 .sq.liked { color: var(--sale); border-color: var(--sale); }
 .stock { display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--ok); font-weight: 500; margin-top: 4px; }
@@ -375,6 +377,8 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
   .msz button.on small { color: rgba(255, 255, 255, .7); }
   .msz button.off { opacity: .45; text-decoration: line-through; }
   .madd { height: 46px; padding: 0 12px; gap: 8px; font-size: 14px; }
+  /* sahifa ichidagi tugmada narx yo'q — u tepada va pastki panelda bor */
+  .addbtn .pr-part { display: none; }
 }
 @media (max-width: 359px) {
   .msz button { width: 40px; }
