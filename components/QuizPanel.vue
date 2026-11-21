@@ -148,7 +148,7 @@ function add(p: Pick['p'], e?: Event) {
       <div v-else class="res">
         <p class="bubble">{{ t('quiz.result') }} ✦</p>
         <article v-for="r in picks" :key="r.p.slug" class="rc">
-          <NuxtLink :to="lp(`/product/${r.p.slug}`)" class="th" @click="ui.quiz = false"><BottleArt :product="r.p" /></NuxtLink>
+          <NuxtLink :to="lp(`/product/${r.p.slug}`)" class="th" @click="ui.quiz = false"><ProductVisual sizes="100px" :product="r.p" /></NuxtLink>
           <div class="rinfo">
             <span class="match">{{ r.match }}% {{ t('quiz.match') }}</span>
             <span class="br">{{ brandName(r.p.brand) }}</span>

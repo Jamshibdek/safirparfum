@@ -226,4 +226,4 @@ textarea.input { height: auto; min-height: 104px; padding: 14px 16px; resize: ve
 @keyframes cart-bump { 40% { transform: scale(1.18); } }
 
 /* Kirishdagi atir sepilishi: sarlavha tuman orasidan chiqquncha yashirin turadi (faqat bosh banner matni) */
-html.sp-intro .hero .slide.trio .copy > * { opacity: 0; }
+html.sp-intro .hero .slide[data-k="0"] .copy > * { opacity: 0; }

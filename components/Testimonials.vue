@@ -25,7 +25,7 @@ const cur = computed(() => testimonials.find(x => x.id === open.value))
         <p class="q">“{{ L(x.text) }}”</p>
         <div class="bot">
           <NuxtLink v-if="getProduct(x.product)" :to="lp(`/product/${x.product}`)" class="prod">
-            <span class="th"><BottleArt :product="getProduct(x.product)!" /></span>
+            <span class="th"><ProductVisual sizes="100px" :product="getProduct(x.product)!" /></span>
             {{ brandName(getProduct(x.product)!.brand) }} {{ getProduct(x.product)!.name }}
           </NuxtLink>
           <button class="shot" @click="open = x.id">{{ t('home.screenshot') }}</button>

@@ -23,6 +23,8 @@ export type Product = {
   sizes: Size[]; discount: number; tagline: Loc; description: Loc
   art: { shape: string; liquid: string; cap: string }
   badge: 'top' | 'new' | 'sale' | null; featured: boolean; isNew: boolean
+  /** mijozning haqiqiy rasmlari (`/media/p/<nom>` — .webp va -sm.webp) va videolari (`/media/v/<nom>` — .mp4 va poster .webp) */
+  real?: boolean; images: string[]; videos: string[]; photoFit?: 'contain' | 'cover' | null
   rating: number; reviews: number; popularity: number; createdAt: string
 }
 export type Brand = { slug: string; name: string; country: string; sort: number }
@@ -33,7 +35,7 @@ export const notes = notesJson as Record<string, Loc>
 export const families = familiesJson as Record<string, Loc>
 export const seasons = seasonsJson as Record<string, Loc>
 export const collections = collectionsJson as Array<{ slug: string; rule: string; name: Loc; text: Loc; tone: string[] }>
-export const banners = bannersJson as Array<{ id: number; title: Loc; text: Loc; cta: Loc; to: string; scene: string; tone: string[] }>
+export const banners = bannersJson as Array<{ id: number; title: Loc; text: Loc; cta: Loc; to: string; photo: string; theme: 'dark' | 'light'; panel: string[]; focal: number[]; nozzle: number[] | null; mist: string }>
 export const testimonials = testimonialsJson as Array<{ id: number; user: string; source: string; date: string; text: Loc; product: string }>
 export const faq = faqJson as Array<{ id: number; q: Loc; a: Loc }>
 export const branches = branchesJson as Array<{ id: number; slug: string; name: Loc; city: Loc; address: Loc; landmark: Loc; hours: string; phone: string; lat: number; lng: number }>
@@ -88,7 +90,8 @@ export function sortProducts(list: Product[], sort = 'popular') {
     case 'new': return arr.sort((a, b) => b.createdAt.localeCompare(a.createdAt))
     case 'discount': return arr.sort((a, b) => b.discount - a.discount)
     case 'az': return arr.sort((a, b) => (brandName(a.brand) + a.name).localeCompare(brandName(b.brand) + b.name))
-    default: return arr.sort((a, b) => Number(b.badge === 'top') - Number(a.badge === 'top') || b.popularity - a.popularity)
+    // haqiqiy (mijoz suratli) atirlar birinchi, keyin Top, keyin mashhurlik
+    default: return arr.sort((a, b) => Number(!!b.real) - Number(!!a.real) || Number(b.badge === 'top') - Number(a.badge === 'top') || b.popularity - a.popularity)
   }
 }
 
@@ -174,3 +177,6 @@ export const popularNotes = (() => {
 
 /** Flakondagi suyuqlik sathi tanlangan hajmga qarab (animatsiya uchun). */
 export const fillLevel = (ml: number) => (ml <= 30 ? 0.6 : ml <= 50 ? 0.75 : 0.9)
+
+/** Oq fonli suratda flakon tanlangan hajmga qarab biroz kichrayadi/kattalashadi. */
+export const sizeScale = (ml: number) => (ml <= 30 ? 0.86 : ml <= 50 ? 0.94 : 1)

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getProduct, brandName, relatedProducts, useL, testimonials, fillLevel } from '~/lib/catalog'
+import { getProduct, brandName, relatedProducts, useL, testimonials, fillLevel, sizeScale } from '~/lib/catalog'
 import { flyToCart } from '~/utils/fly'
 import { useCart, useWishlist, useRecent, useUi } from '~/stores/shop'
 
@@ -24,6 +24,7 @@ const totalShown = useTween(() => size.value.price * qty.value)
 const mainImg = ref<HTMLElement | null>(null)
 const scenes = ['studio', 'notes', 'box', 'mood'] as const
 const shot = ref<(typeof scenes)[number]>('studio')
+const photo = ref(0)
 const zoom = ref(false)
 const more = ref(false)
 const notified = ref(false)
@@ -34,7 +35,7 @@ const recentList = computed(() => (mounted.value ? recent.slugs.filter(s => s !=
 const reviews = computed(() => testimonials.filter(x => x.product === prod.value.slug))
 
 onMounted(() => { mounted.value = true; recent.push(prod.value.slug) })
-watch(() => route.params.slug, () => { shot.value = 'studio'; qty.value = 1; ml.value = prod.value.sizes.find(s => s.stock)?.ml ?? 30; recent.push(prod.value.slug) })
+watch(() => route.params.slug, () => { shot.value = 'studio'; photo.value = 0; qty.value = 1; ml.value = prod.value.sizes.find(s => s.stock)?.ml ?? 30; recent.push(prod.value.slug) })
 
 function add() {
   cart.add(prod.value.slug, ml.value, qty.value)
@@ -90,17 +91,33 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
 
       <div class="top">
         <!-- galereya -->
-        <div class="gallery">
-          <div class="thumbs" role="tablist">
+        <div class="gallery" :class="{ 'has-reel': prod.videos.length, photo: prod.real }">
+          <!-- haqiqiy suratlar bo'lsa — ular; bo'lmasa chizilgan 4 sahna -->
+          <div v-if="prod.real" class="thumbs" role="tablist">
+            <button v-for="(img, k) in prod.images" :key="img" role="tab" :aria-selected="photo === k" :class="{ on: photo === k }" @click="photo = k">
+              <ProductVisual :product="prod" :index="k" sizes="80px" />
+            </button>
+          </div>
+          <div v-else class="thumbs" role="tablist">
             <button v-for="s in scenes" :key="s" role="tab" :aria-selected="shot === s" :class="{ on: shot === s }" @click="shot = s">
               <BottleArt :product="prod" :scene="s" />
             </button>
           </div>
-          <button ref="mainImg" class="main-img" :aria-label="t('product.more')" @click="zoom = true">
-            <Transition name="fade" mode="out-in"><BottleArt :key="shot" :product="prod" :scene="shot" :level="fillLevel(ml)" /></Transition>
-            <span class="zoom-ic"><Icon name="zoom" :size="18" /></span>
-            <span v-if="prod.discount" class="disc">−{{ prod.discount }}%</span>
-          </button>
+          <div class="main-wrap">
+            <button ref="mainImg" class="main-img" :class="{ photo: prod.real }" :style="{ '--sz': prod.real && prod.photoFit !== 'cover' ? sizeScale(ml) : 1 }" :aria-label="t('product.more')" @click="zoom = true">
+              <Transition name="fade" mode="out-in">
+                <ProductVisual v-if="prod.real" :key="'p' + photo" :product="prod" :index="photo" eager sizes="(max-width: 1023px) 100vw, 560px" />
+                <BottleArt v-else :key="shot" :product="prod" :scene="shot" :level="fillLevel(ml)" />
+              </Transition>
+              <span class="zoom-ic"><Icon name="zoom" :size="18" /></span>
+              <span v-if="prod.discount" class="disc">−{{ prod.discount }}%</span>
+              <SizeGauge v-if="prod.real" class="gauge-main" :ml="ml" :color="prod.art.liquid" />
+            </button>
+            <!-- telefon-ekran video: rasm yonida, Reels kabi -->
+            <ClientOnly>
+              <div v-if="prod.videos.length" class="reel-slot"><PhoneReel :videos="prod.videos" :title="`${brandName(prod.brand)} ${prod.name}`" /></div>
+            </ClientOnly>
+          </div>
         </div>
 
         <!-- ma'lumot -->
@@ -214,7 +231,7 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
     <Teleport to="body">
       <Transition name="fade">
         <div v-if="zoom" class="lightbox" role="dialog" aria-modal="true" @click="zoom = false">
-          <div class="lb-img"><BottleArt :product="prod" :scene="shot" :level="fillLevel(ml)" /></div>
+          <div class="lb-img" :class="{ photo: prod.real }"><ProductVisual :product="prod" :index="photo" :scene="shot" :level="fillLevel(ml)" sizes="90vw" /></div>
           <button class="icon-btn lb-x" :aria-label="t('common.close')"><Icon name="close" /></button>
         </div>
       </Transition>
@@ -231,7 +248,14 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
 .thumbs button.on { opacity: 1; border-color: var(--ink); }
 .thumbs :deep(svg) { width: 100%; height: 100%; }
 .main-img { position: relative; aspect-ratio: 4 / 5; border: 0; padding: 0; border-radius: 24px; overflow: hidden; cursor: zoom-in; background: var(--bg-2); }
-.main-img :deep(svg) { width: 100%; height: 100%; }
+.main-img.photo { background: #fff; }
+.main-img :deep(img) { transition: transform .8s var(--ease); transform: scale(var(--sz, 1)); transform-origin: 50% 60%; }
+.gauge-main { position: absolute; left: 16px; bottom: 16px; }
+.main-wrap { position: relative; min-width: 0; }
+/* telefon-ekran video asosiy rasm yonida, burchagidan chiqib turadi */
+.reel-slot { position: absolute; right: -30px; bottom: -26px; width: 150px; z-index: 3; }
+.lb-img.photo { aspect-ratio: auto; height: min(88vh, 92vw); background: #fff; }
+.main-img > :deep(svg) { width: 100%; height: 100%; }
 .zoom-ic { position: absolute; right: 16px; bottom: 16px; width: 40px; height: 40px; border-radius: 50%; background: rgba(250, 250, 251, .9); display: grid; place-items: center; }
 .disc { position: absolute; left: 16px; top: 16px; background: var(--sale); color: #fff; font-weight: 700; font-size: 13px; padding: 6px 10px; border-radius: 8px; }
 
@@ -307,10 +331,12 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
   .top { grid-template-columns: minmax(0, 1fr); gap: 28px; }
   .gallery { position: static; grid-template-columns: 1fr; }
   .thumbs { grid-auto-flow: column; justify-content: start; order: 2; }
+  .reel-slot { right: 14px; bottom: 14px; width: 118px; }
   .detail { grid-template-columns: 1fr; gap: 36px; margin-top: 48px; }
 }
 @media (max-width: 767px) {
   .thumbs button { width: 64px; height: 76px; }
+  .reel-slot { width: 96px; right: 10px; bottom: 10px; }
   .price strong { font-size: 28px; }
   .mbar { display: flex; align-items: center; gap: 14px; position: fixed; left: 0; right: 0; bottom: calc(64px + env(safe-area-inset-bottom)); z-index: 44; padding: 10px 16px; background: var(--surface); border-top: 1px solid var(--line); }
   .mbar > div { display: grid; line-height: 1.2; }

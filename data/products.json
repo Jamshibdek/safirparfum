@@ -1,6 +1,910 @@
 [
   {
     "id": 1001,
+    "slug": "safirparfum-aura-19-for-women",
+    "name": "AURA 19+ for women",
+    "brand": "safir",
+    "gender": "women",
+    "families": [
+      "floral",
+      "gourmand"
+    ],
+    "notes": {
+      "top": [
+        "pinkpepper",
+        "pear"
+      ],
+      "heart": [
+        "rose",
+        "jasmine"
+      ],
+      "base": [
+        "vanilla",
+        "musk"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
+    "time": "evening",
+    "longevity": 4,
+    "sillage": 4,
+    "concentration": "Extrait",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 320000,
+        "oldPrice": null,
+        "stock": 6
+      },
+      {
+        "ml": 50,
+        "price": 490000,
+        "oldPrice": null,
+        "stock": 8
+      },
+      {
+        "ml": 100,
+        "price": 790000,
+        "oldPrice": null,
+        "stock": 4
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Gullar bilan nafas oladigan nafislik",
+      "ru": "Изящество, которое дышит цветами"
+    },
+    "description": {
+      "uz": "AURA 19+ for women — SafirParfum uyidan ayollar uchun gulli va shirin (gurmand) hid. Ochilishida pushti qalampir va nok seziladi, yuragida atirgul va yasmin ochiladi, izida esa vanil va mushk qoladi. Ayniqsa kuz, qish va bahor fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "AURA 19+ for women — аромат дома SafirParfum для женщин: цветочный и гурманский. В начале звучат розовый перец и груша, в сердце раскрываются роза и жасмин, в шлейфе остаются ваниль и мускус. Лучше всего раскрывается: осень, зима и весна, вечером."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#F2B8B5",
+      "cap": "gold"
+    },
+    "real": true,
+    "images": [
+      "/media/p/aura-women-1",
+      "/media/p/aura-women-2"
+    ],
+    "videos": [
+      "/media/v/aura-women-1",
+      "/media/v/aura-women-2"
+    ],
+    "photoFit": "cover",
+    "badge": "top",
+    "featured": true,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 73,
+    "popularity": 2000,
+    "createdAt": "2026-01-01"
+  },
+  {
+    "id": 1002,
+    "slug": "safirparfum-aura-21-for-men",
+    "name": "AURA 21+ for men",
+    "brand": "safir",
+    "gender": "men",
+    "families": [
+      "woody",
+      "spicy"
+    ],
+    "notes": {
+      "top": [
+        "bergamot",
+        "cardamom"
+      ],
+      "heart": [
+        "lavender",
+        "leather"
+      ],
+      "base": [
+        "amber",
+        "vetiver",
+        "cedar"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 5,
+    "sillage": 4,
+    "concentration": "Extrait",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 320000,
+        "oldPrice": null,
+        "stock": 4
+      },
+      {
+        "ml": 50,
+        "price": 490000,
+        "oldPrice": null,
+        "stock": 6
+      },
+      {
+        "ml": 100,
+        "price": 790000,
+        "oldPrice": null,
+        "stock": 11
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Quruq yog'och va toza havo",
+      "ru": "Сухое дерево и чистый воздух"
+    },
+    "description": {
+      "uz": "AURA 21+ for men — SafirParfum uyidan erkaklar uchun yog'ochli va ziravorli hid. Ochilishida bergamot va kardamon seziladi, yuragida lavanda va teri ochiladi, izida esa ambra, vetiver va sadr qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "AURA 21+ for men — аромат дома SafirParfum для мужчин: древесный и пряный. В начале звучат бергамот и кардамон, в сердце раскрываются лаванда и кожа, в шлейфе остаются амбра, ветивер и кедр. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#9AA6B8",
+      "cap": "silver"
+    },
+    "real": true,
+    "images": [
+      "/media/p/aura-men-1"
+    ],
+    "videos": [
+      "/media/v/aura-men-1"
+    ],
+    "photoFit": "cover",
+    "badge": "top",
+    "featured": true,
+    "isNew": false,
+    "rating": 4.6,
+    "reviews": 35,
+    "popularity": 1999,
+    "createdAt": "2026-02-04"
+  },
+  {
+    "id": 1003,
+    "slug": "safirparfum-pacific-chill",
+    "name": "Pacific Chill",
+    "brand": "safir",
+    "gender": "unisex",
+    "families": [
+      "citrus",
+      "fruity"
+    ],
+    "notes": {
+      "top": [
+        "lemon",
+        "mandarin",
+        "mint"
+      ],
+      "heart": [
+        "blackcurrant",
+        "fig"
+      ],
+      "base": [
+        "musk",
+        "ambroxan"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "time": "day",
+    "longevity": 3,
+    "sillage": 3,
+    "concentration": "Extrait",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 250000,
+        "oldPrice": 280000,
+        "stock": 11
+      },
+      {
+        "ml": 50,
+        "price": 390000,
+        "oldPrice": 430000,
+        "stock": 4
+      },
+      {
+        "ml": 100,
+        "price": 620000,
+        "oldPrice": 690000,
+        "stock": 9
+      }
+    ],
+    "discount": 10,
+    "tagline": {
+      "uz": "Yozgi tongning yorqin boshlanishi",
+      "ru": "Яркое начало летнего утра"
+    },
+    "description": {
+      "uz": "Pacific Chill — SafirParfum uyidan har kim uchun sitrusli va mevali hid. Ochilishida limon, mandarin va yalpiz seziladi, yuragida qora smorodina va anjir ochiladi, izida esa mushk va ambroksan qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Pacific Chill — аромат дома SafirParfum для всех: цитрусовый и фруктовый. В начале звучат лимон, мандарин и мята, в сердце раскрываются чёрная смородина и инжир, в шлейфе остаются мускус и амброксан. Лучше всего раскрывается: весна и лето, днём."
+    },
+    "art": {
+      "shape": "tall",
+      "liquid": "#BFE3DC",
+      "cap": "silver"
+    },
+    "real": true,
+    "images": [
+      "/media/p/pacific-chill-1",
+      "/media/p/pacific-chill-2"
+    ],
+    "videos": [
+      "/media/v/lv-set-1"
+    ],
+    "photoFit": "contain",
+    "badge": "new",
+    "featured": true,
+    "isNew": true,
+    "rating": 4.7,
+    "reviews": 66,
+    "popularity": 1998,
+    "createdAt": "2026-03-07"
+  },
+  {
+    "id": 1004,
+    "slug": "safirparfum-louis-vuitton-imagination",
+    "name": "Louis Vuitton Imagination",
+    "brand": "safir",
+    "gender": "men",
+    "families": [
+      "citrus",
+      "woody"
+    ],
+    "notes": {
+      "top": [
+        "bergamot",
+        "lemon",
+        "ginger"
+      ],
+      "heart": [
+        "tea",
+        "cinnamon"
+      ],
+      "base": [
+        "ambroxan",
+        "incense",
+        "cedar"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "time": "any",
+    "longevity": 4,
+    "sillage": 3,
+    "concentration": "Extrait",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 280000,
+        "oldPrice": null,
+        "stock": 0
+      },
+      {
+        "ml": 50,
+        "price": 430000,
+        "oldPrice": null,
+        "stock": 11
+      },
+      {
+        "ml": 100,
+        "price": 690000,
+        "oldPrice": null,
+        "stock": 7
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Tetiklik bir tomchida",
+      "ru": "Свежесть в одной капле"
+    },
+    "description": {
+      "uz": "Louis Vuitton Imagination — SafirParfum uyidan erkaklar uchun sitrusli va yog'ochli hid. Ochilishida bergamot, limon va zanjabil seziladi, yuragida choy va dolchin ochiladi, izida esa ambroksan, ladan va sadr qoladi. Ayniqsa bahor, yoz va kuz fasllarida, istalgan vaqtda yaxshi ochiladi.",
+      "ru": "Louis Vuitton Imagination — аромат дома SafirParfum для мужчин: цитрусовый и древесный. В начале звучат бергамот, лимон и имбирь, в сердце раскрываются чай и корица, в шлейфе остаются амброксан, ладан и кедр. Лучше всего раскрывается: весна, лето и осень, в любое время."
+    },
+    "art": {
+      "shape": "tall",
+      "liquid": "#D9E4EE",
+      "cap": "silver"
+    },
+    "real": true,
+    "images": [
+      "/media/p/imagination-1"
+    ],
+    "videos": [
+      "/media/v/lv-set-1"
+    ],
+    "photoFit": "contain",
+    "badge": "new",
+    "featured": true,
+    "isNew": true,
+    "rating": 4.5,
+    "reviews": 111,
+    "popularity": 1997,
+    "createdAt": "2026-04-10"
+  },
+  {
+    "id": 1005,
+    "slug": "safirparfum-louis-vuitton-symphony",
+    "name": "Louis Vuitton Symphony",
+    "brand": "safir",
+    "gender": "unisex",
+    "families": [
+      "citrus",
+      "aquatic"
+    ],
+    "notes": {
+      "top": [
+        "grapefruit",
+        "bergamot",
+        "ginger"
+      ],
+      "heart": [
+        "tea"
+      ],
+      "base": [
+        "amber",
+        "musk"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "time": "day",
+    "longevity": 3,
+    "sillage": 3,
+    "concentration": "Extrait",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 280000,
+        "oldPrice": null,
+        "stock": 7
+      },
+      {
+        "ml": 50,
+        "price": 430000,
+        "oldPrice": null,
+        "stock": 9
+      },
+      {
+        "ml": 100,
+        "price": 690000,
+        "oldPrice": null,
+        "stock": 5
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Yozgi tongning yorqin boshlanishi",
+      "ru": "Яркое начало летнего утра"
+    },
+    "description": {
+      "uz": "Louis Vuitton Symphony — SafirParfum uyidan har kim uchun sitrusli va suvli hid. Ochilishida greypfrut, bergamot va zanjabil seziladi, yuragida choy ochiladi, izida esa ambra va mushk qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Louis Vuitton Symphony — аромат дома SafirParfum для всех: цитрусовый и водный. В начале звучат грейпфрут, бергамот и имбирь, в сердце раскрываются чай, в шлейфе остаются амбра и мускус. Лучше всего раскрывается: весна и лето, днём."
+    },
+    "art": {
+      "shape": "tall",
+      "liquid": "#F3C6D3",
+      "cap": "gold"
+    },
+    "real": true,
+    "images": [
+      "/media/p/symphony-1"
+    ],
+    "videos": [
+      "/media/v/symphony-1",
+      "/media/v/symphony-2",
+      "/media/v/symphony-3"
+    ],
+    "photoFit": "contain",
+    "badge": "new",
+    "featured": true,
+    "isNew": true,
+    "rating": 4.8,
+    "reviews": 55,
+    "popularity": 1996,
+    "createdAt": "2026-05-13"
+  },
+  {
+    "id": 1006,
+    "slug": "safirparfum-lost-in-paris",
+    "name": "Lost in Paris",
+    "brand": "safir",
+    "gender": "women",
+    "families": [
+      "fruity",
+      "floral"
+    ],
+    "notes": {
+      "top": [
+        "blackcurrant",
+        "pinkpepper"
+      ],
+      "heart": [
+        "rose",
+        "peony"
+      ],
+      "base": [
+        "musk",
+        "patchouli"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "autumn"
+    ],
+    "time": "any",
+    "longevity": 4,
+    "sillage": 3,
+    "concentration": "Extrait",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 280000,
+        "oldPrice": null,
+        "stock": 5
+      },
+      {
+        "ml": 50,
+        "price": 430000,
+        "oldPrice": null,
+        "stock": 0
+      },
+      {
+        "ml": 100,
+        "price": 690000,
+        "oldPrice": null,
+        "stock": 3
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Quvnoq va yorqin xarakter",
+      "ru": "Весёлый и яркий характер"
+    },
+    "description": {
+      "uz": "Lost in Paris — SafirParfum uyidan ayollar uchun mevali va gulli hid. Ochilishida qora smorodina va pushti qalampir seziladi, yuragida atirgul va pion ochiladi, izida esa mushk va pachuli qoladi. Ayniqsa bahor va kuz fasllarida, istalgan vaqtda yaxshi ochiladi.",
+      "ru": "Lost in Paris — аромат дома SafirParfum для женщин: фруктовый и цветочный. В начале звучат чёрная смородина и розовый перец, в сердце раскрываются роза и пион, в шлейфе остаются мускус и пачули. Лучше всего раскрывается: весна и осень, в любое время."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#F4D7DA",
+      "cap": "gold"
+    },
+    "real": true,
+    "images": [
+      "/media/p/lost-in-paris-1"
+    ],
+    "videos": [
+      "/media/v/lost-in-paris-1"
+    ],
+    "photoFit": "contain",
+    "badge": "new",
+    "featured": true,
+    "isNew": true,
+    "rating": 4.6,
+    "reviews": 99,
+    "popularity": 1995,
+    "createdAt": "2026-06-16"
+  },
+  {
+    "id": 1007,
+    "slug": "safirparfum-hormone-gaba",
+    "name": "Hormone Gaba",
+    "brand": "safir",
+    "gender": "unisex",
+    "families": [
+      "oriental",
+      "spicy"
+    ],
+    "notes": {
+      "top": [
+        "saffron",
+        "pinkpepper"
+      ],
+      "heart": [
+        "rose",
+        "oud"
+      ],
+      "base": [
+        "amber",
+        "musk"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 5,
+    "sillage": 4,
+    "concentration": "Extrait",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 280000,
+        "oldPrice": null,
+        "stock": 3
+      },
+      {
+        "ml": 50,
+        "price": 430000,
+        "oldPrice": null,
+        "stock": 5
+      },
+      {
+        "ml": 100,
+        "price": 690000,
+        "oldPrice": null,
+        "stock": 10
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Issiq, sirli va unutilmas",
+      "ru": "Тёплый, загадочный, незабываемый"
+    },
+    "description": {
+      "uz": "Hormone Gaba — SafirParfum uyidan har kim uchun sharqona va ziravorli hid. Ochilishida za'faron va pushti qalampir seziladi, yuragida atirgul va ud ochiladi, izida esa ambra va mushk qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Hormone Gaba — аромат дома SafirParfum для всех: восточный и пряный. В начале звучат шафран и розовый перец, в сердце раскрываются роза и уд, в шлейфе остаются амбра и мускус. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#E8D6C0",
+      "cap": "gold"
+    },
+    "real": true,
+    "images": [
+      "/media/p/hormone-gaba-1"
+    ],
+    "videos": [],
+    "photoFit": "contain",
+    "badge": null,
+    "featured": true,
+    "isNew": false,
+    "rating": 4.8,
+    "reviews": 15,
+    "popularity": 1994,
+    "createdAt": "2026-07-19"
+  },
+  {
+    "id": 1008,
+    "slug": "safirparfum-tilia",
+    "name": "Tilia",
+    "brand": "safir",
+    "gender": "unisex",
+    "families": [
+      "floral",
+      "fruity"
+    ],
+    "notes": {
+      "top": [
+        "pear",
+        "mandarin"
+      ],
+      "heart": [
+        "linden",
+        "jasmine"
+      ],
+      "base": [
+        "musk",
+        "vanilla"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "time": "day",
+    "longevity": 3,
+    "sillage": 3,
+    "concentration": "Extrait",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 280000,
+        "oldPrice": null,
+        "stock": 10
+      },
+      {
+        "ml": 50,
+        "price": 430000,
+        "oldPrice": null,
+        "stock": 3
+      },
+      {
+        "ml": 100,
+        "price": 690000,
+        "oldPrice": null,
+        "stock": 8
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Bahor bog'ining yumshoq ovozi",
+      "ru": "Нежный голос весеннего сада"
+    },
+    "description": {
+      "uz": "Tilia — SafirParfum uyidan har kim uchun gulli va mevali hid. Ochilishida nok va mandarin seziladi, yuragida jo'ka guli va yasmin ochiladi, izida esa mushk va vanil qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Tilia — аромат дома SafirParfum для всех: цветочный и фруктовый. В начале звучат груша и мандарин, в сердце раскрываются липовый цвет и жасмин, в шлейфе остаются мускус и ваниль. Лучше всего раскрывается: весна и лето, днём."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#EFE7C8",
+      "cap": "gold"
+    },
+    "real": true,
+    "images": [
+      "/media/p/tilia-1"
+    ],
+    "videos": [],
+    "photoFit": "contain",
+    "badge": null,
+    "featured": true,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 34,
+    "popularity": 1993,
+    "createdAt": "2026-08-22"
+  },
+  {
+    "id": 1009,
+    "slug": "safirparfum-aurica",
+    "name": "Aurica",
+    "brand": "safir",
+    "gender": "unisex",
+    "families": [
+      "oriental",
+      "floral"
+    ],
+    "notes": {
+      "top": [
+        "bergamot",
+        "mandarin"
+      ],
+      "heart": [
+        "rose",
+        "jasmine"
+      ],
+      "base": [
+        "amber",
+        "vanilla",
+        "sandalwood"
+      ]
+    },
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "time": "evening",
+    "longevity": 4,
+    "sillage": 4,
+    "concentration": "Extrait",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 230000,
+        "oldPrice": 280000,
+        "stock": 8
+      },
+      {
+        "ml": 50,
+        "price": 360000,
+        "oldPrice": 430000,
+        "stock": 10
+      },
+      {
+        "ml": 100,
+        "price": 590000,
+        "oldPrice": 690000,
+        "stock": 6
+      }
+    ],
+    "discount": 15,
+    "tagline": {
+      "uz": "Issiq, sirli va unutilmas",
+      "ru": "Тёплый, загадочный, незабываемый"
+    },
+    "description": {
+      "uz": "Aurica — SafirParfum uyidan har kim uchun sharqona va gulli hid. Ochilishida bergamot va mandarin seziladi, yuragida atirgul va yasmin ochiladi, izida esa ambra, vanil va sandal qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
+      "ru": "Aurica — аромат дома SafirParfum для всех: восточный и цветочный. В начале звучат бергамот и мандарин, в сердце раскрываются роза и жасмин, в шлейфе остаются амбра, ваниль и сандал. Лучше всего раскрывается: осень и зима, вечером."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#E9C88E",
+      "cap": "gold"
+    },
+    "real": true,
+    "images": [
+      "/media/p/aurica-1"
+    ],
+    "videos": [],
+    "photoFit": "contain",
+    "badge": null,
+    "featured": true,
+    "isNew": false,
+    "rating": 4.8,
+    "reviews": 24,
+    "popularity": 1992,
+    "createdAt": "2026-09-25"
+  },
+  {
+    "id": 1010,
+    "slug": "safirparfum-boadicea-aqua-sapphire",
+    "name": "Boadicea Aqua Sapphire",
+    "brand": "safir",
+    "gender": "unisex",
+    "families": [
+      "aquatic",
+      "woody"
+    ],
+    "notes": {
+      "top": [
+        "marine",
+        "bergamot",
+        "mint"
+      ],
+      "heart": [
+        "geranium"
+      ],
+      "base": [
+        "cedar",
+        "musk",
+        "ambroxan"
+      ]
+    },
+    "seasons": [
+      "summer",
+      "spring"
+    ],
+    "time": "day",
+    "longevity": 4,
+    "sillage": 3,
+    "concentration": "Extrait",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 280000,
+        "oldPrice": null,
+        "stock": 6
+      },
+      {
+        "ml": 50,
+        "price": 430000,
+        "oldPrice": null,
+        "stock": 8
+      },
+      {
+        "ml": 100,
+        "price": 690000,
+        "oldPrice": null,
+        "stock": 4
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Salqin, toza, erkin",
+      "ru": "Прохладно, чисто, свободно"
+    },
+    "description": {
+      "uz": "Boadicea Aqua Sapphire — SafirParfum uyidan har kim uchun suvli va yog'ochli hid. Ochilishida dengiz notalari, bergamot va yalpiz seziladi, yuragida geran ochiladi, izida esa sadr, mushk va ambroksan qoladi. Ayniqsa yoz va bahor fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Boadicea Aqua Sapphire — аромат дома SafirParfum для всех: водный и древесный. В начале звучат морские ноты, бергамот и мята, в сердце раскрываются герань, в шлейфе остаются кедр, мускус и амброксан. Лучше всего раскрывается: лето и весна, днём."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#BCD4EA",
+      "cap": "gold"
+    },
+    "real": true,
+    "images": [
+      "/media/p/aqua-sapphire-1"
+    ],
+    "videos": [],
+    "photoFit": "contain",
+    "badge": null,
+    "featured": true,
+    "isNew": false,
+    "rating": 4.8,
+    "reviews": 64,
+    "popularity": 1991,
+    "createdAt": "2026-10-01"
+  },
+  {
+    "id": 1011,
+    "slug": "safirparfum-bvlgari-tygar",
+    "name": "Bvlgari Tygar",
+    "brand": "safir",
+    "gender": "men",
+    "families": [
+      "citrus",
+      "woody"
+    ],
+    "notes": {
+      "top": [
+        "grapefruit"
+      ],
+      "heart": [
+        "ambroxan"
+      ],
+      "base": [
+        "cedar",
+        "vetiver"
+      ]
+    },
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "time": "day",
+    "longevity": 4,
+    "sillage": 3,
+    "concentration": "Extrait",
+    "sizes": [
+      {
+        "ml": 30,
+        "price": 280000,
+        "oldPrice": null,
+        "stock": 4
+      },
+      {
+        "ml": 50,
+        "price": 430000,
+        "oldPrice": null,
+        "stock": 6
+      },
+      {
+        "ml": 100,
+        "price": 690000,
+        "oldPrice": null,
+        "stock": 0
+      }
+    ],
+    "discount": 0,
+    "tagline": {
+      "uz": "Yozgi tongning yorqin boshlanishi",
+      "ru": "Яркое начало летнего утра"
+    },
+    "description": {
+      "uz": "Bvlgari Tygar — SafirParfum uyidan erkaklar uchun sitrusli va yog'ochli hid. Ochilishida greypfrut seziladi, yuragida ambroksan ochiladi, izida esa sadr va vetiver qoladi. Ayniqsa bahor, yoz va kuz fasllarida, kunduzi yaxshi ochiladi.",
+      "ru": "Bvlgari Tygar — аромат дома SafirParfum для мужчин: цитрусовый и древесный. В начале звучат грейпфрут, в сердце раскрываются амброксан, в шлейфе остаются кедр и ветивер. Лучше всего раскрывается: весна, лето и осень, днём."
+    },
+    "art": {
+      "shape": "square",
+      "liquid": "#E3E6EA",
+      "cap": "gold"
+    },
+    "real": true,
+    "images": [
+      "/media/p/tygar-1"
+    ],
+    "videos": [],
+    "photoFit": "contain",
+    "badge": null,
+    "featured": true,
+    "isNew": false,
+    "rating": 4.6,
+    "reviews": 12,
+    "popularity": 1990,
+    "createdAt": "2026-11-04"
+  },
+  {
+    "id": 1012,
     "slug": "dior-sauvage-elixir",
     "name": "Sauvage Elixir",
     "brand": "dior",
@@ -37,19 +941,19 @@
         "ml": 30,
         "price": 660000,
         "oldPrice": null,
-        "stock": 6
+        "stock": 11
       },
       {
         "ml": 50,
         "price": 1020000,
         "oldPrice": null,
-        "stock": 8
+        "stock": 4
       },
       {
         "ml": 100,
         "price": 1650000,
         "oldPrice": null,
-        "stock": 4
+        "stock": 9
       }
     ],
     "discount": 0,
@@ -66,16 +970,20 @@
       "liquid": "#3B4F86",
       "cap": "black"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "top",
     "featured": true,
     "isNew": false,
-    "rating": 4.7,
-    "reviews": 73,
-    "popularity": 115,
-    "createdAt": "2026-01-01"
+    "rating": 5,
+    "reviews": 122,
+    "popularity": 120,
+    "createdAt": "2026-01-07"
   },
   {
-    "id": 1002,
+    "id": 1013,
     "slug": "dior-sauvage-edp",
     "name": "Sauvage EDP",
     "brand": "dior",
@@ -112,25 +1020,25 @@
         "ml": 30,
         "price": 460000,
         "oldPrice": 540000,
-        "stock": 4
+        "stock": 9
       },
       {
         "ml": 50,
         "price": 710000,
         "oldPrice": 840000,
-        "stock": 6
+        "stock": 11
       },
       {
         "ml": 100,
         "price": 1150000,
         "oldPrice": 1350000,
-        "stock": 11
+        "stock": 7
       }
     ],
     "discount": 15,
     "tagline": {
-      "uz": "Toza, ishonchli, har kunga",
-      "ru": "Чисто, уверенно, на каждый день"
+      "uz": "Klassik erkaklik, zamonaviy ohangda",
+      "ru": "Классическая мужественность в новом звучании"
     },
     "description": {
       "uz": "Sauvage EDP — Dior uyidan erkaklar uchun fujer va ziravorli hid. Ochilishida bergamot va pushti qalampir seziladi, yuragida lavanda va geran ochiladi, izida esa ambroksan va vanil qoladi. Ayniqsa bahor, yoz va kuz fasllarida, kunduzi yaxshi ochiladi.",
@@ -141,16 +1049,20 @@
       "liquid": "#2E4A80",
       "cap": "black"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "top",
     "featured": true,
     "isNew": false,
-    "rating": 4.6,
-    "reviews": 59,
-    "popularity": 506,
-    "createdAt": "2026-02-04"
+    "rating": 4.7,
+    "reviews": 120,
+    "popularity": 189,
+    "createdAt": "2026-02-10"
   },
   {
-    "id": 1003,
+    "id": 1014,
     "slug": "dior-miss-dior-blooming-bouquet",
     "name": "Miss Dior Blooming Bouquet",
     "brand": "dior",
@@ -185,25 +1097,25 @@
         "ml": 30,
         "price": 460000,
         "oldPrice": null,
-        "stock": 11
+        "stock": 7
       },
       {
         "ml": 50,
         "price": 710000,
         "oldPrice": null,
-        "stock": 4
+        "stock": 9
       },
       {
         "ml": 100,
         "price": 1150000,
         "oldPrice": null,
-        "stock": 9
+        "stock": 5
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Gullar bilan nafas oladigan nafislik",
-      "ru": "Изящество, которое дышит цветами"
+      "uz": "Bahor bog'ining yumshoq ovozi",
+      "ru": "Нежный голос весеннего сада"
     },
     "description": {
       "uz": "Miss Dior Blooming Bouquet — Dior uyidan ayollar uchun gulli va mevali hid. Ochilishida mandarin va bergamot seziladi, yuragida pion va atirgul ochiladi, izida esa mushk qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
@@ -214,16 +1126,20 @@
       "liquid": "#F2C6CF",
       "cap": "silver"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
     "featured": false,
     "isNew": false,
-    "rating": 4.5,
-    "reviews": 111,
-    "popularity": 589,
-    "createdAt": "2026-03-07"
+    "rating": 4.7,
+    "reviews": 72,
+    "popularity": 671,
+    "createdAt": "2026-03-13"
   },
   {
-    "id": 1004,
+    "id": 1015,
     "slug": "dior-homme-intense",
     "name": "Homme Intense",
     "brand": "dior",
@@ -264,19 +1180,19 @@
         "ml": 50,
         "price": 800000,
         "oldPrice": null,
-        "stock": 11
+        "stock": 7
       },
       {
         "ml": 100,
         "price": 1290000,
         "oldPrice": null,
-        "stock": 7
+        "stock": 3
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Quruq yog'och va toza havo",
-      "ru": "Сухое дерево и чистый воздух"
+      "uz": "Tinch kuch va ishonch",
+      "ru": "Спокойная сила и уверенность"
     },
     "description": {
       "uz": "Homme Intense — Dior uyidan erkaklar uchun yog'ochli va gulli hid. Ochilishida lavanda va nok seziladi, yuragida iris ochiladi, izida esa vetiver va sadr qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -287,16 +1203,20 @@
       "liquid": "#8B7B74",
       "cap": "black"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
-    "featured": true,
+    "featured": false,
     "isNew": false,
-    "rating": 4.7,
-    "reviews": 40,
-    "popularity": 781,
-    "createdAt": "2026-04-10"
+    "rating": 4.6,
+    "reviews": 26,
+    "popularity": 985,
+    "createdAt": "2026-04-16"
   },
   {
-    "id": 1005,
+    "id": 1016,
     "slug": "chanel-coco-mademoiselle",
     "name": "Coco Mademoiselle",
     "brand": "chanel",
@@ -334,25 +1254,25 @@
         "ml": 30,
         "price": 680000,
         "oldPrice": null,
-        "stock": 7
+        "stock": 3
       },
       {
         "ml": 50,
         "price": 1050000,
         "oldPrice": null,
-        "stock": 9
+        "stock": 5
       },
       {
         "ml": 100,
         "price": 1690000,
         "oldPrice": null,
-        "stock": 5
+        "stock": 10
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Issiq, sirli va unutilmas",
-      "ru": "Тёплый, загадочный, незабываемый"
+      "uz": "Kechki shaharning oltin izi",
+      "ru": "Золотой шлейф вечернего города"
     },
     "description": {
       "uz": "Coco Mademoiselle — Chanel uyidan ayollar uchun sharqona va gulli hid. Ochilishida mandarin va bergamot seziladi, yuragida atirgul va yasmin ochiladi, izida esa pachuli, vanil va mushk qoladi. Ayniqsa kuz, qish va bahor fasllarida, istalgan vaqtda yaxshi ochiladi.",
@@ -363,16 +1283,20 @@
       "liquid": "#E7B78C",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "top",
     "featured": true,
     "isNew": false,
-    "rating": 4.8,
-    "reviews": 15,
-    "popularity": 498,
-    "createdAt": "2026-05-13"
+    "rating": 4.7,
+    "reviews": 33,
+    "popularity": 547,
+    "createdAt": "2026-05-19"
   },
   {
-    "id": 1006,
+    "id": 1017,
     "slug": "chanel-bleu-de-chanel",
     "name": "Bleu de Chanel",
     "brand": "chanel",
@@ -410,7 +1334,7 @@
         "ml": 30,
         "price": 570000,
         "oldPrice": 640000,
-        "stock": 5
+        "stock": 10
       },
       {
         "ml": 50,
@@ -422,13 +1346,13 @@
         "ml": 100,
         "price": 1430000,
         "oldPrice": 1590000,
-        "stock": 3
+        "stock": 8
       }
     ],
     "discount": 10,
     "tagline": {
-      "uz": "Quruq yog'och va toza havo",
-      "ru": "Сухое дерево и чистый воздух"
+      "uz": "Tinch kuch va ishonch",
+      "ru": "Спокойная сила и уверенность"
     },
     "description": {
       "uz": "Bleu de Chanel — Chanel uyidan erkaklar uchun yog'ochli va sitrusli hid. Ochilishida greypfrut, limon va yalpiz seziladi, yuragida ladan va pushti qalampir ochiladi, izida esa sadr va sandal qoladi. Ayniqsa bahor, yoz va kuz fasllarida, istalgan vaqtda yaxshi ochiladi.",
@@ -439,16 +1363,20 @@
       "liquid": "#1E2B4E",
       "cap": "black"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "top",
     "featured": true,
     "isNew": false,
-    "rating": 4.6,
-    "reviews": 86,
-    "popularity": 157,
-    "createdAt": "2026-06-16"
+    "rating": 4.7,
+    "reviews": 24,
+    "popularity": 772,
+    "createdAt": "2026-06-22"
   },
   {
-    "id": 1007,
+    "id": 1018,
     "slug": "chanel-chance-eau-tendre",
     "name": "Chance Eau Tendre",
     "brand": "chanel",
@@ -483,25 +1411,25 @@
         "ml": 30,
         "price": 560000,
         "oldPrice": null,
-        "stock": 3
+        "stock": 8
       },
       {
         "ml": 50,
         "price": 860000,
         "oldPrice": null,
-        "stock": 5
+        "stock": 10
       },
       {
         "ml": 100,
         "price": 1390000,
         "oldPrice": null,
-        "stock": 10
+        "stock": 6
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Gullar bilan nafas oladigan nafislik",
-      "ru": "Изящество, которое дышит цветами"
+      "uz": "Bahor bog'ining yumshoq ovozi",
+      "ru": "Нежный голос весеннего сада"
     },
     "description": {
       "uz": "Chance Eau Tendre — Chanel uyidan ayollar uchun gulli va mevali hid. Ochilishida greypfrut va olma seziladi, yuragida yasmin ochiladi, izida esa mushk va sadr qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
@@ -512,16 +1440,20 @@
       "liquid": "#F6C9C4",
       "cap": "silver"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
-    "featured": true,
+    "featured": false,
     "isNew": false,
-    "rating": 4.8,
-    "reviews": 64,
-    "popularity": 176,
-    "createdAt": "2026-07-19"
+    "rating": 4.7,
+    "reviews": 48,
+    "popularity": 79,
+    "createdAt": "2026-07-25"
   },
   {
-    "id": 1008,
+    "id": 1019,
     "slug": "chanel-egoiste-platinum",
     "name": "Egoiste Platinum",
     "brand": "chanel",
@@ -557,25 +1489,25 @@
         "ml": 30,
         "price": 410000,
         "oldPrice": 520000,
-        "stock": 10
+        "stock": 6
       },
       {
         "ml": 50,
         "price": 640000,
         "oldPrice": 800000,
-        "stock": 3
+        "stock": 8
       },
       {
         "ml": 100,
         "price": 1030000,
         "oldPrice": 1290000,
-        "stock": 8
+        "stock": 4
       }
     ],
     "discount": 20,
     "tagline": {
-      "uz": "Toza, ishonchli, har kunga",
-      "ru": "Чисто, уверенно, на каждый день"
+      "uz": "Klassik erkaklik, zamonaviy ohangda",
+      "ru": "Классическая мужественность в новом звучании"
     },
     "description": {
       "uz": "Egoiste Platinum — Chanel uyidan erkaklar uchun fujer va yog'ochli hid. Ochilishida lavanda va neroli seziladi, yuragida geran va shalfey ochiladi, izida esa vetiver va sadr qoladi. Ayniqsa bahor va kuz fasllarida, kunduzi yaxshi ochiladi.",
@@ -586,16 +1518,20 @@
       "liquid": "#B9BCC2",
       "cap": "silver"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "sale",
-    "featured": false,
+    "featured": true,
     "isNew": false,
-    "rating": 4.5,
-    "reviews": 118,
-    "popularity": 969,
-    "createdAt": "2026-08-22"
+    "rating": 5,
+    "reviews": 34,
+    "popularity": 884,
+    "createdAt": "2026-08-01"
   },
   {
-    "id": 1009,
+    "id": 1020,
     "slug": "tom-ford-lost-cherry",
     "name": "Lost Cherry",
     "brand": "tom-ford",
@@ -632,25 +1568,25 @@
         "ml": 30,
         "price": 1160000,
         "oldPrice": null,
-        "stock": 8
+        "stock": 4
       },
       {
         "ml": 50,
         "price": 1800000,
         "oldPrice": null,
-        "stock": 10
+        "stock": 6
       },
       {
         "ml": 100,
         "price": 2900000,
         "oldPrice": null,
-        "stock": 6
+        "stock": 11
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Shirin, ammo shirinlikdan ko'proq",
-      "ru": "Сладкий, но больше чем сладость"
+      "uz": "Qishki kechaning iliq quchog'i",
+      "ru": "Тёплые объятия зимнего вечера"
     },
     "description": {
       "uz": "Lost Cherry — Tom Ford uyidan har kim uchun shirin (gurmand) va mevali hid. Ochilishida olcha va bodom seziladi, yuragida atirgul va yasmin ochiladi, izida esa tonka loviya, vanil va sandal qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -661,16 +1597,20 @@
       "liquid": "#8E1B2C",
       "cap": "black"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "top",
     "featured": true,
     "isNew": false,
-    "rating": 4.6,
-    "reviews": 59,
-    "popularity": 955,
-    "createdAt": "2026-09-25"
+    "rating": 4.7,
+    "reviews": 34,
+    "popularity": 602,
+    "createdAt": "2026-09-04"
   },
   {
-    "id": 1010,
+    "id": 1021,
     "slug": "tom-ford-ombre-leather",
     "name": "Ombre Leather",
     "brand": "tom-ford",
@@ -705,19 +1645,19 @@
         "ml": 30,
         "price": 940000,
         "oldPrice": null,
-        "stock": 6
+        "stock": 11
       },
       {
         "ml": 50,
         "price": 1460000,
         "oldPrice": null,
-        "stock": 8
+        "stock": 4
       },
       {
         "ml": 100,
         "price": 2350000,
         "oldPrice": null,
-        "stock": 4
+        "stock": 9
       }
     ],
     "discount": 0,
@@ -734,16 +1674,20 @@
       "liquid": "#5A3A2A",
       "cap": "black"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
-    "featured": true,
+    "featured": false,
     "isNew": false,
-    "rating": 4.6,
-    "reviews": 56,
-    "popularity": 550,
-    "createdAt": "2026-10-01"
+    "rating": 4.7,
+    "reviews": 97,
+    "popularity": 652,
+    "createdAt": "2026-10-07"
   },
   {
-    "id": 1011,
+    "id": 1022,
     "slug": "tom-ford-tobacco-vanille",
     "name": "Tobacco Vanille",
     "brand": "tom-ford",
@@ -778,13 +1722,13 @@
         "ml": 30,
         "price": 1180000,
         "oldPrice": null,
-        "stock": 4
+        "stock": 9
       },
       {
         "ml": 50,
         "price": 1830000,
         "oldPrice": null,
-        "stock": 6
+        "stock": 11
       },
       {
         "ml": 100,
@@ -795,8 +1739,8 @@
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Issiq, sirli va unutilmas",
-      "ru": "Тёплый, загадочный, незабываемый"
+      "uz": "Kechki shaharning oltin izi",
+      "ru": "Золотой шлейф вечернего города"
     },
     "description": {
       "uz": "Tobacco Vanille — Tom Ford uyidan har kim uchun sharqona va ziravorli hid. Ochilishida tamaki va dolchin seziladi, yuragida vanil va tonka loviya ochiladi, izida esa qahva va ambra qoladi. Ayniqsa qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -807,16 +1751,20 @@
       "liquid": "#9B5B2B",
       "cap": "black"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "new",
-    "featured": false,
+    "featured": true,
     "isNew": true,
-    "rating": 4.8,
-    "reviews": 39,
-    "popularity": 170,
-    "createdAt": "2026-11-04"
+    "rating": 4.6,
+    "reviews": 32,
+    "popularity": 450,
+    "createdAt": "2026-11-10"
   },
   {
-    "id": 1012,
+    "id": 1023,
     "slug": "tom-ford-neroli-portofino",
     "name": "Neroli Portofino",
     "brand": "tom-ford",
@@ -852,25 +1800,25 @@
         "ml": 30,
         "price": 970000,
         "oldPrice": 1080000,
-        "stock": 11
+        "stock": 7
       },
       {
         "ml": 50,
         "price": 1510000,
         "oldPrice": 1670000,
-        "stock": 4
+        "stock": 9
       },
       {
         "ml": 100,
         "price": 2430000,
         "oldPrice": 2700000,
-        "stock": 9
+        "stock": 5
       }
     ],
     "discount": 10,
     "tagline": {
-      "uz": "Tetiklik bir tomchida",
-      "ru": "Свежесть в одной капле"
+      "uz": "Yozgi tongning yorqin boshlanishi",
+      "ru": "Яркое начало летнего утра"
     },
     "description": {
       "uz": "Neroli Portofino — Tom Ford uyidan har kim uchun sitrusli va suvli hid. Ochilishida bergamot, limon va mandarin seziladi, yuragida neroli va apelsin guli ochiladi, izida esa ambra va mushk qoladi. Ayniqsa yoz fasllarida, kunduzi yaxshi ochiladi.",
@@ -881,16 +1829,20 @@
       "liquid": "#9ED3E6",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
     "featured": false,
     "isNew": false,
-    "rating": 5,
-    "reviews": 59,
-    "popularity": 232,
-    "createdAt": "2026-01-07"
+    "rating": 4.5,
+    "reviews": 11,
+    "popularity": 412,
+    "createdAt": "2026-01-13"
   },
   {
-    "id": 1013,
+    "id": 1024,
     "slug": "yves-saint-laurent-libre",
     "name": "Libre",
     "brand": "ysl",
@@ -927,25 +1879,25 @@
         "ml": 30,
         "price": 580000,
         "oldPrice": null,
-        "stock": 9
+        "stock": 5
       },
       {
         "ml": 50,
         "price": 900000,
         "oldPrice": null,
-        "stock": 11
+        "stock": 7
       },
       {
         "ml": 100,
         "price": 1450000,
         "oldPrice": null,
-        "stock": 7
+        "stock": 3
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Gullar bilan nafas oladigan nafislik",
-      "ru": "Изящество, которое дышит цветами"
+      "uz": "Bahor bog'ining yumshoq ovozi",
+      "ru": "Нежный голос весеннего сада"
     },
     "description": {
       "uz": "Libre — Yves Saint Laurent uyidan ayollar uchun gulli va sharqona hid. Ochilishida lavanda va mandarin seziladi, yuragida apelsin guli va yasmin ochiladi, izida esa vanil va mushk qoladi. Ayniqsa kuz, qish va bahor fasllarida, istalgan vaqtda yaxshi ochiladi.",
@@ -956,16 +1908,20 @@
       "liquid": "#E9D3A6",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "top",
     "featured": true,
     "isNew": false,
     "rating": 4.8,
-    "reviews": 45,
-    "popularity": 153,
-    "createdAt": "2026-02-10"
+    "reviews": 83,
+    "popularity": 955,
+    "createdAt": "2026-02-16"
   },
   {
-    "id": 1014,
+    "id": 1025,
     "slug": "yves-saint-laurent-y-eau-de-parfum",
     "name": "Y Eau de Parfum",
     "brand": "ysl",
@@ -1002,25 +1958,25 @@
         "ml": 30,
         "price": 460000,
         "oldPrice": 540000,
-        "stock": 7
+        "stock": 3
       },
       {
         "ml": 50,
         "price": 710000,
         "oldPrice": 840000,
-        "stock": 9
+        "stock": 5
       },
       {
         "ml": 100,
         "price": 1150000,
         "oldPrice": 1350000,
-        "stock": 5
+        "stock": 10
       }
     ],
     "discount": 15,
     "tagline": {
-      "uz": "Toza, ishonchli, har kunga",
-      "ru": "Чисто, уверенно, на каждый день"
+      "uz": "Klassik erkaklik, zamonaviy ohangda",
+      "ru": "Классическая мужественность в новом звучании"
     },
     "description": {
       "uz": "Y Eau de Parfum — Yves Saint Laurent uyidan erkaklar uchun fujer va yog'ochli hid. Ochilishida olma va bergamot seziladi, yuragida shalfey va geran ochiladi, izida esa tonka loviya, ambra va sadr qoladi. Ayniqsa bahor va kuz fasllarida, istalgan vaqtda yaxshi ochiladi.",
@@ -1031,16 +1987,20 @@
       "liquid": "#2A3E73",
       "cap": "silver"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
-    "featured": false,
+    "featured": true,
     "isNew": false,
-    "rating": 4.9,
-    "reviews": 48,
-    "popularity": 350,
-    "createdAt": "2026-03-13"
+    "rating": 4.7,
+    "reviews": 58,
+    "popularity": 495,
+    "createdAt": "2026-03-19"
   },
   {
-    "id": 1015,
+    "id": 1026,
     "slug": "yves-saint-laurent-black-opium",
     "name": "Black Opium",
     "brand": "ysl",
@@ -1083,19 +2043,19 @@
         "ml": 50,
         "price": 860000,
         "oldPrice": null,
-        "stock": 7
+        "stock": 3
       },
       {
         "ml": 100,
         "price": 1390000,
         "oldPrice": null,
-        "stock": 3
+        "stock": 8
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Shirin, ammo shirinlikdan ko'proq",
-      "ru": "Сладкий, но больше чем сладость"
+      "uz": "Qishki kechaning iliq quchog'i",
+      "ru": "Тёплые объятия зимнего вечера"
     },
     "description": {
       "uz": "Black Opium — Yves Saint Laurent uyidan ayollar uchun shirin (gurmand) va sharqona hid. Ochilishida nok va pushti qalampir seziladi, yuragida qahva va yasmin ochiladi, izida esa vanil, pachuli va sadr qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -1106,16 +2066,20 @@
       "liquid": "#2B1E2E",
       "cap": "black"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
     "featured": false,
     "isNew": false,
-    "rating": 4.5,
-    "reviews": 117,
-    "popularity": 238,
-    "createdAt": "2026-04-16"
+    "rating": 4.7,
+    "reviews": 106,
+    "popularity": 450,
+    "createdAt": "2026-04-22"
   },
   {
-    "id": 1016,
+    "id": 1027,
     "slug": "yves-saint-laurent-myslf",
     "name": "MYSLF",
     "brand": "ysl",
@@ -1150,25 +2114,25 @@
         "ml": 30,
         "price": 570000,
         "oldPrice": null,
-        "stock": 3
+        "stock": 8
       },
       {
         "ml": 50,
         "price": 880000,
         "oldPrice": null,
-        "stock": 5
+        "stock": 10
       },
       {
         "ml": 100,
         "price": 1420000,
         "oldPrice": null,
-        "stock": 10
+        "stock": 6
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Bahor bog'ining yumshoq ovozi",
-      "ru": "Нежный голос весеннего сада"
+      "uz": "Gullar bilan nafas oladigan nafislik",
+      "ru": "Изящество, которое дышит цветами"
     },
     "description": {
       "uz": "MYSLF — Yves Saint Laurent uyidan erkaklar uchun gulli va yog'ochli hid. Ochilishida bergamot seziladi, yuragida apelsin guli ochiladi, izida esa pachuli va ambra qoladi. Ayniqsa bahor, yoz va kuz fasllarida, kunduzi yaxshi ochiladi.",
@@ -1179,16 +2143,20 @@
       "liquid": "#C9C1B6",
       "cap": "black"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "new",
-    "featured": true,
+    "featured": false,
     "isNew": true,
-    "rating": 4.9,
-    "reviews": 62,
+    "rating": 4.7,
+    "reviews": 37,
     "popularity": 236,
-    "createdAt": "2026-05-19"
+    "createdAt": "2026-05-25"
   },
   {
-    "id": 1017,
+    "id": 1028,
     "slug": "giorgio-armani-acqua-di-gio-profondo",
     "name": "Acqua di Gio Profondo",
     "brand": "armani",
@@ -1226,7 +2194,7 @@
         "ml": 30,
         "price": 430000,
         "oldPrice": 480000,
-        "stock": 10
+        "stock": 6
       },
       {
         "ml": 50,
@@ -1238,13 +2206,13 @@
         "ml": 100,
         "price": 1070000,
         "oldPrice": 1190000,
-        "stock": 8
+        "stock": 4
       }
     ],
     "discount": 10,
     "tagline": {
-      "uz": "Dengiz shabadasi teringizda",
-      "ru": "Морской бриз на коже"
+      "uz": "Salqin, toza, erkin",
+      "ru": "Прохладно, чисто, свободно"
     },
     "description": {
       "uz": "Acqua di Gio Profondo — Giorgio Armani uyidan erkaklar uchun suvli va sitrusli hid. Ochilishida dengiz notalari, bergamot va mandarin seziladi, yuragida lavanda va kardamon ochiladi, izida esa mushk, pachuli va ambra qoladi. Ayniqsa yoz va bahor fasllarida, kunduzi yaxshi ochiladi.",
@@ -1255,16 +2223,20 @@
       "liquid": "#3A7BB8",
       "cap": "silver"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
-    "featured": false,
+    "featured": true,
     "isNew": false,
-    "rating": 4.8,
-    "reviews": 54,
-    "popularity": 758,
-    "createdAt": "2026-06-22"
+    "rating": 4.9,
+    "reviews": 21,
+    "popularity": 270,
+    "createdAt": "2026-06-01"
   },
   {
-    "id": 1018,
+    "id": 1029,
     "slug": "giorgio-armani-si-passione",
     "name": "Si Passione",
     "brand": "armani",
@@ -1301,25 +2273,25 @@
         "ml": 30,
         "price": 500000,
         "oldPrice": null,
-        "stock": 8
+        "stock": 4
       },
       {
         "ml": 50,
         "price": 780000,
         "oldPrice": null,
-        "stock": 10
+        "stock": 6
       },
       {
         "ml": 100,
         "price": 1250000,
         "oldPrice": null,
-        "stock": 6
+        "stock": 11
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Quvnoq va yorqin xarakter",
-      "ru": "Весёлый и яркий характер"
+      "uz": "Shirali mevalar va yengil kayfiyat",
+      "ru": "Сочные фрукты и лёгкое настроение"
     },
     "description": {
       "uz": "Si Passione — Giorgio Armani uyidan ayollar uchun mevali va gulli hid. Ochilishida qora smorodina, nok va pushti qalampir seziladi, yuragida atirgul va yasmin ochiladi, izida esa vanil va sadr qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -1330,16 +2302,20 @@
       "liquid": "#B41F3A",
       "cap": "black"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
     "featured": false,
     "isNew": false,
-    "rating": 4.8,
-    "reviews": 22,
-    "popularity": 223,
-    "createdAt": "2026-07-25"
+    "rating": 4.9,
+    "reviews": 109,
+    "popularity": 968,
+    "createdAt": "2026-07-04"
   },
   {
-    "id": 1019,
+    "id": 1030,
     "slug": "giorgio-armani-stronger-with-you-intensely",
     "name": "Stronger With You Intensely",
     "brand": "armani",
@@ -1376,25 +2352,25 @@
         "ml": 30,
         "price": 360000,
         "oldPrice": 480000,
-        "stock": 6
+        "stock": 11
       },
       {
         "ml": 50,
         "price": 550000,
         "oldPrice": 740000,
-        "stock": 8
+        "stock": 4
       },
       {
         "ml": 100,
         "price": 890000,
         "oldPrice": 1190000,
-        "stock": 4
+        "stock": 9
       }
     ],
     "discount": 25,
     "tagline": {
-      "uz": "Issiq, sirli va unutilmas",
-      "ru": "Тёплый, загадочный, незабываемый"
+      "uz": "Kechki shaharning oltin izi",
+      "ru": "Золотой шлейф вечернего города"
     },
     "description": {
       "uz": "Stronger With You Intensely — Giorgio Armani uyidan erkaklar uchun sharqona va ziravorli hid. Ochilishida pushti qalampir va kardamon seziladi, yuragida lavanda va dolchin ochiladi, izida esa vanil, tonka loviya va ambra qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -1405,16 +2381,20 @@
       "liquid": "#6B2D24",
       "cap": "black"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "sale",
-    "featured": true,
+    "featured": false,
     "isNew": false,
-    "rating": 4.7,
-    "reviews": 16,
-    "popularity": 47,
-    "createdAt": "2026-08-01"
+    "rating": 5,
+    "reviews": 109,
+    "popularity": 747,
+    "createdAt": "2026-08-07"
   },
   {
-    "id": 1020,
+    "id": 1031,
     "slug": "versace-eros",
     "name": "Eros",
     "brand": "versace",
@@ -1453,25 +2433,25 @@
         "ml": 30,
         "price": 320000,
         "oldPrice": 400000,
-        "stock": 4
+        "stock": 9
       },
       {
         "ml": 50,
         "price": 490000,
         "oldPrice": 610000,
-        "stock": 6
+        "stock": 11
       },
       {
         "ml": 100,
         "price": 790000,
         "oldPrice": 990000,
-        "stock": 11
+        "stock": 7
       }
     ],
     "discount": 20,
     "tagline": {
-      "uz": "Toza, ishonchli, har kunga",
-      "ru": "Чисто, уверенно, на каждый день"
+      "uz": "Klassik erkaklik, zamonaviy ohangda",
+      "ru": "Классическая мужественность в новом звучании"
     },
     "description": {
       "uz": "Eros — Versace uyidan erkaklar uchun fujer va sharqona hid. Ochilishida yalpiz, olma va limon seziladi, yuragida tonka loviya va geran ochiladi, izida esa vanil, vetiver va sadr qoladi. Ayniqsa kuz, qish va bahor fasllarida, kechqurun yaxshi ochiladi.",
@@ -1482,16 +2462,20 @@
       "liquid": "#39B6A8",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "sale",
-    "featured": false,
+    "featured": true,
     "isNew": false,
-    "rating": 4.7,
-    "reviews": 87,
-    "popularity": 646,
-    "createdAt": "2026-09-04"
+    "rating": 4.8,
+    "reviews": 72,
+    "popularity": 24,
+    "createdAt": "2026-09-10"
   },
   {
-    "id": 1021,
+    "id": 1032,
     "slug": "versace-pour-homme",
     "name": "Pour Homme",
     "brand": "versace",
@@ -1529,25 +2513,25 @@
         "ml": 30,
         "price": 320000,
         "oldPrice": null,
-        "stock": 11
+        "stock": 7
       },
       {
         "ml": 50,
         "price": 490000,
         "oldPrice": null,
-        "stock": 4
+        "stock": 9
       },
       {
         "ml": 100,
         "price": 790000,
         "oldPrice": null,
-        "stock": 9
+        "stock": 5
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Klassik erkaklik, zamonaviy ohangda",
-      "ru": "Классическая мужественность в новом звучании"
+      "uz": "Toza, ishonchli, har kunga",
+      "ru": "Чисто, уверенно, на каждый день"
     },
     "description": {
       "uz": "Pour Homme — Versace uyidan erkaklar uchun fujer va sitrusli hid. Ochilishida bergamot, neroli va limon seziladi, yuragida geran va shalfey ochiladi, izida esa mushk, tonka loviya va ambra qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
@@ -1558,16 +2542,20 @@
       "liquid": "#6EA6D9",
       "cap": "silver"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
     "featured": false,
     "isNew": false,
-    "rating": 5,
-    "reviews": 44,
-    "popularity": 438,
-    "createdAt": "2026-10-07"
+    "rating": 4.7,
+    "reviews": 48,
+    "popularity": 215,
+    "createdAt": "2026-10-13"
   },
   {
-    "id": 1022,
+    "id": 1033,
     "slug": "versace-bright-crystal",
     "name": "Bright Crystal",
     "brand": "versace",
@@ -1602,13 +2590,13 @@
         "ml": 30,
         "price": 250000,
         "oldPrice": 360000,
-        "stock": 9
+        "stock": 5
       },
       {
         "ml": 50,
         "price": 390000,
         "oldPrice": 550000,
-        "stock": 11
+        "stock": 7
       },
       {
         "ml": 100,
@@ -1619,8 +2607,8 @@
     ],
     "discount": 30,
     "tagline": {
-      "uz": "Bahor bog'ining yumshoq ovozi",
-      "ru": "Нежный голос весеннего сада"
+      "uz": "Gullar bilan nafas oladigan nafislik",
+      "ru": "Изящество, которое дышит цветами"
     },
     "description": {
       "uz": "Bright Crystal — Versace uyidan ayollar uchun gulli va mevali hid. Ochilishida pushti qalampir va mandarin seziladi, yuragida pion ochiladi, izida esa mushk va ambra qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
@@ -1631,16 +2619,20 @@
       "liquid": "#F3B9C6",
       "cap": "silver"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "sale",
-    "featured": true,
+    "featured": false,
     "isNew": false,
     "rating": 4.7,
-    "reviews": 58,
-    "popularity": 838,
-    "createdAt": "2026-11-10"
+    "reviews": 88,
+    "popularity": 737,
+    "createdAt": "2026-11-16"
   },
   {
-    "id": 1023,
+    "id": 1034,
     "slug": "creed-aventus",
     "name": "Aventus",
     "brand": "creed",
@@ -1679,25 +2671,25 @@
         "ml": 30,
         "price": 1560000,
         "oldPrice": null,
-        "stock": 7
+        "stock": 3
       },
       {
         "ml": 50,
         "price": 2420000,
         "oldPrice": null,
-        "stock": 9
+        "stock": 5
       },
       {
         "ml": 100,
         "price": 3900000,
         "oldPrice": null,
-        "stock": 5
+        "stock": 10
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Shirali mevalar va yengil kayfiyat",
-      "ru": "Сочные фрукты и лёгкое настроение"
+      "uz": "Quvnoq va yorqin xarakter",
+      "ru": "Весёлый и яркий характер"
     },
     "description": {
       "uz": "Aventus — Creed uyidan erkaklar uchun mevali va yog'ochli hid. Ochilishida ananas, bergamot va qora smorodina seziladi, yuragida qayin va yasmin ochiladi, izida esa mushk, ambra va vetiver qoladi. Ayniqsa bahor, yoz va kuz fasllarida, istalgan vaqtda yaxshi ochiladi.",
@@ -1708,16 +2700,20 @@
       "liquid": "#20242C",
       "cap": "silver"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "top",
     "featured": true,
     "isNew": false,
-    "rating": 4.7,
-    "reviews": 58,
-    "popularity": 264,
-    "createdAt": "2026-01-13"
+    "rating": 4.6,
+    "reviews": 120,
+    "popularity": 7,
+    "createdAt": "2026-01-19"
   },
   {
-    "id": 1024,
+    "id": 1035,
     "slug": "creed-silver-mountain-water",
     "name": "Silver Mountain Water",
     "brand": "creed",
@@ -1753,25 +2749,25 @@
         "ml": 30,
         "price": 1380000,
         "oldPrice": null,
-        "stock": 5
+        "stock": 10
       },
       {
         "ml": 50,
         "price": 2140000,
         "oldPrice": null,
-        "stock": 7
+        "stock": 3
       },
       {
         "ml": 100,
         "price": 3450000,
         "oldPrice": null,
-        "stock": 3
+        "stock": 8
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Salqin, toza, erkin",
-      "ru": "Прохладно, чисто, свободно"
+      "uz": "Dengiz shabadasi teringizda",
+      "ru": "Морской бриз на коже"
     },
     "description": {
       "uz": "Silver Mountain Water — Creed uyidan har kim uchun suvli va sitrusli hid. Ochilishida bergamot va mandarin seziladi, yuragida choy va qora smorodina ochiladi, izida esa mushk va sandal qoladi. Ayniqsa yoz va bahor fasllarida, kunduzi yaxshi ochiladi.",
@@ -1782,16 +2778,20 @@
       "liquid": "#C7D6DE",
       "cap": "silver"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
     "featured": false,
     "isNew": false,
-    "rating": 4.6,
-    "reviews": 95,
-    "popularity": 131,
-    "createdAt": "2026-02-16"
+    "rating": 4.7,
+    "reviews": 76,
+    "popularity": 441,
+    "createdAt": "2026-02-22"
   },
   {
-    "id": 1025,
+    "id": 1036,
     "slug": "maison-francis-kurkdjian-baccarat-rouge-540",
     "name": "Baccarat Rouge 540",
     "brand": "mfk",
@@ -1828,25 +2828,25 @@
         "ml": 30,
         "price": 1960000,
         "oldPrice": null,
-        "stock": 3
+        "stock": 8
       },
       {
         "ml": 50,
         "price": 3040000,
         "oldPrice": null,
-        "stock": 5
+        "stock": 10
       },
       {
         "ml": 100,
         "price": 4900000,
         "oldPrice": null,
-        "stock": 10
+        "stock": 6
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Issiq, sirli va unutilmas",
-      "ru": "Тёплый, загадочный, незабываемый"
+      "uz": "Kechki shaharning oltin izi",
+      "ru": "Золотой шлейф вечернего города"
     },
     "description": {
       "uz": "Baccarat Rouge 540 — Maison Francis Kurkdjian uyidan har kim uchun sharqona va yog'ochli hid. Ochilishida za'faron va yasmin seziladi, yuragida ambra va sadr ochiladi, izida esa ambroksan va mushk qoladi. Ayniqsa kuz, qish va bahor fasllarida, istalgan vaqtda yaxshi ochiladi.",
@@ -1857,16 +2857,20 @@
       "liquid": "#C7352E",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "top",
     "featured": true,
     "isNew": false,
-    "rating": 4.6,
-    "reviews": 97,
-    "popularity": 858,
-    "createdAt": "2026-03-19"
+    "rating": 4.5,
+    "reviews": 124,
+    "popularity": 456,
+    "createdAt": "2026-03-25"
   },
   {
-    "id": 1026,
+    "id": 1037,
     "slug": "maison-francis-kurkdjian-gentle-fluidity-gold",
     "name": "Gentle Fluidity Gold",
     "brand": "mfk",
@@ -1907,19 +2911,19 @@
         "ml": 50,
         "price": 2230000,
         "oldPrice": null,
-        "stock": 3
+        "stock": 8
       },
       {
         "ml": 100,
         "price": 3600000,
         "oldPrice": null,
-        "stock": 8
+        "stock": 4
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Kechki shaharning oltin izi",
-      "ru": "Золотой шлейф вечернего города"
+      "uz": "Issiq, sirli va unutilmas",
+      "ru": "Тёплый, загадочный, незабываемый"
     },
     "description": {
       "uz": "Gentle Fluidity Gold — Maison Francis Kurkdjian uyidan har kim uchun sharqona va shirin (gurmand) hid. Ochilishida mushk seziladi, yuragida vanil va ambra ochiladi, izida esa sandal va tonka loviya qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -1930,16 +2934,20 @@
       "liquid": "#D9B061",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "new",
-    "featured": false,
+    "featured": true,
     "isNew": true,
-    "rating": 5,
-    "reviews": 117,
-    "popularity": 860,
-    "createdAt": "2026-04-22"
+    "rating": 4.9,
+    "reviews": 76,
+    "popularity": 469,
+    "createdAt": "2026-04-01"
   },
   {
-    "id": 1027,
+    "id": 1038,
     "slug": "xerjoff-naxos",
     "name": "Naxos",
     "brand": "xerjoff",
@@ -1978,25 +2986,25 @@
         "ml": 30,
         "price": 1280000,
         "oldPrice": null,
-        "stock": 8
+        "stock": 4
       },
       {
         "ml": 50,
         "price": 1980000,
         "oldPrice": null,
-        "stock": 10
+        "stock": 6
       },
       {
         "ml": 100,
         "price": 3200000,
         "oldPrice": null,
-        "stock": 6
+        "stock": 11
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Issiq, sirli va unutilmas",
-      "ru": "Тёплый, загадочный, незабываемый"
+      "uz": "Kechki shaharning oltin izi",
+      "ru": "Золотой шлейф вечернего города"
     },
     "description": {
       "uz": "Naxos — Xerjoff uyidan har kim uchun sharqona va shirin (gurmand) hid. Ochilishida lavanda, bergamot va limon seziladi, yuragida asal, dolchin va yasmin ochiladi, izida esa tamaki, tonka loviya va vanil qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -2007,16 +3015,20 @@
       "liquid": "#C98A3A",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
     "featured": false,
     "isNew": false,
-    "rating": 4.9,
-    "reviews": 82,
-    "popularity": 554,
-    "createdAt": "2026-05-25"
+    "rating": 4.6,
+    "reviews": 101,
+    "popularity": 896,
+    "createdAt": "2026-05-04"
   },
   {
-    "id": 1028,
+    "id": 1039,
     "slug": "xerjoff-erba-pura",
     "name": "Erba Pura",
     "brand": "xerjoff",
@@ -2054,7 +3066,7 @@
         "ml": 30,
         "price": 1120000,
         "oldPrice": 1240000,
-        "stock": 6
+        "stock": 11
       },
       {
         "ml": 50,
@@ -2066,13 +3078,13 @@
         "ml": 100,
         "price": 2790000,
         "oldPrice": 3100000,
-        "stock": 4
+        "stock": 9
       }
     ],
     "discount": 10,
     "tagline": {
-      "uz": "Quvnoq va yorqin xarakter",
-      "ru": "Весёлый и яркий характер"
+      "uz": "Shirali mevalar va yengil kayfiyat",
+      "ru": "Сочные фрукты и лёгкое настроение"
     },
     "description": {
       "uz": "Erba Pura — Xerjoff uyidan har kim uchun mevali va sitrusli hid. Ochilishida mandarin, limon va bergamot seziladi, yuragida anjir va nok ochiladi, izida esa vanil, mushk va ambra qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
@@ -2083,16 +3095,20 @@
       "liquid": "#E7A33C",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
-    "featured": true,
+    "featured": false,
     "isNew": false,
-    "rating": 4.5,
-    "reviews": 44,
-    "popularity": 357,
-    "createdAt": "2026-06-01"
+    "rating": 4.6,
+    "reviews": 8,
+    "popularity": 154,
+    "createdAt": "2026-06-07"
   },
   {
-    "id": 1029,
+    "id": 1040,
     "slug": "kilian-paris-angels-share",
     "name": "Angels' Share",
     "brand": "kilian",
@@ -2128,25 +3144,25 @@
         "ml": 30,
         "price": 1400000,
         "oldPrice": null,
-        "stock": 4
+        "stock": 9
       },
       {
         "ml": 50,
         "price": 2170000,
         "oldPrice": null,
-        "stock": 6
+        "stock": 11
       },
       {
         "ml": 100,
         "price": 3500000,
         "oldPrice": null,
-        "stock": 11
+        "stock": 7
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Shirin, ammo shirinlikdan ko'proq",
-      "ru": "Сладкий, но больше чем сладость"
+      "uz": "Qishki kechaning iliq quchog'i",
+      "ru": "Тёплые объятия зимнего вечера"
     },
     "description": {
       "uz": "Angels' Share — Kilian Paris uyidan har kim uchun shirin (gurmand) va ziravorli hid. Ochilishida dolchin seziladi, yuragida tonka loviya va bodom ochiladi, izida esa vanil, sandal va karamel qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -2157,16 +3173,20 @@
       "liquid": "#A55A1E",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "top",
     "featured": true,
     "isNew": false,
-    "rating": 4.6,
-    "reviews": 53,
-    "popularity": 685,
-    "createdAt": "2026-07-04"
+    "rating": 4.9,
+    "reviews": 89,
+    "popularity": 660,
+    "createdAt": "2026-07-10"
   },
   {
-    "id": 1030,
+    "id": 1041,
     "slug": "kilian-paris-good-girl-gone-bad",
     "name": "Good Girl Gone Bad",
     "brand": "kilian",
@@ -2202,25 +3222,25 @@
         "ml": 30,
         "price": 1320000,
         "oldPrice": null,
-        "stock": 11
+        "stock": 7
       },
       {
         "ml": 50,
         "price": 2050000,
         "oldPrice": null,
-        "stock": 4
+        "stock": 9
       },
       {
         "ml": 100,
         "price": 3300000,
         "oldPrice": null,
-        "stock": 9
+        "stock": 5
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Bahor bog'ining yumshoq ovozi",
-      "ru": "Нежный голос весеннего сада"
+      "uz": "Gullar bilan nafas oladigan nafislik",
+      "ru": "Изящество, которое дышит цветами"
     },
     "description": {
       "uz": "Good Girl Gone Bad — Kilian Paris uyidan ayollar uchun gulli hid. Ochilishida olxo'ri va apelsin guli seziladi, yuragida tuberoza, yasmin va atirgul ochiladi, izida esa ambra va sadr qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
@@ -2231,16 +3251,20 @@
       "liquid": "#E9A9B5",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
     "featured": false,
     "isNew": false,
     "rating": 4.9,
-    "reviews": 38,
-    "popularity": 956,
-    "createdAt": "2026-08-07"
+    "reviews": 33,
+    "popularity": 830,
+    "createdAt": "2026-08-13"
   },
   {
-    "id": 1031,
+    "id": 1042,
     "slug": "initio-oud-for-greatness",
     "name": "Oud for Greatness",
     "brand": "initio",
@@ -2275,25 +3299,25 @@
         "ml": 30,
         "price": 1480000,
         "oldPrice": null,
-        "stock": 9
+        "stock": 5
       },
       {
         "ml": 50,
         "price": 2290000,
         "oldPrice": null,
-        "stock": 11
+        "stock": 7
       },
       {
         "ml": 100,
         "price": 3700000,
         "oldPrice": null,
-        "stock": 7
+        "stock": 3
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Tinch kuch va ishonch",
-      "ru": "Спокойная сила и уверенность"
+      "uz": "Quruq yog'och va toza havo",
+      "ru": "Сухое дерево и чистый воздух"
     },
     "description": {
       "uz": "Oud for Greatness — Initio uyidan har kim uchun yog'ochli va sharqona hid. Ochilishida za'faron va lavanda seziladi, yuragida ud ochiladi, izida esa pachuli va mushk qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -2304,16 +3328,20 @@
       "liquid": "#2A1A14",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
-    "featured": true,
+    "featured": false,
     "isNew": false,
-    "rating": 4.5,
-    "reviews": 49,
-    "popularity": 585,
-    "createdAt": "2026-09-10"
+    "rating": 4.6,
+    "reviews": 10,
+    "popularity": 81,
+    "createdAt": "2026-09-16"
   },
   {
-    "id": 1032,
+    "id": 1043,
     "slug": "initio-side-effect",
     "name": "Side Effect",
     "brand": "initio",
@@ -2347,25 +3375,25 @@
         "ml": 30,
         "price": 1240000,
         "oldPrice": 1460000,
-        "stock": 7
+        "stock": 3
       },
       {
         "ml": 50,
         "price": 1920000,
         "oldPrice": 2260000,
-        "stock": 9
+        "stock": 5
       },
       {
         "ml": 100,
         "price": 3100000,
         "oldPrice": 3650000,
-        "stock": 5
+        "stock": 10
       }
     ],
     "discount": 15,
     "tagline": {
-      "uz": "Kechki shaharning oltin izi",
-      "ru": "Золотой шлейф вечернего города"
+      "uz": "Issiq, sirli va unutilmas",
+      "ru": "Тёплый, загадочный, незабываемый"
     },
     "description": {
       "uz": "Side Effect — Initio uyidan har kim uchun sharqona va shirin (gurmand) hid. Ochilishida tamaki va dolchin seziladi, yuragida vanil ochiladi, izida esa ambra va tonka loviya qoladi. Ayniqsa qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -2376,16 +3404,20 @@
       "liquid": "#5B2330",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
-    "featured": false,
+    "featured": true,
     "isNew": false,
-    "rating": 4.7,
-    "reviews": 16,
-    "popularity": 990,
-    "createdAt": "2026-10-13"
+    "rating": 4.5,
+    "reviews": 70,
+    "popularity": 830,
+    "createdAt": "2026-10-19"
   },
   {
-    "id": 1033,
+    "id": 1044,
     "slug": "parfums-de-marly-layton",
     "name": "Layton",
     "brand": "pdm",
@@ -2424,13 +3456,13 @@
         "ml": 30,
         "price": 1240000,
         "oldPrice": null,
-        "stock": 5
+        "stock": 10
       },
       {
         "ml": 50,
         "price": 1920000,
         "oldPrice": null,
-        "stock": 7
+        "stock": 3
       },
       {
         "ml": 100,
@@ -2441,8 +3473,8 @@
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Klassik erkaklik, zamonaviy ohangda",
-      "ru": "Классическая мужественность в новом звучании"
+      "uz": "Toza, ishonchli, har kunga",
+      "ru": "Чисто, уверенно, на каждый день"
     },
     "description": {
       "uz": "Layton — Parfums de Marly uyidan erkaklar uchun fujer va ziravorli hid. Ochilishida olma, lavanda va bergamot seziladi, yuragida geran va yasmin ochiladi, izida esa vanil, kardamon va sandal qoladi. Ayniqsa kuz, qish va bahor fasllarida, istalgan vaqtda yaxshi ochiladi.",
@@ -2453,16 +3485,20 @@
       "liquid": "#1F2E5A",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "top",
     "featured": true,
     "isNew": false,
-    "rating": 4.7,
-    "reviews": 110,
-    "popularity": 587,
-    "createdAt": "2026-11-16"
+    "rating": 4.9,
+    "reviews": 23,
+    "popularity": 494,
+    "createdAt": "2026-11-22"
   },
   {
-    "id": 1034,
+    "id": 1045,
     "slug": "parfums-de-marly-delina",
     "name": "Delina",
     "brand": "pdm",
@@ -2499,25 +3535,25 @@
         "ml": 30,
         "price": 1320000,
         "oldPrice": null,
-        "stock": 3
+        "stock": 8
       },
       {
         "ml": 50,
         "price": 2050000,
         "oldPrice": null,
-        "stock": 5
+        "stock": 10
       },
       {
         "ml": 100,
         "price": 3300000,
         "oldPrice": null,
-        "stock": 10
+        "stock": 6
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Bahor bog'ining yumshoq ovozi",
-      "ru": "Нежный голос весеннего сада"
+      "uz": "Gullar bilan nafas oladigan nafislik",
+      "ru": "Изящество, которое дышит цветами"
     },
     "description": {
       "uz": "Delina — Parfums de Marly uyidan ayollar uchun gulli va mevali hid. Ochilishida nok va bergamot seziladi, yuragida atirgul va pion ochiladi, izida esa vanil, mushk va sadr qoladi. Ayniqsa bahor va kuz fasllarida, istalgan vaqtda yaxshi ochiladi.",
@@ -2528,16 +3564,20 @@
       "liquid": "#F0A5BC",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
-    "featured": true,
+    "featured": false,
     "isNew": false,
-    "rating": 4.7,
-    "reviews": 21,
-    "popularity": 793,
-    "createdAt": "2026-01-19"
+    "rating": 4.5,
+    "reviews": 39,
+    "popularity": 488,
+    "createdAt": "2026-01-25"
   },
   {
-    "id": 1035,
+    "id": 1046,
     "slug": "parfums-de-marly-pegasus",
     "name": "Pegasus",
     "brand": "pdm",
@@ -2574,25 +3614,25 @@
         "ml": 30,
         "price": 930000,
         "oldPrice": 1160000,
-        "stock": 10
+        "stock": 6
       },
       {
         "ml": 50,
         "price": 1440000,
         "oldPrice": 1800000,
-        "stock": 3
+        "stock": 8
       },
       {
         "ml": 100,
         "price": 2320000,
         "oldPrice": 2900000,
-        "stock": 8
+        "stock": 4
       }
     ],
     "discount": 20,
     "tagline": {
-      "uz": "Issiq, sirli va unutilmas",
-      "ru": "Тёплый, загадочный, незабываемый"
+      "uz": "Kechki shaharning oltin izi",
+      "ru": "Золотой шлейф вечернего города"
     },
     "description": {
       "uz": "Pegasus — Parfums de Marly uyidan erkaklar uchun sharqona va shirin (gurmand) hid. Ochilishida bergamot va bodom seziladi, yuragida lavanda va yasmin ochiladi, izida esa vanil, sandal va ambra qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -2603,16 +3643,20 @@
       "liquid": "#7E8C9A",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "sale",
-    "featured": false,
+    "featured": true,
     "isNew": false,
-    "rating": 4.9,
-    "reviews": 37,
-    "popularity": 24,
-    "createdAt": "2026-02-22"
+    "rating": 4.5,
+    "reviews": 48,
+    "popularity": 230,
+    "createdAt": "2026-02-01"
   },
   {
-    "id": 1036,
+    "id": 1047,
     "slug": "guerlain-shalimar",
     "name": "Shalimar",
     "brand": "guerlain",
@@ -2650,25 +3694,25 @@
         "ml": 30,
         "price": 620000,
         "oldPrice": null,
-        "stock": 8
+        "stock": 4
       },
       {
         "ml": 50,
         "price": 960000,
         "oldPrice": null,
-        "stock": 10
+        "stock": 6
       },
       {
         "ml": 100,
         "price": 1550000,
         "oldPrice": null,
-        "stock": 6
+        "stock": 11
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Kechki shaharning oltin izi",
-      "ru": "Золотой шлейф вечернего города"
+      "uz": "Issiq, sirli va unutilmas",
+      "ru": "Тёплый, загадочный, незабываемый"
     },
     "description": {
       "uz": "Shalimar — Guerlain uyidan ayollar uchun sharqona va shirin (gurmand) hid. Ochilishida bergamot va limon seziladi, yuragida iris, yasmin va atirgul ochiladi, izida esa vanil, ladan va tonka loviya qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -2679,16 +3723,20 @@
       "liquid": "#5F7FB8",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
     "featured": false,
     "isNew": false,
     "rating": 4.6,
-    "reviews": 90,
-    "popularity": 697,
-    "createdAt": "2026-03-25"
+    "reviews": 100,
+    "popularity": 136,
+    "createdAt": "2026-03-04"
   },
   {
-    "id": 1037,
+    "id": 1048,
     "slug": "guerlain-lhomme-ideal",
     "name": "L'Homme Ideal",
     "brand": "guerlain",
@@ -2730,19 +3778,19 @@
         "ml": 50,
         "price": 800000,
         "oldPrice": null,
-        "stock": 8
+        "stock": 4
       },
       {
         "ml": 100,
         "price": 1290000,
         "oldPrice": null,
-        "stock": 4
+        "stock": 9
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Shirin, ammo shirinlikdan ko'proq",
-      "ru": "Сладкий, но больше чем сладость"
+      "uz": "Qishki kechaning iliq quchog'i",
+      "ru": "Тёплые объятия зимнего вечера"
     },
     "description": {
       "uz": "L'Homme Ideal — Guerlain uyidan erkaklar uchun shirin (gurmand) va yog'ochli hid. Ochilishida bodom va bergamot seziladi, yuragida teri va tonka loviya ochiladi, izida esa vetiver va sadr qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -2753,16 +3801,20 @@
       "liquid": "#6D4A2F",
       "cap": "black"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
-    "featured": true,
+    "featured": false,
     "isNew": false,
-    "rating": 4.8,
-    "reviews": 110,
-    "popularity": 229,
-    "createdAt": "2026-04-01"
+    "rating": 4.6,
+    "reviews": 6,
+    "popularity": 624,
+    "createdAt": "2026-04-07"
   },
   {
-    "id": 1038,
+    "id": 1049,
     "slug": "lancome-la-vie-est-belle",
     "name": "La Vie Est Belle",
     "brand": "lancome",
@@ -2800,25 +3852,25 @@
         "ml": 30,
         "price": 490000,
         "oldPrice": 540000,
-        "stock": 4
+        "stock": 9
       },
       {
         "ml": 50,
         "price": 750000,
         "oldPrice": 840000,
-        "stock": 6
+        "stock": 11
       },
       {
         "ml": 100,
         "price": 1220000,
         "oldPrice": 1350000,
-        "stock": 11
+        "stock": 7
       }
     ],
     "discount": 10,
     "tagline": {
-      "uz": "Qishki kechaning iliq quchog'i",
-      "ru": "Тёплые объятия зимнего вечера"
+      "uz": "Shirin, ammo shirinlikdan ko'proq",
+      "ru": "Сладкий, но больше чем сладость"
     },
     "description": {
       "uz": "La Vie Est Belle — Lancôme uyidan ayollar uchun shirin (gurmand) va mevali hid. Ochilishida qora smorodina va nok seziladi, yuragida iris, yasmin va apelsin guli ochiladi, izida esa vanil, pachuli va tonka loviya qoladi. Ayniqsa kuz va qish fasllarida, istalgan vaqtda yaxshi ochiladi.",
@@ -2829,16 +3881,20 @@
       "liquid": "#E7B3B8",
       "cap": "silver"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "top",
     "featured": true,
     "isNew": false,
-    "rating": 4.9,
-    "reviews": 26,
-    "popularity": 37,
-    "createdAt": "2026-05-04"
+    "rating": 4.5,
+    "reviews": 54,
+    "popularity": 109,
+    "createdAt": "2026-05-10"
   },
   {
-    "id": 1039,
+    "id": 1050,
     "slug": "lancome-idole",
     "name": "Idole",
     "brand": "lancome",
@@ -2873,7 +3929,7 @@
         "ml": 30,
         "price": 520000,
         "oldPrice": null,
-        "stock": 11
+        "stock": 7
       },
       {
         "ml": 50,
@@ -2885,13 +3941,13 @@
         "ml": 100,
         "price": 1290000,
         "oldPrice": null,
-        "stock": 9
+        "stock": 5
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Gullar bilan nafas oladigan nafislik",
-      "ru": "Изящество, которое дышит цветами"
+      "uz": "Bahor bog'ining yumshoq ovozi",
+      "ru": "Нежный голос весеннего сада"
     },
     "description": {
       "uz": "Idole — Lancôme uyidan ayollar uchun gulli hid. Ochilishida bergamot va nok seziladi, yuragida atirgul va yasmin ochiladi, izida esa vanil va mushk qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
@@ -2902,16 +3958,20 @@
       "liquid": "#F1C9B7",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "new",
     "featured": false,
     "isNew": true,
-    "rating": 4.5,
-    "reviews": 8,
-    "popularity": 537,
-    "createdAt": "2026-06-07"
+    "rating": 4.7,
+    "reviews": 55,
+    "popularity": 8,
+    "createdAt": "2026-06-13"
   },
   {
-    "id": 1040,
+    "id": 1051,
     "slug": "byredo-gypsy-water",
     "name": "Gypsy Water",
     "brand": "byredo",
@@ -2949,25 +4009,25 @@
         "ml": 30,
         "price": 1080000,
         "oldPrice": null,
-        "stock": 9
+        "stock": 5
       },
       {
         "ml": 50,
         "price": 1670000,
         "oldPrice": null,
-        "stock": 11
+        "stock": 7
       },
       {
         "ml": 100,
         "price": 2700000,
         "oldPrice": null,
-        "stock": 7
+        "stock": 3
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Quruq yog'och va toza havo",
-      "ru": "Сухое дерево и чистый воздух"
+      "uz": "Tinch kuch va ishonch",
+      "ru": "Спокойная сила и уверенность"
     },
     "description": {
       "uz": "Gypsy Water — Byredo uyidan har kim uchun yog'ochli va sitrusli hid. Ochilishida bergamot, limon va qora qalampir seziladi, yuragida ladan va iris ochiladi, izida esa vanil va sandal qoladi. Ayniqsa bahor, yoz va kuz fasllarida, kunduzi yaxshi ochiladi.",
@@ -2978,16 +4038,20 @@
       "liquid": "#E9E3D6",
       "cap": "black"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
-    "featured": true,
+    "featured": false,
     "isNew": false,
     "rating": 4.9,
-    "reviews": 107,
-    "popularity": 145,
-    "createdAt": "2026-07-10"
+    "reviews": 60,
+    "popularity": 738,
+    "createdAt": "2026-07-16"
   },
   {
-    "id": 1041,
+    "id": 1052,
     "slug": "byredo-mojave-ghost",
     "name": "Mojave Ghost",
     "brand": "byredo",
@@ -3023,25 +4087,25 @@
         "ml": 30,
         "price": 1080000,
         "oldPrice": null,
-        "stock": 7
+        "stock": 3
       },
       {
         "ml": 50,
         "price": 1670000,
         "oldPrice": null,
-        "stock": 9
+        "stock": 5
       },
       {
         "ml": 100,
         "price": 2700000,
         "oldPrice": null,
-        "stock": 5
+        "stock": 10
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Tinch kuch va ishonch",
-      "ru": "Спокойная сила и уверенность"
+      "uz": "Quruq yog'och va toza havo",
+      "ru": "Сухое дерево и чистый воздух"
     },
     "description": {
       "uz": "Mojave Ghost — Byredo uyidan har kim uchun yog'ochli va gulli hid. Ochilishida nok seziladi, yuragida sandal va iris ochiladi, izida esa ambra, mushk va sadr qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
@@ -3052,16 +4116,20 @@
       "liquid": "#D8D2C2",
       "cap": "black"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "new",
-    "featured": false,
+    "featured": true,
     "isNew": true,
     "rating": 4.7,
-    "reviews": 12,
-    "popularity": 279,
-    "createdAt": "2026-08-13"
+    "reviews": 117,
+    "popularity": 716,
+    "createdAt": "2026-08-19"
   },
   {
-    "id": 1042,
+    "id": 1053,
     "slug": "le-labo-santal-33",
     "name": "Santal 33",
     "brand": "le-labo",
@@ -3097,25 +4165,25 @@
         "ml": 30,
         "price": 1240000,
         "oldPrice": null,
-        "stock": 5
+        "stock": 10
       },
       {
         "ml": 50,
         "price": 1920000,
         "oldPrice": null,
-        "stock": 7
+        "stock": 3
       },
       {
         "ml": 100,
         "price": 3100000,
         "oldPrice": null,
-        "stock": 3
+        "stock": 8
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Quruq yog'och va toza havo",
-      "ru": "Сухое дерево и чистый воздух"
+      "uz": "Tinch kuch va ishonch",
+      "ru": "Спокойная сила и уверенность"
     },
     "description": {
       "uz": "Santal 33 — Le Labo uyidan har kim uchun yog'ochli va teri hid. Ochilishida kardamon va iris seziladi, yuragida teri va sadr ochiladi, izida esa sandal va ambra qoladi. Ayniqsa kuz va bahor fasllarida, istalgan vaqtda yaxshi ochiladi.",
@@ -3126,16 +4194,20 @@
       "liquid": "#D7C4A3",
       "cap": "black"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "top",
     "featured": true,
     "isNew": false,
-    "rating": 4.7,
-    "reviews": 13,
-    "popularity": 355,
-    "createdAt": "2026-09-16"
+    "rating": 4.8,
+    "reviews": 38,
+    "popularity": 359,
+    "createdAt": "2026-09-22"
   },
   {
-    "id": 1043,
+    "id": 1054,
     "slug": "le-labo-another-13",
     "name": "Another 13",
     "brand": "le-labo",
@@ -3171,25 +4243,25 @@
         "ml": 30,
         "price": 1120000,
         "oldPrice": 1240000,
-        "stock": 3
+        "stock": 8
       },
       {
         "ml": 50,
         "price": 1730000,
         "oldPrice": 1920000,
-        "stock": 5
+        "stock": 10
       },
       {
         "ml": 100,
         "price": 2790000,
         "oldPrice": 3100000,
-        "stock": 10
+        "stock": 6
       }
     ],
     "discount": 10,
     "tagline": {
-      "uz": "Tinch kuch va ishonch",
-      "ru": "Спокойная сила и уверенность"
+      "uz": "Quruq yog'och va toza havo",
+      "ru": "Сухое дерево и чистый воздух"
     },
     "description": {
       "uz": "Another 13 — Le Labo uyidan har kim uchun yog'ochli hid. Ochilishida nok seziladi, yuragida yasmin va ambroksan ochiladi, izida esa mushk va ambra qoladi. Ayniqsa bahor, yoz, kuz va qish fasllarida, istalgan vaqtda yaxshi ochiladi.",
@@ -3200,16 +4272,20 @@
       "liquid": "#ECE7DA",
       "cap": "black"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
-    "featured": true,
+    "featured": false,
     "isNew": false,
-    "rating": 4.6,
-    "reviews": 41,
-    "popularity": 790,
-    "createdAt": "2026-10-19"
+    "rating": 4.5,
+    "reviews": 111,
+    "popularity": 82,
+    "createdAt": "2026-10-25"
   },
   {
-    "id": 1044,
+    "id": 1055,
     "slug": "montale-intense-cafe",
     "name": "Intense Cafe",
     "brand": "montale",
@@ -3244,13 +4320,13 @@
         "ml": 30,
         "price": 580000,
         "oldPrice": null,
-        "stock": 10
+        "stock": 6
       },
       {
         "ml": 50,
         "price": 900000,
         "oldPrice": null,
-        "stock": 3
+        "stock": 8
       },
       {
         "ml": 100,
@@ -3261,8 +4337,8 @@
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Qishki kechaning iliq quchog'i",
-      "ru": "Тёплые объятия зимнего вечера"
+      "uz": "Shirin, ammo shirinlikdan ko'proq",
+      "ru": "Сладкий, но больше чем сладость"
     },
     "description": {
       "uz": "Intense Cafe — Montale uyidan har kim uchun shirin (gurmand) va gulli hid. Ochilishida qahva va atirgul seziladi, yuragida ambra va vanil ochiladi, izida esa mushk qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -3273,16 +4349,20 @@
       "liquid": "#6B3E2B",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
-    "featured": false,
+    "featured": true,
     "isNew": false,
-    "rating": 4.6,
-    "reviews": 25,
-    "popularity": 0,
-    "createdAt": "2026-11-22"
+    "rating": 4.5,
+    "reviews": 28,
+    "popularity": 304,
+    "createdAt": "2026-11-01"
   },
   {
-    "id": 1045,
+    "id": 1056,
     "slug": "montale-arabians-tonka",
     "name": "Arabians Tonka",
     "brand": "montale",
@@ -3317,25 +4397,25 @@
         "ml": 30,
         "price": 480000,
         "oldPrice": 600000,
-        "stock": 8
+        "stock": 4
       },
       {
         "ml": 50,
         "price": 740000,
         "oldPrice": 920000,
-        "stock": 10
+        "stock": 6
       },
       {
         "ml": 100,
         "price": 1190000,
         "oldPrice": 1490000,
-        "stock": 6
+        "stock": 11
       }
     ],
     "discount": 20,
     "tagline": {
-      "uz": "Issiq, sirli va unutilmas",
-      "ru": "Тёплый, загадочный, незабываемый"
+      "uz": "Kechki shaharning oltin izi",
+      "ru": "Золотой шлейф вечернего города"
     },
     "description": {
       "uz": "Arabians Tonka — Montale uyidan har kim uchun sharqona va yog'ochli hid. Ochilishida za'faron va bergamot seziladi, yuragida ud va atirgul ochiladi, izida esa tonka loviya va ambra qoladi. Ayniqsa qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -3346,16 +4426,20 @@
       "liquid": "#3D2016",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "sale",
     "featured": false,
     "isNew": false,
-    "rating": 4.8,
-    "reviews": 16,
-    "popularity": 403,
-    "createdAt": "2026-01-25"
+    "rating": 4.5,
+    "reviews": 78,
+    "popularity": 439,
+    "createdAt": "2026-01-04"
   },
   {
-    "id": 1046,
+    "id": 1057,
     "slug": "amouage-interlude-man",
     "name": "Interlude Man",
     "brand": "amouage",
@@ -3392,25 +4476,25 @@
         "ml": 30,
         "price": 1520000,
         "oldPrice": null,
-        "stock": 6
+        "stock": 11
       },
       {
         "ml": 50,
         "price": 2360000,
         "oldPrice": null,
-        "stock": 8
+        "stock": 4
       },
       {
         "ml": 100,
         "price": 3800000,
         "oldPrice": null,
-        "stock": 4
+        "stock": 9
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Kechki shaharning oltin izi",
-      "ru": "Золотой шлейф вечернего города"
+      "uz": "Issiq, sirli va unutilmas",
+      "ru": "Тёплый, загадочный, незабываемый"
     },
     "description": {
       "uz": "Interlude Man — Amouage uyidan erkaklar uchun sharqona va yog'ochli hid. Ochilishida bergamot va kardamon seziladi, yuragida ladan va ambra ochiladi, izida esa ud, teri va pachuli qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -3421,16 +4505,20 @@
       "liquid": "#2C4C6E",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
-    "featured": true,
+    "featured": false,
     "isNew": false,
-    "rating": 4.6,
-    "reviews": 63,
-    "popularity": 414,
-    "createdAt": "2026-02-01"
+    "rating": 4.7,
+    "reviews": 70,
+    "popularity": 906,
+    "createdAt": "2026-02-07"
   },
   {
-    "id": 1047,
+    "id": 1058,
     "slug": "amouage-guidance",
     "name": "Guidance",
     "brand": "amouage",
@@ -3467,25 +4555,25 @@
         "ml": 30,
         "price": 1560000,
         "oldPrice": null,
-        "stock": 4
+        "stock": 9
       },
       {
         "ml": 50,
         "price": 2420000,
         "oldPrice": null,
-        "stock": 6
+        "stock": 11
       },
       {
         "ml": 100,
         "price": 3900000,
         "oldPrice": null,
-        "stock": 11
+        "stock": 7
       }
     ],
     "discount": 0,
     "tagline": {
-      "uz": "Gullar bilan nafas oladigan nafislik",
-      "ru": "Изящество, которое дышит цветами"
+      "uz": "Bahor bog'ining yumshoq ovozi",
+      "ru": "Нежный голос весеннего сада"
     },
     "description": {
       "uz": "Guidance — Amouage uyidan har kim uchun gulli va sharqona hid. Ochilishida nok va za'faron seziladi, yuragida atirgul va yasmin ochiladi, izida esa ladan, sandal va vanil qoladi. Ayniqsa kuz va qish fasllarida, kechqurun yaxshi ochiladi.",
@@ -3496,16 +4584,20 @@
       "liquid": "#D3B57A",
       "cap": "gold"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": "new",
-    "featured": false,
+    "featured": true,
     "isNew": true,
-    "rating": 4.5,
-    "reviews": 96,
-    "popularity": 451,
-    "createdAt": "2026-03-04"
+    "rating": 4.8,
+    "reviews": 56,
+    "popularity": 120,
+    "createdAt": "2026-03-10"
   },
   {
-    "id": 1048,
+    "id": 1059,
     "slug": "amouage-reflection-man",
     "name": "Reflection Man",
     "brand": "amouage",
@@ -3548,19 +4640,19 @@
         "ml": 50,
         "price": 2010000,
         "oldPrice": 2230000,
-        "stock": 4
+        "stock": 9
       },
       {
         "ml": 100,
         "price": 3240000,
         "oldPrice": 3600000,
-        "stock": 9
+        "stock": 5
       }
     ],
     "discount": 10,
     "tagline": {
-      "uz": "Bahor bog'ining yumshoq ovozi",
-      "ru": "Нежный голос весеннего сада"
+      "uz": "Gullar bilan nafas oladigan nafislik",
+      "ru": "Изящество, которое дышит цветами"
     },
     "description": {
       "uz": "Reflection Man — Amouage uyidan erkaklar uchun gulli va yog'ochli hid. Ochilishida neroli va pushti qalampir seziladi, yuragida yasmin va apelsin guli ochiladi, izida esa sandal, vetiver va sadr qoladi. Ayniqsa bahor va yoz fasllarida, kunduzi yaxshi ochiladi.",
@@ -3571,12 +4663,16 @@
       "liquid": "#BFD0D9",
       "cap": "silver"
     },
+    "real": false,
+    "images": [],
+    "videos": [],
+    "photoFit": null,
     "badge": null,
     "featured": false,
     "isNew": false,
     "rating": 4.9,
-    "reviews": 46,
-    "popularity": 930,
-    "createdAt": "2026-04-07"
+    "reviews": 85,
+    "popularity": 498,
+    "createdAt": "2026-04-13"
   }
 ]

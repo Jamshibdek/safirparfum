@@ -20,7 +20,7 @@ export function bumpCart() {
 export function flyToCart(source?: Element | null) {
   if (typeof window === 'undefined') return
   const target = visibleTarget()
-  const svg = source?.querySelector('svg') ?? (source instanceof SVGElement ? source : null)
+  const svg = (source?.querySelector('img.pv, svg') as HTMLElement | SVGElement | null) ?? (source instanceof SVGElement ? source : null)
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches
   if (!target || !svg || reduce || document.hidden || !Element.prototype.animate) return bumpCart()
 
@@ -30,9 +30,10 @@ export function flyToCart(source?: Element | null) {
   const ghost = document.createElement('div')
   ghost.setAttribute('aria-hidden', 'true')
   ghost.style.cssText = `position:fixed;z-index:200;pointer-events:none;width:${size}px;height:${size}px;left:${from.left + from.width / 2 - size / 2}px;top:${from.top + from.height / 2 - size / 2}px;border-radius:50%;overflow:hidden;box-shadow:0 12px 30px -10px rgba(11,22,49,.5)`
-  const clone = svg.cloneNode(true) as SVGElement
+  const clone = svg.cloneNode(true) as HTMLElement
   clone.style.width = '100%'
   clone.style.height = '100%'
+  if (clone.tagName === 'IMG') clone.style.objectFit = 'cover'
   ghost.appendChild(clone)
   document.body.appendChild(ghost)
 

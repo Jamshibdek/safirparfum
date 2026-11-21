@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Product } from '~/lib/catalog'
-import { brandName, useL, fillLevel } from '~/lib/catalog'
+import { brandName, useL, fillLevel, sizeScale } from '~/lib/catalog'
 import { useCart, useWishlist, useUi } from '~/stores/shop'
 import { flyToCart } from '~/utils/fly'
 
@@ -48,10 +48,15 @@ function like() {
 
 <template>
   <article class="pc">
-    <div ref="media" class="media" :class="{ open }" @pointerenter="onEnter" @pointerleave="onLeave">
+    <div ref="media" class="media" :class="{ open, photo: product.real, cover: product.photoFit === 'cover' }" :style="{ '--sz': product.real && product.photoFit !== 'cover' ? sizeScale(ml) : 1 }" @pointerenter="onEnter" @pointerleave="onLeave">
       <NuxtLink :to="lp(`/product/${product.slug}`)" class="media-link" :aria-label="product.name" @focus="open = true" @blur="open = false">
-        <BottleArt :product="product" :open="open" wisps :level="fillLevel(ml)" />
+        <!-- haqiqiy surat: yaqinlashish + jilo, 2-rasm bo'lsa almashadi; chizilgan flakon: qopqoq ochiladi -->
+        <ProductVisual :product="product" :open="open" wisps :level="fillLevel(ml)" />
+        <ProductVisual v-if="product.images.length > 1" class="alt-photo" :product="product" :index="1" />
+        <span v-if="product.real" class="glint" aria-hidden="true" />
       </NuxtLink>
+      <span v-if="product.videos.length" class="vid-badge" aria-hidden="true"><Icon name="play" :size="11" />Video</span>
+      <SizeGauge v-if="product.real" class="gauge-pos" :ml="ml" :color="product.art.liquid" small />
       <div class="badges">
         <span v-if="product.discount" class="b sale">−{{ product.discount }}%</span>
         <span v-else-if="product.badge === 'top'" class="b top">{{ t('badge.top') }}</span>
@@ -99,6 +104,17 @@ function like() {
 .media-link { position: absolute; inset: 0; }
 .media-link > :deep(svg) { transition: transform .7s var(--ease); transform-origin: 50% 85%; }
 .media.open .media-link > :deep(svg) { transform: scale(1.08) translateY(-2%); }
+/* haqiqiy suratlar */
+.media.photo { background: #fff; }
+.media-link > :deep(img) { transition: transform .8s var(--ease), opacity .5s; transform-origin: 55% 60%; transform: scale(var(--sz, 1)); }
+.media.open .media-link > :deep(img) { transform: scale(calc(var(--sz, 1) * 1.06)); }
+.gauge-pos { position: absolute; right: 10px; bottom: 10px; }
+.media-link > :deep(.alt-photo) { position: absolute; inset: 0; opacity: 0; }
+.media.open .media-link > :deep(.alt-photo) { opacity: 1; }
+.glint { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, .55) 48%, transparent 60%); transform: translateX(-120%); }
+.media.open .glint { transition: transform 1.1s var(--ease) .1s; transform: translateX(120%); }
+.media.cover .glint { background: linear-gradient(105deg, transparent 35%, rgba(255, 240, 220, .35) 48%, transparent 60%); }
+.vid-badge { position: absolute; left: 12px; bottom: 12px; display: inline-flex; align-items: center; gap: 4px; padding: 4px 8px; border-radius: 999px; background: rgba(11, 22, 49, .72); color: #fff; font-size: 11px; font-weight: 600; backdrop-filter: blur(4px); pointer-events: none; }
 
 .badges { position: absolute; top: 12px; left: 12px; display: flex; gap: 6px; pointer-events: none; }
 .b { font-size: 12px; font-weight: 600; padding: 5px 9px; border-radius: 6px; background: var(--ink); color: #fff; }

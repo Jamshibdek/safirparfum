@@ -22,7 +22,8 @@ const NOTES = {
   cherry: ['olcha', 'вишня'], apple: ['olma', 'яблоко'], pear: ['nok', 'груша'], blackcurrant: ['qora smorodina', 'чёрная смородина'],
   marine: ['dengiz notalari', 'морские ноты'], mint: ['yalpiz', 'мята'], sage: ['shalfey', 'шалфей'], ambroxan: ['ambroksan', 'амброксан'],
   incense: ['ladan', 'ладан'], honey: ['asal', 'мёд'], cinnamon: ['dolchin', 'корица'], coconut: ['kokos', 'кокос'],
-  tea: ['choy', 'чай'], fig: ['anjir', 'инжир'], pineapple: ['ananas', 'ананас'], birch: ['qayin', 'берёза'], plum: ['olxo\'ri', 'слива']
+  tea: ['choy', 'чай'], fig: ['anjir', 'инжир'], pineapple: ['ananas', 'ананас'], birch: ['qayin', 'берёза'], plum: ['olxo\'ri', 'слива'],
+  linden: ['jo\'ka guli', 'липовый цвет'], ginger: ['zanjabil', 'имбирь']
 }
 
 const FAMILIES = {
@@ -34,6 +35,7 @@ const FAMILIES = {
 const SEASONS = { spring: ['bahor', 'весна'], summer: ['yoz', 'лето'], autumn: ['kuz', 'осень'], winter: ['qish', 'зима'] }
 
 const BRANDS = [
+  ['safir', 'SafirParfum', 'Uzbekistan'],
   ['dior', 'Dior', 'France'], ['chanel', 'Chanel', 'France'], ['tom-ford', 'Tom Ford', 'USA'], ['ysl', 'Yves Saint Laurent', 'France'],
   ['armani', 'Giorgio Armani', 'Italy'], ['versace', 'Versace', 'Italy'], ['creed', 'Creed', 'France'],
   ['mfk', 'Maison Francis Kurkdjian', 'France'], ['xerjoff', 'Xerjoff', 'Italy'], ['kilian', 'Kilian Paris', 'France'],
@@ -43,8 +45,25 @@ const BRANDS = [
 ].map(([slug, name, country], i) => ({ slug, name, country, sort: i }))
 const brandName = Object.fromEntries(BRANDS.map(b => [b.slug, b.name]))
 
+// Mijozning haqiqiy atirlari (rasm va videolar rasmvidio papkasidan, public/media ga siqilgan).
+// Notalar va narxlar namunaviy — mijoz tasdiqlagach almashtiriladi.
+// [... P bilan bir xil ustunlar ..., media: { img: [...], vid: [...] }]
+const REAL = [
+  ['AURA 19+ for women', 'safir', 'women', ['floral', 'gourmand'], ['pinkpepper', 'pear'], ['rose', 'jasmine'], ['vanilla', 'musk'], ['autumn', 'winter', 'spring'], 'evening', 4, 4, 'Extrait', 790000, 0, 'square', '#F2B8B5', 'gold', 'top', { img: ['aura-women-1', 'aura-women-2'], vid: ['aura-women-1', 'aura-women-2'], fit: 'cover' }],
+  ['AURA 21+ for men', 'safir', 'men', ['woody', 'spicy'], ['bergamot', 'cardamom'], ['lavender', 'leather'], ['amber', 'vetiver', 'cedar'], ['autumn', 'winter'], 'evening', 5, 4, 'Extrait', 790000, 0, 'square', '#9AA6B8', 'silver', 'top', { img: ['aura-men-1'], vid: ['aura-men-1'], fit: 'cover' }],
+  ['Pacific Chill', 'safir', 'unisex', ['citrus', 'fruity'], ['lemon', 'mandarin', 'mint'], ['blackcurrant', 'fig'], ['musk', 'ambroxan'], ['spring', 'summer'], 'day', 3, 3, 'Extrait', 690000, 10, 'tall', '#BFE3DC', 'silver', 'new', { img: ['pacific-chill-1', 'pacific-chill-2'], vid: ['lv-set-1'] }],
+  ['Louis Vuitton Imagination', 'safir', 'men', ['citrus', 'woody'], ['bergamot', 'lemon', 'ginger'], ['tea', 'cinnamon'], ['ambroxan', 'incense', 'cedar'], ['spring', 'summer', 'autumn'], 'any', 4, 3, 'Extrait', 690000, 0, 'tall', '#D9E4EE', 'silver', 'new', { img: ['imagination-1'], vid: ['lv-set-1'] }],
+  ['Louis Vuitton Symphony', 'safir', 'unisex', ['citrus', 'aquatic'], ['grapefruit', 'bergamot', 'ginger'], ['tea'], ['amber', 'musk'], ['spring', 'summer'], 'day', 3, 3, 'Extrait', 690000, 0, 'tall', '#F3C6D3', 'gold', 'new', { img: ['symphony-1'], vid: ['symphony-1', 'symphony-2', 'symphony-3'] }],
+  ['Lost in Paris', 'safir', 'women', ['fruity', 'floral'], ['blackcurrant', 'pinkpepper'], ['rose', 'peony'], ['musk', 'patchouli'], ['spring', 'autumn'], 'any', 4, 3, 'Extrait', 690000, 0, 'square', '#F4D7DA', 'gold', 'new', { img: ['lost-in-paris-1'], vid: ['lost-in-paris-1'] }],
+  ['Hormone Gaba', 'safir', 'unisex', ['oriental', 'spicy'], ['saffron', 'pinkpepper'], ['rose', 'oud'], ['amber', 'musk'], ['autumn', 'winter'], 'evening', 5, 4, 'Extrait', 690000, 0, 'square', '#E8D6C0', 'gold', null, { img: ['hormone-gaba-1'], vid: [] }],
+  ['Tilia', 'safir', 'unisex', ['floral', 'fruity'], ['pear', 'mandarin'], ['linden', 'jasmine'], ['musk', 'vanilla'], ['spring', 'summer'], 'day', 3, 3, 'Extrait', 690000, 0, 'square', '#EFE7C8', 'gold', null, { img: ['tilia-1'], vid: [] }],
+  ['Aurica', 'safir', 'unisex', ['oriental', 'floral'], ['bergamot', 'mandarin'], ['rose', 'jasmine'], ['amber', 'vanilla', 'sandalwood'], ['autumn', 'winter'], 'evening', 4, 4, 'Extrait', 690000, 15, 'square', '#E9C88E', 'gold', null, { img: ['aurica-1'], vid: [] }],
+  ['Boadicea Aqua Sapphire', 'safir', 'unisex', ['aquatic', 'woody'], ['marine', 'bergamot', 'mint'], ['geranium'], ['cedar', 'musk', 'ambroxan'], ['summer', 'spring'], 'day', 4, 3, 'Extrait', 690000, 0, 'square', '#BCD4EA', 'gold', null, { img: ['aqua-sapphire-1'], vid: [] }],
+  ['Bvlgari Tygar', 'safir', 'men', ['citrus', 'woody'], ['grapefruit'], ['ambroxan'], ['cedar', 'vetiver'], ['spring', 'summer', 'autumn'], 'day', 4, 3, 'Extrait', 690000, 0, 'square', '#E3E6EA', 'gold', null, { img: ['tygar-1'], vid: [] }]
+]
+
 // [nom, brend, jins, oilalar, top, heart, base, fasllar, vaqt, turg'unlik, tarqalish, konsentratsiya, 100ml narx, chegirma %, shakl, suyuqlik, qopqoq, belgilar]
-const P = [
+const P = [...REAL,
   ['Sauvage Elixir', 'dior', 'men', ['spicy', 'woody'], ['cinnamon', 'cardamom', 'grapefruit'], ['lavender'], ['amber', 'patchouli', 'sandalwood'], ['autumn', 'winter'], 'evening', 5, 4, 'Parfum', 1650000, 0, 'square', '#3B4F86', 'black', 'top'],
   ['Sauvage EDP', 'dior', 'men', ['fougere', 'spicy'], ['bergamot', 'pinkpepper'], ['lavender', 'geranium'], ['ambroxan', 'vanilla'], ['spring', 'summer', 'autumn'], 'day', 4, 4, 'EDP', 1350000, 15, 'square', '#2E4A80', 'black', 'top'],
   ['Miss Dior Blooming Bouquet', 'dior', 'women', ['floral', 'fruity'], ['mandarin', 'bergamot'], ['peony', 'rose'], ['musk'], ['spring', 'summer'], 'day', 3, 2, 'EDT', 1150000, 0, 'round', '#F2C6CF', 'silver', ''],
@@ -120,7 +139,8 @@ let seed = 7
 const rnd = () => ((seed = (seed * 9301 + 49297) % 233280) / 233280)
 
 const products = P.map((r, i) => {
-  const [name, brand, gender, fam, top, heart, base, seasons, time, longevity, sillage, conc, p100, disc, shape, liquid, cap, flag] = r
+  const [name, brand, gender, fam, top, heart, base, seasons, time, longevity, sillage, conc, p100, disc, shape, liquid, cap, flag, media] = r
+  const real = !!media
   const slug = slugify(`${brandName[brand]} ${name}`)
   const mk = ml => {
     const k = ml === 100 ? 1 : ml === 50 ? 0.62 : 0.4
@@ -155,12 +175,16 @@ const products = P.map((r, i) => {
     tagline: { uz: tl[0], ru: tl[1] },
     description: { uz: desc(0), ru: desc(1) },
     art: { shape, liquid, cap },
+    real,
+    images: real ? media.img.map(k => `/media/p/${k}`) : [],
+    videos: real ? media.vid.map(k => `/media/v/${k}`) : [],
+    photoFit: real ? media.fit || 'contain' : null,
     badge: flag || null,
-    featured: i % 3 === 0 || flag === 'top',
+    featured: real || i % 3 === 0 || flag === 'top',
     isNew: flag === 'new',
     rating: Math.round((4.5 + rnd() * 0.5) * 10) / 10,
     reviews: 6 + Math.floor(rnd() * 120),
-    popularity: Math.floor(rnd() * 1000),
+    popularity: real ? 2000 - i : Math.floor(rnd() * 1000),
     createdAt: `2026-${String(1 + (i % 11)).padStart(2, '0')}-${String(1 + (i * 3) % 27).padStart(2, '0')}`
   }
 })
@@ -174,11 +198,14 @@ const collections = [
   { slug: 'chegirma', rule: 'sale', name: { uz: 'Chegirmalar', ru: 'Скидки' }, text: { uz: '30% gacha arzonroq', ru: 'Выгода до 30%' }, tone: ['#B23A2E', '#5E1A14'] }
 ]
 
+// Banner slaydlari mijoz suratlari bilan (public/media/hero). focal — surat qaysi nuqtasi markazda turadi,
+// nozzle — atir sepiladigan nuqta (surat eni/bo'yiga nisbatan), theme — matn rangi.
 const banners = [
-  { id: 1, title: { uz: 'Hidingizni topamiz', ru: 'Найдём ваш аромат' }, text: { uz: '48 ta original atir — 30, 50 va 100 ml. Do\'konda hidlab, uyda kutib oling.', ru: '48 оригинальных ароматов — 30, 50 и 100 мл. Попробуйте в бутике, получите дома.' }, cta: { uz: 'Katalogni ko\'rish', ru: 'Смотреть каталог' }, to: '/shop', scene: 'trio', tone: ['#F4F6FA', '#BFCBE3'] },
-  { id: 2, title: { uz: 'Kech uchun yaratilgan', ru: 'Создано для вечера' }, text: { uz: 'Ud, ambra va vanil — kechki atirlar to\'plami', ru: 'Уд, амбра и ваниль — вечерняя коллекция' }, cta: { uz: 'To\'plamni ochish', ru: 'Открыть подборку' }, to: '/collections/kechki', scene: 'night', tone: ['#16264A', '#0E1A33'] },
-  { id: 3, title: { uz: '30% gacha chegirma', ru: 'Скидки до 30%' }, text: { uz: 'Tanlangan atirlar — faqat shu hafta', ru: 'Избранные ароматы — только на этой неделе' }, cta: { uz: 'Chegirmalarni ko\'rish', ru: 'Смотреть скидки' }, to: '/collections/chegirma', scene: 'sale', tone: ['#F3EEE6', '#D9C7A6'] }
+  { id: 1, title: { uz: 'Hidingizni topamiz', ru: 'Найдём ваш аромат' }, text: { uz: 'Original atirlar — 30, 50 va 100 ml. Do\'konda hidlab, uyda kutib oling.', ru: 'Оригинальные ароматы — 30, 50 и 100 мл. Попробуйте в бутике, получите дома.' }, cta: { uz: 'Katalogni ko\'rish', ru: 'Смотреть каталог' }, to: '/shop', photo: '/media/hero/aura-men', theme: 'dark', panel: ['#16120E', '#050507'], focal: [0.5, 0.42], nozzle: [0.49, 0.3], mist: '#ffffff' },
+  { id: 2, title: { uz: 'AURA 19+ ayollar uchun', ru: 'AURA 19+ для женщин' }, text: { uz: 'Atirgul, yasmin va iliq vanil — kechki uchrashuvlar uchun', ru: 'Роза, жасмин и тёплая ваниль — для вечерних встреч' }, cta: { uz: 'Atirni ko\'rish', ru: 'Смотреть аромат' }, to: '/product/safirparfum-aura-19-for-women', photo: '/media/hero/aura-women-trio', theme: 'light', panel: ['#F8E9E1', '#EBC9B9'], focal: [0.55, 0.42], nozzle: null, mist: '#F4D3C8' },
+  { id: 3, title: { uz: '30% gacha chegirma', ru: 'Скидки до 30%' }, text: { uz: 'Tanlangan atirlar — faqat shu hafta', ru: 'Избранные ароматы — только на этой неделе' }, cta: { uz: 'Chegirmalarni ko\'rish', ru: 'Смотреть скидки' }, to: '/collections/chegirma', photo: '/media/hero/aura-women', theme: 'light', panel: ['#F6E6DB', '#E7C2AB'], focal: [0.6, 0.5], nozzle: null, mist: '#F4D3C8' }
 ]
+
 
 const testimonials = [
   ['madina.r', 'instagram', '2026-10-28', 'Baccarat Rouge oldim, hidi do\'kondagidek — originalligi aniq sezilyapti. Kuryer 3 soatda olib keldi, rahmat!', 'Взяла Baccarat Rouge — аромат как в бутике. Курьер привёз за 3 часа, спасибо!'],
@@ -187,7 +214,7 @@ const testimonials = [
   ['sardor', 'telegram', '2026-10-09', 'Samarqandga 2 kunda keldi, hammasi butun. Narxi ham boshqa joylardan arzonroq chiqdi.', 'В Самарканд доставили за 2 дня, всё целое. И цена ниже, чем у других.'],
   ['aziza_m', 'instagram', '2026-09-30', 'Testni o\'tib ko\'rdim — tavsiya qilingan Delina rostdan menga mos keldi!', 'Прошла тест — рекомендованная Delina действительно мне подошла!'],
   ['bekzod.a', 'telegram', '2026-09-22', 'Aventus 30 ml oldim, avval sinab ko\'rish uchun. Endi 100 ml olaman.', 'Взял Aventus 30 мл на пробу. Теперь возьму 100 мл.']
-].map(([user, source, date, uz, ru], i) => ({ id: i + 1, user, source, date, text: { uz, ru }, product: products[[24, 32, 35, 22, 33, 21][i]].slug }))
+].map(([user, source, date, uz, ru], i) => ({ id: i + 1, user, source, date, text: { uz, ru }, product: ['maison-francis-kurkdjian-baccarat-rouge-540', 'parfums-de-marly-layton', 'guerlain-shalimar', 'safirparfum-aura-19-for-women', 'parfums-de-marly-delina', 'creed-aventus'][i] }))
 
 const faq = [
   ['Atirlaringiz originalmi?', 'Ваши ароматы оригинальные?', 'Ha. Barcha atirlar rasmiy distribyutorlardan keladi, har bir flakonda partiya raqami bor. Do\'konda hidlab ko\'rishingiz mumkin.', 'Да. Все ароматы поступают от официальных дистрибьюторов, у каждого флакона есть номер партии. В бутике можно попробовать.'],

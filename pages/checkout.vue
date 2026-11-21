@@ -158,7 +158,7 @@ useSeoMeta({ title: () => `${t('checkout.title')} — SafirParfum`, robots: 'noi
         <h2 class="h3">{{ t('checkout.summary') }}</h2>
         <ul class="items">
           <li v-for="i in cart.items" :key="i.slug + i.ml">
-            <span class="th"><BottleArt :product="i.p" /><b>{{ i.qty }}</b></span>
+            <span class="th"><ProductVisual sizes="100px" :product="i.p" /><b>{{ i.qty }}</b></span>
             <span class="it"><strong>{{ i.p.name }}</strong><small>{{ brandName(i.p.brand) }} · {{ i.ml }} ml</small></span>
             <span class="num">{{ money(i.total) }}</span>
           </li>

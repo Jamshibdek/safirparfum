@@ -29,7 +29,7 @@ useSeoMeta({ title: () => `${t('order.thanks')} — SafirParfum`, robots: 'noind
       <h2 class="h3">{{ t('order.items') }}</h2>
       <ul class="items">
         <li v-for="l in order.lines" :key="l.slug + l.ml">
-          <span class="th"><BottleArt v-if="getProduct(l.slug)" :product="getProduct(l.slug)!" /></span>
+          <span class="th"><ProductVisual sizes="100px" v-if="getProduct(l.slug)" :product="getProduct(l.slug)!" /></span>
           <span class="it"><strong>{{ l.brand }} {{ l.name }}</strong><small>{{ l.ml }} ml × {{ l.qty }}</small></span>
           <span class="num">{{ money(l.price * l.qty) }}</span>
         </li>

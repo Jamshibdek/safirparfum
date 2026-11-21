@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getProduct, brandName, useL, fillLevel } from '~/lib/catalog'
+import { getProduct, brandName, useL, fillLevel, sizeScale } from '~/lib/catalog'
 import { flyToCart } from '~/utils/fly'
 import { useCart, useUi } from '~/stores/shop'
 const { t } = useI18n()
@@ -23,7 +23,7 @@ function add() {
   <div class="modal" role="dialog" aria-modal="true" :aria-label="p.name" @click.self="ui.quick = null">
     <div class="box">
       <button class="icon-btn x" :aria-label="t('common.close')" @click="ui.quick = null"><Icon name="close" /></button>
-      <div ref="art" class="art"><BottleArt :product="p" :level="fillLevel(ml)" /></div>
+      <div ref="art" class="art" :class="{ photo: p.real }" :style="{ '--sz': p.real && p.photoFit !== 'cover' ? sizeScale(ml) : 1 }"><ProductVisual :product="p" :level="fillLevel(ml)" sizes="(max-width: 767px) 100vw, 490px" eager /><SizeGauge v-if="p.real" class="gauge-qv" :ml="ml" :color="p.art.liquid" /></div>
       <div class="info">
         <p class="overline">{{ p.families.map(familyL).join(' · ') }}</p>
         <p class="br">{{ brandName(p.brand) }}</p>
@@ -57,6 +57,10 @@ function add() {
 .box { position: relative; width: min(980px, 100%); max-height: calc(100vh - 40px); overflow: auto; display: grid; grid-template-columns: 1fr 1fr; background: var(--bg); border-radius: var(--r-lg); box-shadow: var(--shadow-pop); }
 .x { position: absolute; top: 12px; right: 12px; background: var(--surface); z-index: 2; }
 .art { aspect-ratio: 1; }
+.art.photo { background: #fff; }
+.art { position: relative; overflow: hidden; }
+.art :deep(img) { transition: transform .8s var(--ease); transform: scale(var(--sz, 1)); transform-origin: 50% 60%; }
+.gauge-qv { position: absolute; left: 14px; bottom: 14px; }
 .info { padding: 36px 36px 32px; display: flex; flex-direction: column; gap: 10px; }
 .br { font-weight: 600; color: var(--ink-2); }
 .tl { margin-top: -4px; }

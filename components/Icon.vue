@@ -37,7 +37,12 @@ const P: Record<string, string> = {
   share: 'M16 6l-4-3-4 3M12 3v12M5 12v7h14v-7',
   info: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0-11v6m0-9v.01',
   globe: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9Z',
-  zoom: 'M11 4a7 7 0 1 1 0 14 7 7 0 0 1 0-14Zm9 16-4-4M11 8v6M8 11h6'
+  zoom: 'M11 4a7 7 0 1 1 0 14 7 7 0 0 1 0-14Zm9 16-4-4M11 8v6M8 11h6',
+  play: 'M8 5v14l11-7L8 5Z',
+  pause: 'M8 5v14M16 5v14',
+  sound: 'M4 9v6h4l5 4V5L8 9H4Zm12 0a4 4 0 0 1 0 6m2-9a8 8 0 0 1 0 12',
+  mute: 'M4 9v6h4l5 4V5L8 9H4Zm12 1 5 5m0-5-5 5',
+  expand: 'M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5'
 }
 const d = computed(() => P[props.name] ?? '')
 const fill = computed(() => props.name === 'heart-fill')

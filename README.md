@@ -50,3 +50,9 @@ Mahsulot rasmlari hozircha `components/BottleArt.vue` da SVG bilan chiziladi; ha
 
 - Foydalanuvchi kabineti va SMS orqali kirish — keyin backend bilan qo'shiladi (TZ, 9-bo'lim).
 - Admin panel — backend bilan birga.
+
+## Mijoz rasmlari va videolari
+
+- Manba: `../rasmvidio` (mijoz papkasi). Saytga siqilgan nusxalari `public/media/` da: `p/` — mahsulot suratlari (WebP, 900 va 440 px), `hero/` — banner suratlari, `v/` — videolar (H.264 MP4, 9:16, ovozsiz, ≤15 s) va posterlari.
+- 11 ta haqiqiy atir `scripts/build-data.mjs` dagi `REAL` ro'yxatida; rasm va video nomlari shu yerda bog'langan. Notalar va narxlar namunaviy.
+- Bosh sahifadagi atir sepilishini qayta ko'rish: havolaga `?spray` qo'shing (masalan `https://safirparfum.vercel.app/?spray`).

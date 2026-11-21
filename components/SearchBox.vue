@@ -64,7 +64,7 @@ onBeforeUnmount(() => document.removeEventListener('mousedown', outside))
               v-for="(p, i) in results" :key="p.slug" class="row" :class="{ on: i === active }" role="option"
               :aria-selected="i === active" @mouseenter="active = i" @click="go(p.slug)"
             >
-              <span class="thumb"><BottleArt :product="p" /></span>
+              <span class="thumb"><ProductVisual sizes="100px" :product="p" /></span>
               <span class="txt">
                 <span class="fam">{{ p.families.map(familyL).join(' · ') }}</span>
                 <span class="nm">{{ brandName(p.brand) }} <em>{{ p.name }}</em></span>
@@ -86,7 +86,7 @@ onBeforeUnmount(() => document.removeEventListener('mousedown', outside))
           </div>
           <div class="mini">
             <button v-for="p in popular" :key="p.slug" class="mini-it" @click="go(p.slug)">
-              <span class="thumb"><BottleArt :product="p" /></span>
+              <span class="thumb"><ProductVisual sizes="100px" :product="p" /></span>
               <span>{{ p.name }}</span>
             </button>
           </div>

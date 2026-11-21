@@ -26,7 +26,7 @@ function checkout() { ui.cart = false; navigateTo(lp('/checkout')) }
       <div class="drawer-body">
         <TransitionGroup name="fade" tag="ul" class="lines">
           <li v-for="it in cart.items" :key="it.slug + it.ml" class="line">
-            <NuxtLink :to="lp(`/product/${it.slug}`)" class="th" @click="ui.cart = false"><BottleArt :product="it.p" /></NuxtLink>
+            <NuxtLink :to="lp(`/product/${it.slug}`)" class="th" @click="ui.cart = false"><ProductVisual sizes="100px" :product="it.p" /></NuxtLink>
             <div class="info">
               <span class="br">{{ brandName(it.p.brand) }}</span>
               <NuxtLink :to="lp(`/product/${it.slug}`)" class="nm" @click="ui.cart = false">{{ it.p.name }}</NuxtLink>

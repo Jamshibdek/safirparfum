@@ -6,40 +6,57 @@
       "ru": "Найдём ваш аромат"
     },
     "text": {
-      "uz": "48 ta original atir — 30, 50 va 100 ml. Do'konda hidlab, uyda kutib oling.",
-      "ru": "48 оригинальных ароматов — 30, 50 и 100 мл. Попробуйте в бутике, получите дома."
+      "uz": "Original atirlar — 30, 50 va 100 ml. Do'konda hidlab, uyda kutib oling.",
+      "ru": "Оригинальные ароматы — 30, 50 и 100 мл. Попробуйте в бутике, получите дома."
     },
     "cta": {
       "uz": "Katalogni ko'rish",
       "ru": "Смотреть каталог"
     },
     "to": "/shop",
-    "scene": "trio",
-    "tone": [
-      "#F4F6FA",
-      "#BFCBE3"
-    ]
+    "photo": "/media/hero/aura-men",
+    "theme": "dark",
+    "panel": [
+      "#16120E",
+      "#050507"
+    ],
+    "focal": [
+      0.5,
+      0.42
+    ],
+    "nozzle": [
+      0.49,
+      0.3
+    ],
+    "mist": "#ffffff"
   },
   {
     "id": 2,
     "title": {
-      "uz": "Kech uchun yaratilgan",
-      "ru": "Создано для вечера"
+      "uz": "AURA 19+ ayollar uchun",
+      "ru": "AURA 19+ для женщин"
     },
     "text": {
-      "uz": "Ud, ambra va vanil — kechki atirlar to'plami",
-      "ru": "Уд, амбра и ваниль — вечерняя коллекция"
+      "uz": "Atirgul, yasmin va iliq vanil — kechki uchrashuvlar uchun",
+      "ru": "Роза, жасмин и тёплая ваниль — для вечерних встреч"
     },
     "cta": {
-      "uz": "To'plamni ochish",
-      "ru": "Открыть подборку"
+      "uz": "Atirni ko'rish",
+      "ru": "Смотреть аромат"
     },
-    "to": "/collections/kechki",
-    "scene": "night",
-    "tone": [
-      "#16264A",
-      "#0E1A33"
-    ]
+    "to": "/product/safirparfum-aura-19-for-women",
+    "photo": "/media/hero/aura-women-trio",
+    "theme": "light",
+    "panel": [
+      "#F8E9E1",
+      "#EBC9B9"
+    ],
+    "focal": [
+      0.55,
+      0.42
+    ],
+    "nozzle": null,
+    "mist": "#F4D3C8"
   },
   {
     "id": 3,
@@ -56,10 +73,17 @@
       "ru": "Смотреть скидки"
     },
     "to": "/collections/chegirma",
-    "scene": "sale",
-    "tone": [
-      "#F3EEE6",
-      "#D9C7A6"
-    ]
+    "photo": "/media/hero/aura-women",
+    "theme": "light",
+    "panel": [
+      "#F6E6DB",
+      "#E7C2AB"
+    ],
+    "focal": [
+      0.6,
+      0.5
+    ],
+    "nozzle": null,
+    "mist": "#F4D3C8"
   }
 ]

@@ -1,110 +1,116 @@
 [
   {
+    "slug": "safir",
+    "name": "SafirParfum",
+    "country": "Uzbekistan",
+    "sort": 0
+  },
+  {
     "slug": "dior",
     "name": "Dior",
     "country": "France",
-    "sort": 0
+    "sort": 1
   },
   {
     "slug": "chanel",
     "name": "Chanel",
     "country": "France",
-    "sort": 1
+    "sort": 2
   },
   {
     "slug": "tom-ford",
     "name": "Tom Ford",
     "country": "USA",
-    "sort": 2
+    "sort": 3
   },
   {
     "slug": "ysl",
     "name": "Yves Saint Laurent",
     "country": "France",
-    "sort": 3
+    "sort": 4
   },
   {
     "slug": "armani",
     "name": "Giorgio Armani",
     "country": "Italy",
-    "sort": 4
+    "sort": 5
   },
   {
     "slug": "versace",
     "name": "Versace",
     "country": "Italy",
-    "sort": 5
+    "sort": 6
   },
   {
     "slug": "creed",
     "name": "Creed",
     "country": "France",
-    "sort": 6
+    "sort": 7
   },
   {
     "slug": "mfk",
     "name": "Maison Francis Kurkdjian",
     "country": "France",
-    "sort": 7
+    "sort": 8
   },
   {
     "slug": "xerjoff",
     "name": "Xerjoff",
     "country": "Italy",
-    "sort": 8
+    "sort": 9
   },
   {
     "slug": "kilian",
     "name": "Kilian Paris",
     "country": "France",
-    "sort": 9
+    "sort": 10
   },
   {
     "slug": "initio",
     "name": "Initio",
     "country": "France",
-    "sort": 10
+    "sort": 11
   },
   {
     "slug": "pdm",
     "name": "Parfums de Marly",
     "country": "France",
-    "sort": 11
+    "sort": 12
   },
   {
     "slug": "guerlain",
     "name": "Guerlain",
     "country": "France",
-    "sort": 12
+    "sort": 13
   },
   {
     "slug": "lancome",
     "name": "Lancôme",
     "country": "France",
-    "sort": 13
+    "sort": 14
   },
   {
     "slug": "byredo",
     "name": "Byredo",
     "country": "Sweden",
-    "sort": 14
+    "sort": 15
   },
   {
     "slug": "le-labo",
     "name": "Le Labo",
     "country": "USA",
-    "sort": 15
+    "sort": 16
   },
   {
     "slug": "montale",
     "name": "Montale",
     "country": "France",
-    "sort": 16
+    "sort": 17
   },
   {
     "slug": "amouage",
     "name": "Amouage",
     "country": "Oman",
-    "sort": 17
+    "sort": 18
   }
 ]

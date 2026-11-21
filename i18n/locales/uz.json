@@ -67,6 +67,9 @@
   },
   "product": {
     "size": "Hajm",
+    "video": "Video",
+    "soundOn": "Ovozni yoqish",
+    "soundOff": "Ovozni o'chirish",
     "qty": "Soni",
     "add": "Savatga qo'shish",
     "inStock": "Sotuvda",
