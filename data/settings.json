@@ -1,5 +1,5 @@
 {
-  "brand": "SafirParfum",
+  "brand": "Sefir Parfum",
   "domain": "sefir.uz",
   "phone1": "+998 90 000 00 01",
   "phone2": "+998 90 000 00 02",
@@ -16,7 +16,7 @@
   },
   "promo": [
     {
-      "code": "SAFIR10",
+      "code": "SEFIR10",
       "type": "percent",
       "value": 10,
       "min": 0

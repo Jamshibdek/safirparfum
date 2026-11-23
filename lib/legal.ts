@@ -28,7 +28,7 @@ export const legal: Record<'delivery' | 'returns' | 'offer', LegalPage> = {
     updated: '2026-11-01',
     blocks: [
       { h: { uz: 'Qachon qaytarish mumkin', ru: 'Когда можно вернуть' }, p: [
-        { uz: 'Ochilmagan, plyonkasi va qutisi butun atirni xarid kunidan boshlab 14 kun ichida qaytarishingiz yoki boshqasiga almashtirishingiz mumkin.', ru: 'Невскрытый аромат в целой плёнке и коробке можно вернуть или обменять в течение 14 дней с даты покупки.' }
+        { uz: 'Ochilmagan, plyonkasi va qutisi butun atirni qaytarishingiz yoki boshqasiga almashtirishingiz mumkin.', ru: 'Невскрытый аромат в целой плёнке и коробке можно вернуть или обменять.' }
       ] },
       { h: { uz: 'Qanday qaytariladi', ru: 'Как вернуть' }, p: [
         { uz: 'Telegram yoki telefon orqali buyurtma raqamini yozing. Atirni filialga olib keling yoki kuryer olib ketadi.', ru: 'Напишите номер заказа в Telegram или позвоните. Принесите аромат в бутик или курьер заберёт его.' },
@@ -44,7 +44,7 @@ export const legal: Record<'delivery' | 'returns' | 'offer', LegalPage> = {
     updated: '2026-11-01',
     blocks: [
       { h: { uz: '1. Umumiy qoidalar', ru: '1. Общие положения' }, p: [
-        { uz: 'Ushbu hujjat SafirParfum (sefir.uz) va xaridor o\'rtasidagi masofaviy savdo shartlarini belgilaydi. Buyurtmani tasdiqlash ushbu shartlarga rozilik hisoblanadi.', ru: 'Документ определяет условия дистанционной продажи между SafirParfum (sefir.uz) и покупателем. Подтверждение заказа означает согласие с условиями.' }
+        { uz: 'Ushbu hujjat Sefir Parfum (sefir.uz) va xaridor o\'rtasidagi masofaviy savdo shartlarini belgilaydi. Buyurtmani tasdiqlash ushbu shartlarga rozilik hisoblanadi.', ru: 'Документ определяет условия дистанционной продажи между Sefir Parfum (sefir.uz) и покупателем. Подтверждение заказа означает согласие с условиями.' }
       ] },
       { h: { uz: '2. Narx va to\'lov', ru: '2. Цена и оплата' }, p: [
         { uz: 'Narxlar so\'mda ko\'rsatiladi va buyurtma tasdiqlangan paytdagi narx amal qiladi.', ru: 'Цены указаны в сумах; действует цена на момент подтверждения заказа.' }

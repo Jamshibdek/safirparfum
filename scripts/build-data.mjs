@@ -35,7 +35,7 @@ const FAMILIES = {
 const SEASONS = { spring: ['bahor', 'весна'], summer: ['yoz', 'лето'], autumn: ['kuz', 'осень'], winter: ['qish', 'зима'] }
 
 const BRANDS = [
-  ['safir', 'SafirParfum', 'Uzbekistan'],
+  ['safir', 'Sefir Parfum', 'Uzbekistan'],
   ['dior', 'Dior', 'France'], ['chanel', 'Chanel', 'France'], ['tom-ford', 'Tom Ford', 'USA'], ['ysl', 'Yves Saint Laurent', 'France'],
   ['armani', 'Giorgio Armani', 'Italy'], ['versace', 'Versace', 'Italy'], ['creed', 'Creed', 'France'],
   ['mfk', 'Maison Francis Kurkdjian', 'France'], ['xerjoff', 'Xerjoff', 'Italy'], ['kilian', 'Kilian Paris', 'France'],
@@ -201,14 +201,14 @@ const collections = [
 // Banner slaydlari mijoz suratlari bilan (public/media/hero). focal — surat qaysi nuqtasi markazda turadi,
 // nozzle — atir sepiladigan nuqta (surat eni/bo'yiga nisbatan), theme — matn rangi.
 const banners = [
-  { id: 1, title: { uz: 'Hidingizni topamiz', ru: 'Найдём ваш аромат' }, text: { uz: 'Original atirlar — 30, 50 va 100 ml. Do\'konda hidlab, uyda kutib oling.', ru: 'Оригинальные ароматы — 30, 50 и 100 мл. Попробуйте в бутике, получите дома.' }, cta: { uz: 'Katalogni ko\'rish', ru: 'Смотреть каталог' }, to: '/shop', photo: '/media/hero/aura-men', theme: 'dark', panel: ['#16120E', '#050507'], focal: [0.5, 0.42], nozzle: [0.49, 0.3], mist: '#ffffff' },
+  { id: 1, title: { uz: 'Hidingizni topamiz', ru: 'Найдём ваш аромат' }, text: { uz: 'Originaldan ilhomlangan parfumlar — 30, 50 va 100 ml. Do\'konda hidlab, uyda kutib oling.', ru: 'Парфюмы, вдохновлённые оригиналами — 30, 50 и 100 мл. Попробуйте в бутике, получите дома.' }, cta: { uz: 'Katalogni ko\'rish', ru: 'Смотреть каталог' }, to: '/shop', photo: '/media/hero/aura-men', theme: 'dark', panel: ['#16120E', '#050507'], focal: [0.5, 0.42], nozzle: [0.49, 0.3], mist: '#ffffff' },
   { id: 2, title: { uz: 'AURA 19+ ayollar uchun', ru: 'AURA 19+ для женщин' }, text: { uz: 'Atirgul, yasmin va iliq vanil — kechki uchrashuvlar uchun', ru: 'Роза, жасмин и тёплая ваниль — для вечерних встреч' }, cta: { uz: 'Atirni ko\'rish', ru: 'Смотреть аромат' }, to: '/product/safirparfum-aura-19-for-women', photo: '/media/hero/aura-women-trio', theme: 'light', panel: ['#F8E9E1', '#EBC9B9'], focal: [0.55, 0.42], nozzle: null, mist: '#F4D3C8' },
   { id: 3, title: { uz: '30% gacha chegirma', ru: 'Скидки до 30%' }, text: { uz: 'Tanlangan atirlar — faqat shu hafta', ru: 'Избранные ароматы — только на этой неделе' }, cta: { uz: 'Chegirmalarni ko\'rish', ru: 'Смотреть скидки' }, to: '/collections/chegirma', photo: '/media/hero/aura-women', theme: 'light', panel: ['#F6E6DB', '#E7C2AB'], focal: [0.6, 0.5], nozzle: null, mist: '#F4D3C8' }
 ]
 
 
 const testimonials = [
-  ['madina.r', 'instagram', '2026-10-28', 'Baccarat Rouge oldim, hidi do\'kondagidek — originalligi aniq sezilyapti. Kuryer 3 soatda olib keldi, rahmat!', 'Взяла Baccarat Rouge — аромат как в бутике. Курьер привёз за 3 часа, спасибо!'],
+  ['madina.r', 'instagram', '2026-10-28', 'Baccarat Rouge oldim, hidi do\'kondagidek — originalga juda yaqin. Kuryer 3 soatda olib keldi, rahmat!', 'Взяла Baccarat Rouge — аромат как в бутике. Курьер привёз за 3 часа, спасибо!'],
   ['jasur_t', 'telegram', '2026-10-21', 'Konsultant 10 daqiqada menga mos 3 ta atir topib berdi. Layton\'ni tanladim, ish joyida hamma so\'rayapti.', 'Консультант за 10 минут подобрал 3 аромата. Выбрал Layton — на работе все спрашивают.'],
   ['nilufar.k', 'instagram', '2026-10-14', 'Onamga sovg\'a qildim, qutisi juda chiroyli ekan. 50 ml hajm sovg\'a uchun ideal.', 'Подарила маме, упаковка очень красивая. 50 мл — идеально для подарка.'],
   ['sardor', 'telegram', '2026-10-09', 'Samarqandga 2 kunda keldi, hammasi butun. Narxi ham boshqa joylardan arzonroq chiqdi.', 'В Самарканд доставили за 2 дня, всё целое. И цена ниже, чем у других.'],
@@ -217,22 +217,22 @@ const testimonials = [
 ].map(([user, source, date, uz, ru], i) => ({ id: i + 1, user, source, date, text: { uz, ru }, product: ['maison-francis-kurkdjian-baccarat-rouge-540', 'parfums-de-marly-layton', 'guerlain-shalimar', 'safirparfum-aura-19-for-women', 'parfums-de-marly-delina', 'creed-aventus'][i] }))
 
 const faq = [
-  ['Atirlaringiz originalmi?', 'Ваши ароматы оригинальные?', 'Ha. Barcha atirlar rasmiy distribyutorlardan keladi, har bir flakonda partiya raqami bor. Do\'konda hidlab ko\'rishingiz mumkin.', 'Да. Все ароматы поступают от официальных дистрибьюторов, у каждого флакона есть номер партии. В бутике можно попробовать.'],
+  ['Atirlaringiz originalmi?', 'Ваши ароматы оригинальные?', 'Bizning parfumlarimiz 100% original atirlardan ilhomlangan: hidi va xarakteri originalga yaqin, narxi esa ancha hamyonbop. Do\'konda hidlab ko\'rishingiz mumkin.', 'Да. Все ароматы поступают от официальных дистрибьюторов, у каждого флакона есть номер партии. В бутике можно попробовать.'],
   ['Yetkazib berish qanday?', 'Как работает доставка?', 'Toshkent bo\'ylab kuryer bir kunda olib boradi, 500 000 so\'mdan yuqori buyurtmada bepul. Viloyatlarga 1–3 kunda pochta orqali yuboramiz.', 'По Ташкенту курьер доставит за день, бесплатно от 500 000 сум. В регионы отправляем почтой за 1–3 дня.'],
   ['To\'lovni qanday qilaman?', 'Как оплатить?', 'Naqd pul yoki bank kartasi (Uzcard, Humo) orqali — kuryerga yoki filialda. Online to\'lov tez orada qo\'shiladi.', 'Наличными или картой Uzcard / Humo — курьеру или в бутике. Онлайн-оплата скоро появится.'],
   ['Sotib olishdan oldin hidlab ko\'rsam bo\'ladimi?', 'Можно ли попробовать перед покупкой?', 'Albatta. Filiallarimizda barcha atirlarning testerlari bor, maslahatchi tanlashga yordam beradi.', 'Конечно. В бутиках есть тестеры всех ароматов, консультант поможет с выбором.'],
   ['Qaysi hajmlar bor?', 'Какие есть объёмы?', 'Har bir atir 30, 50 va 100 ml hajmda. 30 ml sinab ko\'rish yoki safar uchun qulay.', 'Каждый аромат — 30, 50 и 100 мл. 30 мл удобно для знакомства и поездок.'],
-  ['Atirni qaytarsa bo\'ladimi?', 'Можно ли вернуть аромат?', 'Ochilmagan va plyonkasi butun atirni 14 kun ichida qaytarish mumkin.', 'Невскрытый аромат в целой плёнке можно вернуть в течение 14 дней.']
+  ['Atirni qaytarsa bo\'ladimi?', 'Можно ли вернуть аромат?', 'Ha. Ochilmagan va plyonkasi butun atirni qaytarish yoki boshqasiga almashtirish imkoniyati mavjud.', 'Да. Невскрытый аромат в целой плёнке можно вернуть или обменять на другой.']
 ].map(([qu, qr, au, ar], i) => ({ id: i + 1, q: { uz: qu, ru: qr }, a: { uz: au, ru: ar } }))
 
 const branches = [
-  { id: 1, slug: 'markaz', name: { uz: 'SafirParfum Markaz', ru: 'SafirParfum Центр' }, city: { uz: 'Toshkent', ru: 'Ташкент' }, address: { uz: 'Amir Temur ko\'chasi, 15', ru: 'ул. Амира Темура, 15' }, landmark: { uz: 'Mo\'ljal: Amir Temur xiyoboni', ru: 'Ориентир: сквер Амира Темура' }, hours: '10:00 — 22:00', phone: '+998 90 000 00 01', lat: 41.3111, lng: 69.2797 },
-  { id: 2, slug: 'chilonzor', name: { uz: 'SafirParfum Chilonzor', ru: 'SafirParfum Чиланзар' }, city: { uz: 'Toshkent', ru: 'Ташкент' }, address: { uz: 'Bunyodkor shoh ko\'chasi, 42', ru: 'пр. Бунёдкор, 42' }, landmark: { uz: 'Mo\'ljal: Chilonzor metrosi', ru: 'Ориентир: метро Чиланзар' }, hours: '10:00 — 22:00', phone: '+998 90 000 00 02', lat: 41.2756, lng: 69.2034 },
-  { id: 3, slug: 'samarqand', name: { uz: 'SafirParfum Samarqand', ru: 'SafirParfum Самарканд' }, city: { uz: 'Samarqand', ru: 'Самарканд' }, address: { uz: 'Universitet xiyoboni, 8', ru: 'Университетский бульвар, 8' }, landmark: { uz: 'Mo\'ljal: Registon maydoni yaqinida', ru: 'Ориентир: рядом с Регистаном' }, hours: '10:00 — 21:00', phone: '+998 90 000 00 03', lat: 39.6542, lng: 66.9597 }
+  { id: 1, slug: 'markaz', name: { uz: 'Sefir Parfum Markaz', ru: 'Sefir Parfum Центр' }, city: { uz: 'Toshkent', ru: 'Ташкент' }, address: { uz: 'Amir Temur ko\'chasi, 15', ru: 'ул. Амира Темура, 15' }, landmark: { uz: 'Mo\'ljal: Amir Temur xiyoboni', ru: 'Ориентир: сквер Амира Темура' }, hours: '10:00 — 22:00', phone: '+998 90 000 00 01', lat: 41.3111, lng: 69.2797 },
+  { id: 2, slug: 'chilonzor', name: { uz: 'Sefir Parfum Chilonzor', ru: 'Sefir Parfum Чиланзар' }, city: { uz: 'Toshkent', ru: 'Ташкент' }, address: { uz: 'Bunyodkor shoh ko\'chasi, 42', ru: 'пр. Бунёдкор, 42' }, landmark: { uz: 'Mo\'ljal: Chilonzor metrosi', ru: 'Ориентир: метро Чиланзар' }, hours: '10:00 — 22:00', phone: '+998 90 000 00 02', lat: 41.2756, lng: 69.2034 },
+  { id: 3, slug: 'samarqand', name: { uz: 'Sefir Parfum Samarqand', ru: 'Sefir Parfum Самарканд' }, city: { uz: 'Samarqand', ru: 'Самарканд' }, address: { uz: 'Universitet xiyoboni, 8', ru: 'Университетский бульвар, 8' }, landmark: { uz: 'Mo\'ljal: Registon maydoni yaqinida', ru: 'Ориентир: рядом с Регистаном' }, hours: '10:00 — 21:00', phone: '+998 90 000 00 03', lat: 39.6542, lng: 66.9597 }
 ]
 
 const settings = {
-  brand: 'SafirParfum',
+  brand: 'Sefir Parfum',
   domain: 'sefir.uz',
   phone1: '+998 90 000 00 01',
   phone2: '+998 90 000 00 02',
@@ -244,7 +244,7 @@ const settings = {
   facebook: 'https://facebook.com/safirparfum',
   delivery: { tashkent: 30000, regions: 45000, freeFrom: 500000 },
   promo: [
-    { code: 'SAFIR10', type: 'percent', value: 10, min: 0 },
+    { code: 'SEFIR10', type: 'percent', value: 10, min: 0 },
     { code: 'YANGI50', type: 'fixed', value: 50000, min: 500000 }
   ],
   demoOtp: '1234'

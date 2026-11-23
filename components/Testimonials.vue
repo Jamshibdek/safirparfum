@@ -44,7 +44,7 @@ const cur = computed(() => testimonials.find(x => x.id === open.value))
             <div class="bar"><span class="av">{{ cur.user[0].toUpperCase() }}</span><strong>{{ cur.user }}</strong></div>
             <div class="chat">
               <p class="msg in">{{ L(cur.text) }}</p>
-              <p class="msg out">Rahmat! Yana kutib qolamiz ✦ — SafirParfum</p>
+              <p class="msg out">Rahmat! Yana kutib qolamiz ✦ — Sefir Parfum</p>
             </div>
             <p class="cap">{{ cur.source === 'instagram' ? 'Instagram' : 'Telegram' }} · {{ fmt(cur.date) }}</p>
           </div>

@@ -46,7 +46,7 @@ const socials = [
       </div>
     </div>
     <div class="wrap bottom">
-      <span>© {{ year }} SafirParfum · sefir.uz. {{ t('footer.rights') }}</span>
+      <span>© {{ year }} Sefir Parfum · sefir.uz. {{ t('footer.rights') }}</span>
       <span class="demo">{{ t('footer.demo') }}</span>
     </div>
   </footer>

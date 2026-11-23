@@ -7,7 +7,7 @@ const q = computed(() => (typeof route.query.q === 'string' ? route.query.q.trim
 const results = computed(() => (q.value ? searchProducts(q.value, 60) : []))
 const popular = [...products].sort((a, b) => b.popularity - a.popularity).slice(0, 8)
 const tries = ['Dior', 'vanil', 'ud', 'Baccarat', 'атиргул', 'savage']
-useSeoMeta({ title: () => `${t('search.title')}${q.value ? ': ' + q.value : ''} — SafirParfum`, robots: 'noindex, follow' })
+useSeoMeta({ title: () => `${t('search.title')}${q.value ? ': ' + q.value : ''} — Sefir Parfum`, robots: 'noindex, follow' })
 </script>
 
 <template>

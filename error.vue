@@ -6,7 +6,7 @@ const { t } = useI18n()
 const lp = useLocalePath()
 const is404 = computed(() => props.error?.statusCode === 404)
 const popular = [...products].sort((a, b) => b.popularity - a.popularity).slice(0, 4)
-useHead({ title: `${is404.value ? '404' : 'Xato'} — SafirParfum`, meta: [{ name: 'robots', content: 'noindex' }] })
+useHead({ title: `${is404.value ? '404' : 'Xato'} — Sefir Parfum`, meta: [{ name: 'robots', content: 'noindex' }] })
 </script>
 
 <template>

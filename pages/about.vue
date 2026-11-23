@@ -6,7 +6,7 @@ const stats = computed(() => (tm('about.stats') as any[]).map(r => r.map((x: any
 const values = computed(() => (tm('about.values') as any[]).map(r => r.map((x: any) => rt(x))))
 const art = getProduct('amouage-interlude-man')!
 const art2 = getProduct('maison-francis-kurkdjian-baccarat-rouge-540')!
-useSeoMeta({ title: () => `${t('nav.about')} — SafirParfum`, description: () => t('about.p1') })
+useSeoMeta({ title: () => `${t('nav.about')} — Sefir Parfum`, description: () => t('about.p1') })
 </script>
 
 <template>

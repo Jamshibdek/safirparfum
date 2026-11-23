@@ -19,7 +19,7 @@ function send() {
   if (Object.values(err.value).some(Boolean)) return
   done.value = true
 }
-useSeoMeta({ title: () => `${t('nav.contact')} — SafirParfum`, description: () => t('contact.text') })
+useSeoMeta({ title: () => `${t('nav.contact')} — Sefir Parfum`, description: () => t('contact.text') })
 </script>
 
 <template>

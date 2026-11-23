@@ -5,7 +5,7 @@ const { t } = useI18n()
 const lp = useLocalePath()
 const wish = useWishlist()
 const items = computed(() => wish.slugs.map(getProduct).filter(Boolean))
-useSeoMeta({ title: () => `${t('wish.title')} — SafirParfum`, robots: 'noindex' })
+useSeoMeta({ title: () => `${t('wish.title')} — Sefir Parfum`, robots: 'noindex' })
 </script>
 
 <template>

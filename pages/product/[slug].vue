@@ -57,7 +57,7 @@ async function share() {
 
 const title = computed(() => `${brandName(prod.value.brand)} ${prod.value.name}`)
 useSeoMeta({
-  title: () => `${title.value} — ${t('product.size').toLowerCase()} 30–100 ml, ${money(prod.value.sizes[0].price)} — SafirParfum`,
+  title: () => `${title.value} — ${t('product.size').toLowerCase()} 30–100 ml, ${money(prod.value.sizes[0].price)} — Sefir Parfum`,
   description: () => L(prod.value.description).slice(0, 158),
   ogTitle: () => title.value,
   ogType: 'product' as any

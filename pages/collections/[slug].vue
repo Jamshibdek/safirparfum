@@ -6,7 +6,7 @@ const { L } = useL()
 const c = computed(() => collections.find(x => x.slug === route.params.slug))
 if (!c.value) throw createError({ statusCode: 404, statusMessage: 'Not found', fatal: true })
 const base = computed(() => products.filter(p => matchCollection(p, c.value!.rule)))
-useSeoMeta({ title: () => `${L(c.value!.name)} — SafirParfum`, description: () => L(c.value!.text) })
+useSeoMeta({ title: () => `${L(c.value!.name)} — Sefir Parfum`, description: () => L(c.value!.text) })
 </script>
 
 <template>

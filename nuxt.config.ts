@@ -1,4 +1,4 @@
-// SafirParfum — frontend (mock ma'lumotlar bilan). Backend keyinroq ulanadi.
+// Sefir Parfum — frontend (mock ma'lumotlar bilan). Backend keyinroq ulanadi.
 export default defineNuxtConfig({
   compatibilityDate: '2025-01-01',
   devtools: { enabled: false },
@@ -8,13 +8,13 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'uz' },
-      title: 'SafirParfum — original atirlar Toshkentda',
+      title: 'Sefir Parfum — original atirlardan ilhomlangan parfumlar',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
         { name: 'theme-color', content: '#0E1A33' },
-        { name: 'description', content: "SafirParfum — Toshkentda original Yevropa atirlari. 30, 50 va 100 ml, hidlab tanlash, 1 kunda yetkazib berish." },
-        { property: 'og:site_name', content: 'SafirParfum' },
+        { name: 'description', content: "Sefir Parfum — Toshkentda original atirlardan ilhomlangan parfumlar. 30, 50 va 100 ml, hidlab tanlash, 1 kunda yetkazib berish." },
+        { property: 'og:site_name', content: 'Sefir Parfum' },
         { property: 'og:type', content: 'website' },
         { property: 'og:image', content: 'https://sefir.uz/og.png' }
       ],

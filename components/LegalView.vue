@@ -7,7 +7,7 @@ const lp = useLocalePath()
 const { L } = useL()
 const d = computed(() => legal[props.page])
 const others = computed(() => (['delivery', 'returns', 'offer'] as const).filter(k => k !== props.page))
-useSeoMeta({ title: () => `${L(d.value.title)} — SafirParfum` })
+useSeoMeta({ title: () => `${L(d.value.title)} — Sefir Parfum` })
 </script>
 
 <template>

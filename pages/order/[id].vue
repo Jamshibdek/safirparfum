@@ -9,7 +9,7 @@ const { L, money } = useL()
 const store = useOrders()
 const order = computed(() => store.orders.find(o => o.id === String(route.params.id)))
 const branch = computed(() => branches.find(b => b.slug === order.value?.branch))
-useSeoMeta({ title: () => `${t('order.thanks')} — SafirParfum`, robots: 'noindex' })
+useSeoMeta({ title: () => `${t('order.thanks')} — Sefir Parfum`, robots: 'noindex' })
 </script>
 
 <template>

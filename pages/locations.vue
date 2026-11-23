@@ -4,7 +4,7 @@ const { t } = useI18n()
 const lp = useLocalePath()
 const { L } = useL()
 const sel = ref(branches[0].id)
-useSeoMeta({ title: () => `${t('nav.locations')} — SafirParfum`, description: () => t('locations.text') })
+useSeoMeta({ title: () => `${t('nav.locations')} — Sefir Parfum`, description: () => t('locations.text') })
 </script>
 
 <template>

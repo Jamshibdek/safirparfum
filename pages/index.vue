@@ -17,14 +17,14 @@ const collArt: Record<string, string> = {
 }
 
 useSeoMeta({
-  title: () => `SafirParfum — ${t('home.featured')}`,
-  description: () => L({ uz: "SafirParfum — Toshkentda 48 ta original Yevropa atiri. 30, 50 va 100 ml, butikda hidlab tanlash, 1 kunda yetkazib berish.", ru: 'SafirParfum — 48 оригинальных европейских ароматов в Ташкенте. 30, 50 и 100 мл, тестеры в бутике, доставка за 1 день.' }),
-  ogTitle: 'SafirParfum'
+  title: () => `Sefir Parfum — ${t('home.featured')}`,
+  description: () => L({ uz: "Sefir Parfum — Toshkentda original atirlardan ilhomlangan 48 xil parfum. 30, 50 va 100 ml, butikda hidlab tanlash, 1 kunda yetkazib berish.", ru: 'Sefir Parfum — 48 парфюмов в Ташкенте, вдохновлённых оригинальными ароматами. 30, 50 и 100 мл, тестеры в бутике, доставка за 1 день.' }),
+  ogTitle: 'Sefir Parfum'
 })
 useHead({
   script: [{
     type: 'application/ld+json',
-    innerHTML: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Store', name: 'SafirParfum', url: 'https://sefir.uz', telephone: settings.phone1, address: { '@type': 'PostalAddress', addressLocality: 'Tashkent', streetAddress: branches[0].address.uz }, openingHours: 'Mo-Su 10:00-22:00' })
+    innerHTML: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Store', name: 'Sefir Parfum', url: 'https://sefir.uz', telephone: settings.phone1, address: { '@type': 'PostalAddress', addressLocality: 'Tashkent', streetAddress: branches[0].address.uz }, openingHours: 'Mo-Su 10:00-22:00' })
   }]
 })
 </script>

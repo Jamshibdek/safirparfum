@@ -212,12 +212,12 @@
   },
   "about": {
     "over": "Bizning hikoya",
-    "title": "Safir — qimmatbaho tosh kabi tanlangan hidlar",
-    "p1": "SafirParfum 2026 yilda Toshkentda ochildi. Bizning maqsadimiz oddiy: dunyoning eng yaxshi parfyumeriya uylarini O'zbekistondagi xaridorga yaqinlashtirish — original, halol narxda va maslahat bilan.",
-    "p2": "Javonlarimizdagi har bir atir rasmiy distribyutordan keladi va partiya raqami bilan tekshiriladi. Biz faqat o'zimiz kiyib ko'rgan, ishongan hidlarni sotamiz.",
-    "p3": "Safir — sapfir toshi. U siqilish va vaqt bilan tiniqlashadi. Yaxshi atir ham shunday: teringizda soatlar davomida ochilib boradi.",
-    "stats": [["48", "original atir"], ["18", "parfyumeriya uyi"], ["3", "butik: Toshkent va Samarqand"], ["14 kun", "qaytarish kafolati"]],
-    "values": [["Faqat original", "Rasmiy distribyutorlar, partiya raqami, sertifikat"], ["Avval hidlab ko'ring", "Har bir atirning testeri butikda bor"], ["Halol narx", "30 ml dan boshlab — sinab ko'rish arzon"], ["Maslahat", "Parfyumer-maslahatchi bepul yordam beradi"]],
+    "title": "Sefir Parfum — mashhur hidlar, hamyonbop narxda",
+    "p1": "Sefir Parfum 2026 yilda Toshkentda ochildi. Bizning maqsadimiz oddiy: dunyoning mashhur atirlaridan ilhomlangan sifatli parfumlarni O'zbekistondagi xaridorga halol narxda va maslahat bilan yetkazish.",
+    "p2": "Har bir parfumimiz 100% original atirdan ilhomlangan va uning xarakterini saqlaydi. Biz faqat o'zimiz kiyib ko'rgan, ishongan hidlarni sotamiz.",
+    "p3": "Yaxshi atir qimmatbaho tosh kabi: teringizda soatlar davomida ochilib boradi. Shuning uchun har bir hidni sinchiklab tanlaymiz.",
+    "stats": [["48", "xil atir"], ["18", "mashhur uydan ilhom"], ["3", "butik: Toshkent va Samarqand"], ["30–100", "ml hajmlar"]],
+    "values": [["Originaldan ilhomlangan", "Mashhur atirlar xarakteri, sifatli xomashyo"], ["Avval hidlab ko'ring", "Har bir atirning testeri butikda bor"], ["Halol narx", "30 ml dan boshlab — sinab ko'rish arzon"], ["Maslahat", "Parfyumer-maslahatchi bepul yordam beradi"]],
     "visit": "Butigimizga tashrif buyuring",
     "visitText": "Har kuni 10:00 dan 22:00 gacha. Qahva biz tomondan."
   },
@@ -229,7 +229,7 @@
     "returns": { "title": "Qaytarish va almashtirish" },
     "offer": { "title": "Ommaviy oferta" }
   },
-  "footer": { "tagline": "Toshkentda original Yevropa atirlari.", "catalog": "Katalog", "company": "Kompaniya", "contacts": "Aloqa", "delivery": "Yetkazib berish", "returns": "Qaytarish", "offer": "Ommaviy oferta", "rights": "Barcha huquqlar himoyalangan.", "demo": "Demo versiya · ma'lumotlar namunaviy" },
+  "footer": { "tagline": "Original atirlardan ilhomlangan parfumlar.", "catalog": "Katalog", "company": "Kompaniya", "contacts": "Aloqa", "delivery": "Yetkazib berish", "returns": "Qaytarish", "offer": "Ommaviy oferta", "rights": "Barcha huquqlar himoyalangan.", "demo": "Demo versiya · ma'lumotlar namunaviy" },
   "errors": { "notFound": "Sahifa topilmadi", "notFoundText": "Bu manzil o'zgargan yoki hech qachon bo'lmagan. Qidiruvdan foydalaning yoki bosh sahifaga qayting.", "home": "Bosh sahifaga", "server": "Nimadir xato ketdi" },
   "common": { "skip": "O'tkazib yuborish", "close": "Yopish", "back": "Ortga", "share": "Ulashish", "copied": "Havola nusxalandi", "loading": "Yuklanmoqda…", "and": "va" }
 }

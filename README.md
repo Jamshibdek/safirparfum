@@ -1,4 +1,4 @@
-# SafirParfum — frontend (sefir.uz)
+# Sefir Parfum — frontend (sefir.uz)
 
 Parfyumeriya internet-do'konining frontendi. Backend hali yo'q: barcha ma'lumotlar `data/*.json` dagi mock fayllardan olinadi, savat, sevimlilar va oxirgi buyurtmalar brauzerda (localStorage) saqlanadi.
 
@@ -23,7 +23,7 @@ npm run build      # production build
 
 | Nima | Qiymat |
 | --- | --- |
-| Promokodlar | `SAFIR10` (−10%), `YANGI50` (−50 000 so'm, 500 000 dan) |
+| Promokodlar | `SEFIR10` (−10%), `YANGI50` (−50 000 so'm, 500 000 dan) |
 | Telefon, manzil, filiallar | Namunaviy — `scripts/build-data.mjs` dagi `settings` va `branches` da almashtiring |
 
 ## Backend ulanganda nima o'zgaradi

@@ -68,7 +68,7 @@ async function submit() {
   cart.clear()
   navigateTo(lp(`/order/${order.id}`))
 }
-useSeoMeta({ title: () => `${t('checkout.title')} — SafirParfum`, robots: 'noindex' })
+useSeoMeta({ title: () => `${t('checkout.title')} — Sefir Parfum`, robots: 'noindex' })
 </script>
 
 <template>

@@ -3,8 +3,8 @@
     "id": 1,
     "slug": "markaz",
     "name": {
-      "uz": "SafirParfum Markaz",
-      "ru": "SafirParfum Центр"
+      "uz": "Sefir Parfum Markaz",
+      "ru": "Sefir Parfum Центр"
     },
     "city": {
       "uz": "Toshkent",
@@ -27,8 +27,8 @@
     "id": 2,
     "slug": "chilonzor",
     "name": {
-      "uz": "SafirParfum Chilonzor",
-      "ru": "SafirParfum Чиланзар"
+      "uz": "Sefir Parfum Chilonzor",
+      "ru": "Sefir Parfum Чиланзар"
     },
     "city": {
       "uz": "Toshkent",
@@ -51,8 +51,8 @@
     "id": 3,
     "slug": "samarqand",
     "name": {
-      "uz": "SafirParfum Samarqand",
-      "ru": "SafirParfum Самарканд"
+      "uz": "Sefir Parfum Samarqand",
+      "ru": "Sefir Parfum Самарканд"
     },
     "city": {
       "uz": "Samarqand",

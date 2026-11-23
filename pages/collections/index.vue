@@ -7,7 +7,7 @@ const art: Record<string, string[]> = {
   yangi: ['amouage-guidance', 'yves-saint-laurent-myslf'], top: ['creed-aventus', 'chanel-coco-mademoiselle'], sovga: ['tom-ford-lost-cherry', 'parfums-de-marly-delina'],
   yozgi: ['tom-ford-neroli-portofino', 'xerjoff-erba-pura'], kechki: ['initio-side-effect', 'tom-ford-tobacco-vanille'], chegirma: ['giorgio-armani-stronger-with-you-intensely', 'versace-eros']
 }
-useSeoMeta({ title: () => `${t('collections.title')} — SafirParfum` })
+useSeoMeta({ title: () => `${t('collections.title')} — Sefir Parfum` })
 </script>
 
 <template>
