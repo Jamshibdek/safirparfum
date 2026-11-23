@@ -16,7 +16,7 @@ withDefaults(defineProps<{ light?: boolean; compact?: boolean }>(), { light: fal
       </g>
     </svg>
     <span class="word">
-      <span class="w1">SAFIR</span>
+      <span class="w1">SEFIR</span>
       <span v-if="!compact" class="w2">PARFUM</span>
     </span>
   </span>

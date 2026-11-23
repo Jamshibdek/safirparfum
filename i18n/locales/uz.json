@@ -23,7 +23,7 @@
     "sale": "Chegirmadagilar",
     "collOver": "Kayfiyatga qarab",
     "coll": "To'plamlar",
-    "perks": ["100% original — partiya raqami bilan", "Toshkent bo'ylab 1 kunda", "Do'konda hidlab tanlang", "14 kun ichida qaytarish"],
+    "perks": ["100% original atirlardan ilhomlangan parfumlar", "Toshkent bo'ylab 1 kunda", "Do'konda hidlab tanlang", "Qaytarish yoki almashtirish imkoniyati mavjud"],
     "testiOver": "Instagram va Telegramdan",
     "testi": "Mijozlarimiz so'zi",
     "screenshot": "Skrinshot",
@@ -96,7 +96,7 @@
     "recent": "Yaqinda ko'rilganlar",
     "reviews": "Sharhlar",
     "reviewsCount": "{n} ta sharh",
-    "perks": ["100% original, partiya raqami bilan", "Toshkent bo'ylab 1 kunda, 500 000 so'mdan bepul", "Butikda hidlab ko'rish mumkin"],
+    "perks": ["100% original atirlardan ilhomlangan parfumlar", "Toshkent bo'ylab 1 kunda, 500 000 so'mdan bepul", "Butikda hidlab ko'rish mumkin"],
     "per": "1 ml narxi"
   },
   "cart": {

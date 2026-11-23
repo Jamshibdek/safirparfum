@@ -47,7 +47,7 @@ watch(() => route.fullPath, () => { ui.mega = false; ui.menu = false })
     <div class="top">
       <div class="wrap row1">
         <button class="icon-btn only-m" :aria-label="t('nav.menu')" @click="ui.menu = true"><Icon name="menu" :size="22" /></button>
-        <NuxtLink :to="lp('/')" class="logo-link" aria-label="SafirParfum"><Logo /></NuxtLink>
+        <NuxtLink :to="lp('/')" class="logo-link" aria-label="Sefir Parfum"><Logo /></NuxtLink>
 
         <nav class="nav only-d" aria-label="Asosiy">
           <NuxtLink v-for="n in nav" :key="n.to" :to="lp(n.to)" :class="{ on: isActive(n.to) }">{{ n.label }}</NuxtLink>
