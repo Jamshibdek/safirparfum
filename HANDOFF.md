@@ -125,7 +125,8 @@ Hammasi 414, 360 va 1280 px'da tekshirilgan, push qilingan va jonli saytda ishla
 
 ## 7. Qabul qilingan qarorlar (o'zgartirmang, foydalanuvchi so'ramasa)
 
-1. Sayt nomi: **SafirParfum**.
+1. Sayt nomi: **Sefir Parfum** (2026-11-23 da SafirParfum'dan o'zgartirildi; logoda "SEFIR / PARFUM"). Ichki kalitlar (`safir` brend slug, `sp-*` localStorage, repo nomi) o'zgarmagan. Promokod: `SEFIR10`.
+10. Pozitsiya: atirlar **"100% original atirlardan ilhomlangan parfumlar"**. Saytda "original atir", "rasmiy distribyutor", "partiya raqami" degan da'volar bo'lmasin. Qaytarish: "qaytarish yoki almashtirish imkoniyati mavjud" (kun soni yozilmaydi).
 2. Katalog: 11 ta haqiqiy mahsulot va namunaviy mahsulotlar aralash. Haqiqiylari doim birinchi turadi.
 3. Hajmlar: **30 / 50 / 100 ml**. Ml tanlanganda flakon to'lishi ko'rinib o'zgarishi shart (30 kam, 100 ko'p).
 4. Videolar **faqat mahsulot sahifasida**, kichik reels ko'rinishida. Kartochkada faqat "Video" belgisi bor.
