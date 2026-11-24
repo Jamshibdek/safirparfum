@@ -29,11 +29,12 @@ export function flyToCart(source?: Element | null) {
   const size = Math.min(96, Math.max(48, from.width * 0.45))
   const ghost = document.createElement('div')
   ghost.setAttribute('aria-hidden', 'true')
-  ghost.style.cssText = `position:fixed;z-index:200;pointer-events:none;width:${size}px;height:${size}px;left:${from.left + from.width / 2 - size / 2}px;top:${from.top + from.height / 2 - size / 2}px;border-radius:50%;overflow:hidden;box-shadow:0 12px 30px -10px rgba(11,22,49,.5)`
+  ghost.style.cssText = `position:fixed;z-index:200;pointer-events:none;width:${size}px;height:${size}px;left:${from.left + from.width / 2 - size / 2}px;top:${from.top + from.height / 2 - size / 2}px;border-radius:50%;overflow:hidden;background:#fff;border:2px solid #CBB389;box-shadow:0 12px 30px -10px rgba(11,22,49,.5)`
   const clone = svg.cloneNode(true) as HTMLElement
   clone.style.width = '100%'
   clone.style.height = '100%'
-  if (clone.tagName === 'IMG') clone.style.objectFit = 'cover'
+  // surat butunligicha (flakon ko'rinsin), oq fon ichida
+  if (clone.tagName === 'IMG') { clone.style.objectFit = 'contain'; clone.style.transform = 'scale(1.25)' }
   ghost.appendChild(clone)
   document.body.appendChild(ghost)
 
@@ -43,8 +44,10 @@ export function flyToCart(source?: Element | null) {
   const anim = ghost.animate([
     { transform: 'translate(0, 0) scale(1)', opacity: 1 },
     { transform: `translate(${dx * 0.55}px, ${dy * 0.55 - lift}px) scale(.7)`, opacity: 1, offset: 0.55 },
-    { transform: `translate(${dx}px, ${dy}px) scale(.2)`, opacity: 0.3 }
-  ], { duration: 420, easing: 'cubic-bezier(.3,.6,.4,1)' })
+    { transform: `translate(${dx * 0.92}px, ${dy * 0.92}px) scale(.32)`, opacity: 0.9, offset: 0.85 },
+    // oxirida savat belgisi ustida qolmasdan butunlay so'nadi
+    { transform: `translate(${dx}px, ${dy}px) scale(.12)`, opacity: 0 }
+  ], { duration: 460, easing: 'cubic-bezier(.3,.6,.4,1)' })
   // Himoya: animatsiya tugash hodisasi kelmasa ham nusxa ekranda qolib ketmaydi
   let done = false
   const finish = () => { if (done) return; done = true; ghost.remove(); bumpCart() }
