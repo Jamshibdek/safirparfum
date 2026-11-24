@@ -150,6 +150,8 @@ Hammasi 414, 360 va 1280 px'da tekshirilgan, push qilingan va jonli saytda ishla
 
 ## 9. Keyingi qadamlar (taklif qilingan tartibda)
 
+> **2026-11-24 holati:** mijozga sayt kontenti (34 savol) va admin panel (30 savol) bo'yicha savollar berildi — **`docs/mijoz-savollari.md`** ni o'qing. Javoblar kelguncha namunaviy brend nomlariga tegilmaydi va admin panel qurilmaydi. Ish endi asosan bulut sessiyasida (claude.ai/code) olib boriladi: oddiy npm/git ishlatiladi, mahalliy yo'llar (3-bo'lim) u yerda yo'q.
+
 1. Foydalanuvchi va mijoz yangi tartibni **iPhone'da ko'rib** fikr bildiradi. Tuzatishlar shu fikrga qarab qilinadi.
 2. Mijozdan **haqiqiy narxlar, notalar va tavsiflarni** olib, `REAL` ro'yxatiga kiritish, keyin `npm run data`.
 3. (Ixtiyoriy) Animatsiyalarning 2-bosqichi: research sahifasidagi g'oyalar (pastga qarang).
