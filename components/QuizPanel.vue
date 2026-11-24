@@ -12,6 +12,7 @@ const cart = useCart()
 
 const STEPS = ['age', 'gender', 'job', 'seasons', 'places', 'purpose', 'priority', 'compliment'] as const
 const step = ref(0)
+const dir = ref<'fwd' | 'back'>('fwd') // o'tish yo'nalishi (slayd animatsiyasi uchun)
 const phase = ref<'q' | 'thinking' | 'done'>('q')
 const picks = ref<Pick[]>([])
 const a = reactive<QuizAnswers>({ age: 28, gender: '', job: '', seasons: [], places: [], purpose: '', priority: '', compliment: '' })
@@ -38,17 +39,18 @@ function pick(key: 'gender' | 'purpose' | 'priority' | 'compliment', v: string) 
   setTimeout(next, 180)
 }
 function next() {
+  dir.value = 'fwd'
   if (step.value < STEPS.length - 1) step.value += 1
   else finish()
 }
-function back() { if (step.value > 0) step.value -= 1 }
+function back() { if (step.value > 0) { dir.value = 'back'; step.value -= 1 } }
 function finish() {
   phase.value = 'thinking'
   setTimeout(() => { picks.value = recommend(a); phase.value = 'done' }, 1300)
 }
 function restart() {
   Object.assign(a, { age: 28, gender: '', job: '', seasons: [], places: [], purpose: '', priority: '', compliment: '' })
-  step.value = 0; phase.value = 'q'; picks.value = []
+  dir.value = 'back'; step.value = 0; phase.value = 'q'; picks.value = []
 }
 function reasonText(r: Pick['reasons'][number]) {
   return t(`quiz.why.${r.key}`, { season: r.season ? seasonL(r.season) : '', family: r.family ? familyL(r.family).toLowerCase() : '', n: r.n ?? '' })
@@ -67,14 +69,15 @@ function add(p: Pick['p'], e?: Event) {
       <div class="ttl"><Icon name="sparkle" :size="20" class="sp" /><h2 class="h3">{{ t('quiz.title') }}</h2></div>
       <button class="icon-btn" :aria-label="t('common.close')" @click="ui.quiz = false"><Icon name="close" /></button>
     </div>
-    <div class="prog"><span :style="{ width: progress + '%' }" /></div>
+    <div class="prog"><span :style="{ transform: `scaleX(${progress / 100})` }" /></div>
 
     <div class="drawer-body">
-      <template v-if="phase === 'q'">
+      <Transition name="qs-ph" mode="out-in">
+      <div v-if="phase === 'q'" class="qwrap">
         <p v-if="step === 0" class="bubble">{{ t('quiz.intro') }}</p>
         <p class="stepn">{{ t('quiz.step', { n: step + 1, total: STEPS.length }) }}</p>
 
-        <Transition name="fade" mode="out-in">
+        <Transition :name="`qs-${dir}`" mode="out-in">
           <div :key="cur" class="q">
             <template v-if="cur === 'age'">
               <h3 class="qh">{{ t('quiz.age') }}</h3>
@@ -138,7 +141,7 @@ function add(p: Pick['p'], e?: Event) {
             </template>
           </div>
         </Transition>
-      </template>
+      </div>
 
       <div v-else-if="phase === 'thinking'" class="think">
         <span class="orb" />
@@ -147,7 +150,7 @@ function add(p: Pick['p'], e?: Event) {
 
       <div v-else class="res">
         <p class="bubble">{{ t('quiz.result') }} ✦</p>
-        <article v-for="r in picks" :key="r.p.slug" class="rc">
+        <article v-for="(r, n) in picks" :key="r.p.slug" class="rc" :style="{ '--n': n }">
           <NuxtLink :to="lp(`/product/${r.p.slug}`)" class="th" @click="ui.quiz = false"><ProductVisual sizes="100px" :product="r.p" /></NuxtLink>
           <div class="rinfo">
             <span class="match">{{ r.match }}% {{ t('quiz.match') }}</span>
@@ -161,6 +164,7 @@ function add(p: Pick['p'], e?: Event) {
           </div>
         </article>
       </div>
+      </Transition>
     </div>
 
     <div v-if="phase !== 'thinking'" class="drawer-foot foot">
@@ -177,7 +181,22 @@ function add(p: Pick['p'], e?: Event) {
 .ttl { display: flex; align-items: center; gap: 10px; }
 .sp { color: var(--gold); }
 .prog { height: 3px; background: var(--bg-2); }
-.prog span { display: block; height: 100%; background: linear-gradient(90deg, var(--gold), var(--champagne)); transition: width .45s var(--ease); }
+.prog span { display: block; height: 100%; background: linear-gradient(90deg, var(--gold), var(--champagne)); transform-origin: 0 50%; transition: transform .45s var(--ease); }
+/* savollar orasida yo'nalishli slayd: oldinga — o'ngdan, orqaga — chapdan */
+.qs-fwd-enter-active, .qs-fwd-leave-active, .qs-back-enter-active, .qs-back-leave-active { transition: opacity .26s var(--ease), transform .26s var(--ease); }
+.qs-fwd-enter-from, .qs-back-leave-to { opacity: 0; transform: translateX(28px); }
+.qs-fwd-leave-to, .qs-back-enter-from { opacity: 0; transform: translateX(-28px); }
+/* bosqichlar (savol → o'ylash → natija) */
+.qs-ph-enter-active, .qs-ph-leave-active { transition: opacity .3s var(--ease), transform .3s var(--ease); }
+.qs-ph-enter-from { opacity: 0; transform: scale(.97); }
+.qs-ph-leave-to { opacity: 0; }
+/* tanlangan variant: yengil "bosilish" */
+.opt.on, .tile.on { animation: pick .32s var(--ease); }
+@keyframes pick { 40% { transform: scale(.98); } }
+/* natija kartalari birin-ketin chiqadi */
+.res .rc { animation: rc-in .55s var(--ease) both; animation-delay: calc(.15s + var(--n) * .12s); }
+@keyframes rc-in { from { opacity: 0; transform: translateY(16px); } }
+.res .match { animation: rc-in .4s var(--ease) both; animation-delay: calc(.45s + var(--n) * .12s); }
 .bubble { background: var(--surface); border: 1px solid var(--line); border-radius: 4px 16px 16px 16px; padding: 12px 16px; font-size: 14px; margin-bottom: 18px; max-width: 90%; }
 .stepn { font-size: 11.5px; font-weight: 700; letter-spacing: .14em; color: var(--muted); margin-bottom: 6px; }
 .qh { font-family: var(--f-display); font-size: 28px; font-weight: 600; margin-bottom: 16px; line-height: 1.1; }

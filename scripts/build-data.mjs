@@ -202,7 +202,7 @@ const collections = [
 // nozzle — atir sepiladigan nuqta (surat eni/bo'yiga nisbatan), theme — matn rangi.
 const banners = [
   { id: 1, title: { uz: 'Hidingizni topamiz', ru: 'Найдём ваш аромат' }, text: { uz: 'Originaldan ilhomlangan parfumlar — 30, 50 va 100 ml. Do\'konda hidlab, uyda kutib oling.', ru: 'Парфюмы, вдохновлённые оригиналами — 30, 50 и 100 мл. Попробуйте в бутике, получите дома.' }, cta: { uz: 'Katalogni ko\'rish', ru: 'Смотреть каталог' }, to: '/shop', photo: '/media/hero/aura-men', theme: 'dark', panel: ['#16120E', '#050507'], focal: [0.5, 0.42], nozzle: [0.49, 0.3], mist: '#ffffff' },
-  { id: 2, title: { uz: 'AURA 19+ ayollar uchun', ru: 'AURA 19+ для женщин' }, text: { uz: 'Atirgul, yasmin va iliq vanil — kechki uchrashuvlar uchun', ru: 'Роза, жасмин и тёплая ваниль — для вечерних встреч' }, cta: { uz: 'Atirni ko\'rish', ru: 'Смотреть аромат' }, to: '/product/safirparfum-aura-19-for-women', photo: '/media/hero/aura-women-trio', theme: 'light', panel: ['#F8E9E1', '#EBC9B9'], focal: [0.55, 0.42], nozzle: null, mist: '#F4D3C8' },
+  { id: 2, title: { uz: 'AURA 19+ ayollar uchun', ru: 'AURA 19+ для женщин' }, text: { uz: 'Atirgul, yasmin va iliq vanil — kechki uchrashuvlar uchun', ru: 'Роза, жасмин и тёплая ваниль — для вечерних встреч' }, cta: { uz: 'Atirni ko\'rish', ru: 'Смотреть аромат' }, to: '/product/sefir-parfum-aura-19-for-women', photo: '/media/hero/aura-women-trio', theme: 'light', panel: ['#F8E9E1', '#EBC9B9'], focal: [0.55, 0.42], nozzle: null, mist: '#F4D3C8' },
   { id: 3, title: { uz: '30% gacha chegirma', ru: 'Скидки до 30%' }, text: { uz: 'Tanlangan atirlar — faqat shu hafta', ru: 'Избранные ароматы — только на этой неделе' }, cta: { uz: 'Chegirmalarni ko\'rish', ru: 'Смотреть скидки' }, to: '/collections/chegirma', photo: '/media/hero/aura-women', theme: 'light', panel: ['#F6E6DB', '#E7C2AB'], focal: [0.6, 0.5], nozzle: null, mist: '#F4D3C8' }
 ]
 
@@ -214,7 +214,7 @@ const testimonials = [
   ['sardor', 'telegram', '2026-10-09', 'Samarqandga 2 kunda keldi, hammasi butun. Narxi ham boshqa joylardan arzonroq chiqdi.', 'В Самарканд доставили за 2 дня, всё целое. И цена ниже, чем у других.'],
   ['aziza_m', 'instagram', '2026-09-30', 'Testni o\'tib ko\'rdim — tavsiya qilingan Delina rostdan menga mos keldi!', 'Прошла тест — рекомендованная Delina действительно мне подошла!'],
   ['bekzod.a', 'telegram', '2026-09-22', 'Aventus 30 ml oldim, avval sinab ko\'rish uchun. Endi 100 ml olaman.', 'Взял Aventus 30 мл на пробу. Теперь возьму 100 мл.']
-].map(([user, source, date, uz, ru], i) => ({ id: i + 1, user, source, date, text: { uz, ru }, product: ['maison-francis-kurkdjian-baccarat-rouge-540', 'parfums-de-marly-layton', 'guerlain-shalimar', 'safirparfum-aura-19-for-women', 'parfums-de-marly-delina', 'creed-aventus'][i] }))
+].map(([user, source, date, uz, ru], i) => ({ id: i + 1, user, source, date, text: { uz, ru }, product: ['maison-francis-kurkdjian-baccarat-rouge-540', 'parfums-de-marly-layton', 'guerlain-shalimar', 'sefir-parfum-aura-19-for-women', 'parfums-de-marly-delina', 'creed-aventus'][i] }))
 
 const faq = [
   ['Atirlaringiz originalmi?', 'Ваши ароматы оригинальные?', 'Bizning parfumlarimiz 100% original atirlardan ilhomlangan: hidi va xarakteri originalga yaqin, narxi esa ancha hamyonbop. Do\'konda hidlab ko\'rishingiz mumkin.', 'Да. Все ароматы поступают от официальных дистрибьюторов, у каждого флакона есть номер партии. В бутике можно попробовать.'],

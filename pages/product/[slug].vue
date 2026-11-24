@@ -6,7 +6,7 @@ import { useCart, useWishlist, useRecent, useUi } from '~/stores/shop'
 const route = useRoute()
 const { t } = useI18n()
 const lp = useLocalePath()
-const { L, noteL, familyL, seasonL, money, locale } = useL()
+const { L, familyL, seasonL, money, locale } = useL()
 const cart = useCart()
 const wish = useWishlist()
 const recent = useRecent()
@@ -222,12 +222,7 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
           <button class="lnk" @click="more = !more">{{ more ? t('product.less') : t('product.more') }}</button>
         </section>
 
-        <section class="pyr" :aria-label="t('product.pyramid')">
-          <h2 class="h3">{{ t('product.pyramid') }}</h2>
-          <div class="tier t1"><span class="tn">{{ t('product.top') }}</span><span class="tv">{{ prod.notes.top.map(noteL).join(', ') }}</span></div>
-          <div class="tier t2"><span class="tn">{{ t('product.heart') }}</span><span class="tv">{{ prod.notes.heart.map(noteL).join(', ') }}</span></div>
-          <div class="tier t3"><span class="tn">{{ t('product.base') }}</span><span class="tv">{{ prod.notes.base.map(noteL).join(', ') }}</span></div>
-        </section>
+        <NotePyramid :notes="prod.notes" />
 
         <section class="specs">
           <h2 class="h3">{{ t('product.specs') }}</h2>
@@ -345,15 +340,6 @@ const meter = (n: number) => Array.from({ length: 5 }, (_, i) => i < n)
 .desc p { font-size: 16.5px; line-height: 1.75; color: var(--ink-2); max-width: 62ch; }
 .desc p.clamp { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
 .lnk { justify-self: start; border: 0; background: transparent; color: var(--sapphire); font-weight: 600; padding: 0; }
-.pyr { display: grid; gap: 8px; align-content: start; }
-.pyr h2 { margin-bottom: 6px; }
-.tier { display: grid; gap: 2px; padding: 14px 18px; border-radius: 14px; background: var(--surface); border: 1px solid var(--line); margin: 0 auto; width: 100%; text-transform: none; }
-.t1 { width: 72%; }
-.t2 { width: 86%; }
-.tn { font-size: 12.5px; color: var(--muted); }
-.tv { font-family: var(--f-display); font-size: 19px; text-transform: capitalize; }
-.t3 { background: var(--night); border-color: var(--night); color: #F2F3F6; }
-.t3 .tn { color: var(--champagne); }
 .specs dl { margin: 14px 0 0; display: grid; }
 .specs dl > div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
 .specs dt { color: var(--muted); }

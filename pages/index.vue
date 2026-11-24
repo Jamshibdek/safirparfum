@@ -97,7 +97,7 @@ useHead({
         </div>
         <div class="colls">
           <NuxtLink v-for="c in collections" :key="c.slug" v-reveal :to="lp(`/collections/${c.slug}`)" class="coll" :style="{ '--a': c.tone[0], '--b': c.tone[1] }">
-            <div class="cart"><BottleArt :product="getProduct(collArt[c.slug])!" bare /></div>
+            <div v-parallax="{ k: 0.06, max: 14 }" class="cart"><BottleArt :product="getProduct(collArt[c.slug])!" bare /></div>
             <div class="ctxt">
               <span class="cn">{{ products.filter(p => matchCollection(p, c.rule)).length }} {{ t('collections.items') }}</span>
               <strong class="display">{{ L(c.name) }}</strong>
@@ -172,7 +172,7 @@ useHead({
 .link-arrow.light { border-color: var(--champagne); color: var(--champagne); }
 .colls { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .coll { position: relative; height: 260px; border-radius: 20px; overflow: hidden; padding: 24px; display: flex; align-items: flex-end; background: radial-gradient(120% 120% at 85% 20%, var(--a), var(--b)); isolation: isolate; border: 1px solid rgba(255, 255, 255, .08); }
-.cart { position: absolute; width: 58%; right: -8%; top: -4%; z-index: -1; transition: transform .8s var(--ease); filter: drop-shadow(0 24px 24px rgba(0, 0, 0, .35)); }
+.cart { translate: 0 var(--py, 0px); position: absolute; width: 58%; right: -8%; top: -4%; z-index: -1; transition: transform .8s var(--ease); filter: drop-shadow(0 24px 24px rgba(0, 0, 0, .35)); }
 .coll:hover .cart { transform: translateY(-6px) rotate(3deg); }
 .ctxt { display: grid; gap: 4px; max-width: 70%; }
 .cn { font-size: 13px; opacity: .7; }

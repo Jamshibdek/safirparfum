@@ -84,6 +84,8 @@
     "top": "Yuqori notalar",
     "heart": "Yurak notalari",
     "base": "Asos notalari",
+    "pyrHint": "Hid vaqt o'tishi bilan qavatma-qavat ochiladi",
+    "pyrTime": { "top": "0–15 daqiqa", "heart": "15 daqiqa – 3 soat", "base": "3 soatdan keyin" },
     "pyramid": "Hid piramidasi",
     "specs": "Xususiyatlar",
     "season": "Fasl",

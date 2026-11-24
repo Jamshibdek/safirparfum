@@ -121,7 +121,7 @@ onBeforeUnmount(() => { cancelAnimationFrame(raf); clearTimeout(introTimer); doc
 
 <template>
   <section class="hero wrap" @mouseenter="paused = true" @mouseleave="paused = false" @touchstart.passive="ts" @touchend="te">
-    <div ref="stage" class="stage" :class="{ intro }">
+    <div ref="stage" v-parallax="{ k: 0.12, max: 40, top: true }" class="stage" :class="{ intro }">
       <canvas ref="mist" class="mist" aria-hidden="true" />
       <button v-if="intro" class="intro-skip" @click="endIntro">{{ t('common.skip') }}</button>
       <TransitionGroup name="xf">
@@ -164,6 +164,9 @@ onBeforeUnmount(() => { cancelAnimationFrame(raf); clearTimeout(introTimer); doc
 /* surat o'ng tomonda, chap cheti panel rangiga yumshoq qo'shiladi */
 .photo { grid-column: 2; position: relative; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 22%); mask-image: linear-gradient(90deg, transparent 0, #000 22%); }
 .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* yengil parallaks: surat sekinroq siljiydi, matn biroz tezroq ko'tarilib xiralashadi (--py, --pf: v-parallax) */
+.photo { translate: 0 calc(var(--py, 0px) * .5); scale: 1.06; transform-origin: 50% 100%; }
+.copy { translate: 0 calc(var(--py, 0px) * -.6); opacity: calc(1 - var(--pf, 0) * .9); }
 .copy { grid-column: 1; grid-row: 1; align-self: center; padding: 0 0 48px clamp(28px, 5vw, 72px); display: grid; gap: 18px; justify-items: start; position: relative; z-index: 2; }
 .title { font-size: clamp(38px, 4.8vw, 68px); }
 .sub { font-size: 16px; max-width: 36ch; opacity: .85; }
